@@ -1,42 +1,70 @@
-# Welcome to future Yerbas.org website codebase
-## READ.ME under construction!
-Current Build Status: ![Build Status](https://travis-ci.org/The-Yerbas-Endeavor/yerbas.svg?branch=master)
-Live site: [yerbas.org](https://yerbas.org)
-Report problems or help improve the site by opening a [new issue](https://github.comThe-Yerbas-Endeavor/The-Yerbas-Endeavor.github.io.org/issues/new) or [pull request](https://github.com/The-Yerbas-Endeavor/The-Yerbas-Endeavor.github.io.org/compare).
+# Getting Started with Create React App
 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Earn Yerbas for Contributing to the Yerbas website (TBD)
-Open issues [labeled with "Bounty"](https://github.com/The-Yerbas-Endeavor/The-Yerbas-Endeavor.github.io/labels/Bounty)
-have bounties on them. Viewing the issue will reveal the value of the bounty.
-Submit a pull request resolving the issue along with an accompanying note or
-comment containing a yerbas address and automatically receive a payment in the
-amount of the bounty if it gets merged.
+## Available Scripts
 
-## Setup the website locally
-https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/
-View site on localhost:4000
+In the project directory, you can run:
 
-## How to Participate
-1. Fork The-Yerbas-Endeavor.github.io
-2. Click the settings tab
-3. Rename repository from The-Yerbas-Endeavor.github.io to `username`.github.io
-4. Make changes.
-5. Ensure your changes are published with GitHub Pages at https://`username`.github.io
-6. Create a Pull Request from your repository to The-Yerbas-Endeavor
-7. Add comment to pull request to your local fork of the website. https://`username`.github.io
-8. Click the Create Pull Request button
-9. Wait for PR to be approved!
+### `yarn start`
 
-### Code of Conduct
-Participation in this project is subject to a [Code of Conduct](https://github.com/The-Yerbas-Endeavor/The-Yerbas-Endeavor.github.io/blob/master/CODE_OF_CONDUCT.md).
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### Questions?
-Please join us in one of our [communities](https://The-Yerbas-Endeavor.github.io/community/) if you need help.
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-### Todo List
-The following are on the Yerbas.org agenda.
-+ Integrate multiple languages and language templating.
-+ Refine overall templating and css structures.
-+ Continue to convert away from minima theme.
-+ Remove any lingering legacy/irrelevant data from minima theme.
-+ Fix minor issues on mobilewallet/support
+### `yarn test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `yarn build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `yarn eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `yarn build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
