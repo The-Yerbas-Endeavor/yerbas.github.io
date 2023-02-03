@@ -22,8 +22,7 @@ header_pages:
  - _index.html
  - _paperwallet.html
  - _yerbvanity.html
- - _src/community.jsx
- - _pages/index.md
+ - _pages/index.html
 
 
 # Build settings
