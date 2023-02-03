@@ -19,18 +19,12 @@ minima:
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
 header_pages:
- - _pages/index.html
+ - _index.html
+ - _paperwallet.html
+ - _yerbvanity.html
  - _src/community.jsx
  - _pages/index.md
- - _pages/buy-yerbas.md
- - _pages/wallet.md
- - _pages/whitepaper.md
- - _pages/community.md
- - _pages/pools.md
- - _pages/updates.md
- - _pages/about.md
- - _pages/projects.md
- - _pages/ledger.md
+
 
 # Build settings
 theme: minima
