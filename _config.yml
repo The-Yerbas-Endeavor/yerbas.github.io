@@ -23,6 +23,7 @@ header_pages:
  - _paperwallet.html
  - _yerbvanity.html
  - _pages/index.html
+ - _pages/yerbvanity.html
 
 
 # Build settings
@@ -31,6 +32,7 @@ relative_permalinks: false
 
 # Reading Files
 include:
+  - _static
   - _pages
   - _posts
   - _wallets
