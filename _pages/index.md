@@ -101,11 +101,11 @@ modalCacheRef: "3.0.0.1"
   <br>
   <br>
   <div class="wrapper text-center pt-8 pb-20" style="max-width: 700px;">
-    <h2 class="mt-10 mb-16">Desktop Downloads</h2>
+    <h2 class="mt-10 mb-16">wYerbas</h2>
     <div class="flex flex-wrap align-center justify-center">
       <div class="w-full sm:w-1/2 md:w-1/3 px-4 mb-12">
         <div class="bg-grey-lighter max-w-sm rounded overflow-hidden shadow-md hover:by-grey">
-          <a class="block px-6 py-4" href="https://github.com/The-Yerbas-Endeavor/Yerbas/releases" target="_blank"><img style="max-height: 125px;" src="/assets/img/pages/wallet/windows.svg" align="middle" alt=" Windows wallet"/></a>
+          <a class="block px-6 py-4" href="https://wrap.yerbas.org" target="_blank"><img style="max-height: 50px;" src="/assets/img/pages/wallet/wyerbas.png" align="middle" alt=" wYerbas"/></a>
         </div>
         <a class="block mt-8 text-lg bg-blue hover:bg-blue-dark rounded p-2 text-white" href="https://github.com/The-Yerbas-Endeavor/yerbas/releases/download/v2.1.1.4/yerbas-win-2.1.1.4.zip" download><i class="zmdi zmdi-download"></i><span class="inline-block ml-3">Windows</span></a>
       </div>
