@@ -1,0 +1,6 @@
+#!/bin/sh
+
+set -e
+
+echo "Building the yerbas site..."
+bundle exec jekyll build

@@ -1,0 +1,203 @@
+- name: ATAIX
+  logo: /assets/img/pages/exchanges/ataix.png
+  url:  https://ataix.com/market/YERB-BTC
+  kyc: true
+  donates_to_project: false
+
+- name: BC Bitcoin
+  logo: /assets/img/pages/exchanges/bcbitcoin.png
+  url: https://www.bcbitcoin.co.uk/buy/?coin=YERB
+  kyc: false
+  donates_to_project: false
+
+- name: Bitladon
+  logo: /assets/img/pages/exchanges/bitladon.png
+  url: https://www.bitladon.com/yerbas
+  kyc: true
+  donates_to_project: false
+
+- name: Bitni
+  logo: /assets/img/pages/exchanges/bitni.png
+  url: https://bitni.com/swap/yerb/btc
+  kyc: false
+  donates_to_project: false
+
+- name: Bitrue
+  logo: /assets/img/pages/exchanges/bitrue.png
+  url: https://www.bitrue.com/trade/yerb_btc
+  kyc: true
+  donates_to_project: false
+
+- name: Binance
+  logo: /assets/img/pages/exchanges/binance.png
+  url: https://www.binance.com/en/trade/YERB_BTC
+  kyc: true
+  donates_to_project: false
+
+- name: Bittrex
+  logo: /assets/img/pages/exchanges/bittrex.png
+  url: https://bittrex.com/Market/Index?MarketName=BTC-YERB
+  kyc: true
+  donates_to_project: false
+
+- name: Bitvavo
+  logo: /assets/img/pages/exchanges/bitvavo.png
+  url: https://bitvavo.com/en/yerbas
+  kyc: true
+  donates_to_project: false
+
+- name: ChangeAngel
+  logo: /assets/img/pages/exchanges/changeangel.png
+  url: https://changeangel.io/
+  kyc: false
+  donates_to_project: true
+
+- name: Changelly
+  logo: /assets/img/pages/exchanges/changelly.png
+  url: https://changelly.com/
+  kyc: false
+  donates_to_project: false
+
+- name: ChangeNow
+  logo: /assets/img/pages/exchanges/changenow.png
+  url: https://changenow.io
+  kyc: false
+  donates_to_project: false
+
+- name: CoinSpot
+  logo: /assets/img/pages/exchanges/coinspot.png
+  url: https://www.coinspot.com.au/chart/YERB
+  kyc: true
+  donates_to_project: false
+
+- name: CoinSwitch
+  logo: /assets/img/pages/exchanges/coinswitch.png
+  url: https://coinswitch.co
+  kyc: false
+  donates_to_project: false
+
+- name: DEX Trade
+  logo: /assets/img/pages/exchanges/dextrade.png
+  url:  https://dex-trade.com/spot/trading/YERBUSDT
+  kyc: true
+  donates_to_project: false
+
+- name: Digifinex
+  logo: /assets/img/pages/exchanges/digifinex.png
+  url: https://www.digifinex.com/en-ww/trade/BTC/YERB
+  kyc: true
+  donates_to_project: false
+
+- name: Evorese
+  logo: /assets/img/pages/exchanges/evorese.png
+  url: https://exchange.evorese.com/market/BIRAKE.YERB_BIRAKE.BTC
+  kyc: false
+  donates_to_project: false
+
+- name: Exolix
+  logo: /assets/img/pages/exchanges/exolix.png
+  url: https://exolix.com/exchange/BTC-YERB
+  kyc: false
+  donates_to_project: false
+
+- name: Graviex
+  logo: /assets/img/pages/exchanges/graviex.png
+  url: https://graviex.net/markets/yerbbtc
+  kyc: true
+  donates_to_project: false
+
+- name: Guardarian
+  logo: /assets/img/pages/exchanges/guardarian.png
+  url: https://guardarian.com
+  kyc: false
+  donates_to_project: false
+
+- name: Huobi
+  logo: /assets/img/pages/exchanges/huobi.png
+  url: https://huobi.com/
+  kyc: true
+  donates_to_project: false
+
+- name: Indodax
+  logo: /assets/img/pages/exchanges/indodax.png
+  url: https://indodax.com/market/YERBIDR
+  kyc: true
+  donates_to_project: false
+
+- name: OKEx
+  logo: /assets/img/pages/exchanges/okex.png
+  url: https://www.okex.com/en/markets/spot/yerb_btc
+  kyc: true
+  donates_to_project: false
+
+- name: Paribu
+  logo: /assets/img/pages/exchanges/paribu.png
+  url: https://www.paribu.com/?utm_source=yerbas.org
+  kyc: true
+  donates_to_project: false
+
+- name: ProBit
+  logo: /assets/img/pages/exchanges/probit.png
+  url: https://www.probit.com/app/exchange/YERB-USDT
+  kyc: true
+  donates_to_project: false
+
+- name: Qortal
+  logo: /assets/img/pages/exchanges/qortal.png
+  url: https://qortal.org/downloads/
+  kyc: false
+  donates_to_project: false
+
+- name: SimpleSwap
+  logo: /assets/img/pages/exchanges/simpleswap.png
+  url:  https://simpleswap.io/
+  kyc: false
+  donates_to_project: false
+
+- name: StealthEX
+  logo: /assets/img/pages/exchanges/stealthex.png
+  url: https://stealthex.io/?to=yerb
+  kyc: false
+  donates_to_project: false
+
+- name: SwapSpace
+  logo: /assets/img/pages/exchanges/swapspace.png
+  url:  https://swapspace.co/
+  kyc: false
+  donates_to_project: false
+
+- name: SwapSwop
+  logo: /assets/img/pages/exchanges/swapswop.png
+  url:  https://swapswop.io/
+  kyc: false
+  donates_to_project: false
+
+- name: Swapzone
+  logo: /assets/img/pages/exchanges/swapzone.png
+  url:  https://swapzone.io/
+  kyc: false
+  donates_to_project: false
+
+- name: tZero
+  logo: /assets/img/pages/exchanges/tzero.png
+  url: https://www.tzero.com/
+  kyc: true
+  donates_to_project: false
+
+- name: Upbit
+  logo: /assets/img/pages/exchanges/upbit.png
+  url: https://upbit.com/exchange?code=CRIX.UPBIT.BTC-YERB
+  kyc: true
+  donates_to_project: false
+
+- name: UnicornX
+  logo: /assets/img/pages/exchanges/UnicornX.png
+  url: https://www.unicornx.exchange/markets/spot-info/yerb-usdt
+  kyc: true
+  donates_to_project: false
+
+- name: NOWPayments
+  logo: /assets/img/pages/exchanges/nowpayments.png
+  url: https://nowpayments.io/
+  kyc: false
+  donates_to_project: false

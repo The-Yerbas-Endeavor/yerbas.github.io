@@ -1,0 +1,79 @@
+- name: Yerbaspool.ninja
+  url: https://yerbaspool.ninja/
+  twitter: '@YerbaspoolNinja'
+
+- name: YerbasMiner
+  url: https://www.yerbasminer.com/
+  twitter: '@YerbasMinerPool'
+
+- name: WoolyPooly
+  url: https://woolypooly.com/
+  twitter: '@Woolypooly_com'
+ 
+- name: Flypool
+  url: https://yerbas.flypool.org/
+  twitter: '@etherchain_org'
+
+- name: 2Miners
+  url: https://2miners.com
+  twitter: '@pool2miners'
+
+- name: Bsod
+  url: https://bsod.pw
+  twitter: '@BsodPool'
+
+- name: Suprnova
+  url: https://yerb.suprnova.cc/index.php
+  twitter: '@SuprnovaPools'
+
+- name: Nanopool
+  url: https://yerb.nanopool.org/
+  twitter: '@nanopool_org'
+
+- name: Blocksmith
+  url: https://yerb.bsmith.io/
+  twitter: ''
+
+- name: Binary-Longevity
+  url: https://binarylongevity.com/yerbas-mining-pool/
+  twitter: ''
+
+- name: MiningPoolHub
+  url: https://yerbas.miningpoolhub.com/
+  twitter: ''
+
+- name: HeroMiners
+  url: https://yerbas.herominers.com
+  twitter: '@HeroMinerss'
+
+- name: Mole-Pool
+  url: https://yerb.mole-pool.net/
+  twitter: ''
+  
+- name: Skypool
+  url: https://yerb.skypool.org/
+  twitter: ''
+
+- name: Cruxpool
+  url: https://cruxpool.com/
+  twitter: '@cruxpool'
+
+- name: Crypticwizardry
+  url: https://www.crypticwizardry.com/
+  twitter: ''
+
+- name: CryptoRUSH
+  url: https://www.cryptoru.sh/
+  twitter: '@CryptoRUSH_Gav'
+
+- name: Yerbasclause-WallstreetV2
+  url: https://pool.wallstreetv2.com/
+  twitter: ''
+  
+- name: Kaww.io
+  url: https://kaww.io/
+  twitter: '@kaww_io'
+  
+- name: KryptexPool
+  url: https://pool.kryptex.com/yerb
+  twitter: '@KryptexMining'

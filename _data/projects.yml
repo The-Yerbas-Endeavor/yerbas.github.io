@@ -1,0 +1,251 @@
+- name: YerbasHelper OS
+  description: >
+    YerbasHelperOS is an Operating System framework for everything Yerbas.
+    A foundation of services that are focused upon the Yerbas Blockchain.
+    Its intent is to consolidate everything about Yerbas,
+    and to present it all, to the user for easy access!
+  project_sites:
+    - name: YerbasHelper OS
+      url: https://yerbashelper.com
+  roadmap:
+    - name: Research & Implement a stable, flexible Operating System across many platforms
+      value: complete
+    - name: Created programs to enhance underlining OS for better functioning of Yerbas Node and IPFS
+      value: complete
+    - name: Creating Options for more flexibility of IPFS
+      value: complete
+    - name: Creating Wiki of all things Yerbas
+      value: complete
+    - name: Creating web download package for Windows, OSX and Raspberry Pi
+      value: complete
+    - name: Creating web application for easy (Manual) downloading of NFTs, with Verification & Viewer
+      value: testing
+    - name: Creating application download and install function for Yerbas projects.
+      value: testing
+    - name: Creating a Token function that allows the user to receive continual Tokens based upon the accumulated time YerbasHelper is maintained.
+      value: testing
+    - name: Creating a website listing and Wiki listing of Yerbas focused products and services that can be purchased with YerbasHelper Tokens.
+      value: upcoming
+    - name: Creating Github Repository
+      value: upcoming
+  social:
+    - name: YerbasHelper OS
+      url: https://twitter.com/technobuddha
+
+- name: Electrum Yerbas
+  description: >
+    The Electrum Yerbas wallet is meant to be a light weight wallet for users who are unable or unwilling
+    to run a full yerbas core wallet as well as allow for hardware support for users. It runs on a "shared node" system
+    where users can wrap an electrum server around a Yerbas node which allows electrum clients to get information about
+    their addresses.
+  project_sites:
+    - name: Electrum Client
+      url: https://github.com/Electrum-YERB-SIG/electrum-yerbas
+    - name: Electrum Server
+      url: https://github.com/Electrum-YERB-SIG/electrumx-yerbas
+    - name: Server and Protocol Documentation
+      url: https://electrumx-yerbas.readthedocs.io/en/latest/protocol-methods.html
+  roadmap:
+    - name: Convert the base electrum repository to Yerbas
+      value: complete
+    - name: Convert the electrum server to be asset aware
+      value: complete
+    - name: Allow ledger hardware YERB transactions
+      value: complete
+    - name: Allow trezor hardware YERB transactions
+      value: complete
+    - name: Allow users to see assets
+      value: complete
+    - name: Allow software to send assets
+      value: testing
+    - name: Allow ledger to send assets
+      value: testing
+    - name: Allow trezor to send assets
+      value: testing
+    - name: Execute atomic swaps
+      value: upcoming
+    - name: Create and share atomic swaps
+      value: upcoming
+    - name: Create, Reissue, and Tag with assets
+      value: upcoming
+    - name: Allow users to create atomic swaps as per RIP15
+      value: upcoming
+  social:
+    - name: Discord
+      url: https://discord.gg/VuubYncHz4
+
+- name: Atomic Swaps
+  description: >
+    Atomic swaps allow for on-chain trades between yerbas and yerbas assets, or between two different yerbas
+    assets. This provides all the needed functionality to make Buy, Sell, and Trade orders that others may execute at
+    will. In addition, these partial orders can be specially signed such that they are easily shared and completable
+    by another party, allowing for clean 2-step orders where that can be shared through any number of side-channels.
+  project_sites:
+    - name: RIP-15 Specification
+      url: https://github.com/The-Yerbas-Endeavor/rips/blob/master/rip-0015.mediawiki
+    - name: YerbasTraderPro - Desktop Client (python)
+      url: https://github.com/ben-abraham/yerbas-trader-pro
+    - name: YerbasTrader - Server (C#)
+      url: https://github.com/ben-abraham/yerbas-trader
+    - name: Core Wallet - Atomic Swap PR
+      url: https://github.com/The-Yerbas-Endeavor/Yerbas/pull/1083
+  roadmap:
+    - name: Process for creating swaps
+      value: complete
+    - name: Support buy/sell/trade orders
+      value: complete
+    - name: Public site sharing incomplete orders
+      value: complete
+    - name: Dedicated client able to execute swaps
+      value: complete
+    - name: Dedicated client able to create swaps
+      value: complete
+    - name: Dedicated client able to post swaps to public site
+      value: complete
+    - name: Core wallet able to view swaps in detail
+      value: submitted
+    - name: Core wallet able to execute swaps
+      value: submitted
+    - name: Core wallet able to create swaps
+      value: upcoming
+    - name: Automated create/listing/execution of orders. (Effectively a self-hosted LP)
+      value: upcoming
+
+- name: YERBFT
+  description: >
+    YERBFT is a full service NFT Tokenization platform on the Yerbas Blockchain Network.
+    You can create your own Artwork, Game Reward, Song, Movie, Certificate of Authenticity and much more.
+    Let YERBFT add it to the Network, so you can focus on what you do best.
+  project_sites:
+    - name: YERBFT
+      url: https://www.yerbft.art/
+    - name: YERBFT Marketplace
+      url: https://www.yerbft.art/nft-marketplace/
+    - name: YERBFT Gallery
+      url: https://www.yerbft.art/yerb-nft-gallery/
+    - name: YERBBAY/YERBFT
+      url: https://yerbbay.com/category/yerbft/
+  social:
+    - name: YERBFT Discord
+      url: https://discord.gg/ZSqqS5Gr
+    - name: YERBFT Twitter
+      url: https://twitter.com/YERBFT_ART
+    - name: YERBFT Instagram
+      url: https://www.instagram.com/yerbft.art/
+    - name: Find YERBFT NFTs on Yerbas Trader
+      url: https://yerbastrader.net/
+
+- name: SYNTH
+  description: >
+    SYNTH is a digital guild based on the Main YERB Token which aims to augment the
+    Yerbas NFT/Cyber Collectible community. SYNTH uses tokens as a company structure,
+    and offers a range of different NFT/token types on various marketplaces.
+    SYNTH has also produced a user friendly front end for current YERB marketplaces & swap
+    options, as well as a private high speed IPFS network to host NFTs/Tokens for ourselves &
+    partnered NFT creators.
+
+  project_sites:
+    - name: NiftySynth - Website/Blog for Synth Token
+      url: https://www.niftysynth.com/
+    - name: yerbBay
+      url: https://yerbbay.com
+    - name: GradeSynth IPFS Gateway
+      url: https://gradesynth.com/ipfs/QmPJeUzChXMSfe3uoXxLTqWP2MR8u1CdFuurUZXRvjed9U/
+
+  social:
+    - name: SYNTH Discord
+      url: https://discord.gg/R2pveQWx
+    - name: SYNTH Twitter
+      url: https://twitter.com/NiftySynth
+
+- name: YerbasWallet by MoonTree
+  description: >
+    The YerbasWallet sponsored by MoonTree is a full featured yerbas specific mobile wallet.
+    From this wallet users can send and receive YERB, Create distribute and manage Assets,
+    as well as trade assets on a distributed exchange in the form of atomic swaps.
+
+  project_sites:
+    - name: Yerbas Source Code - a dart library for the projects underlying functionality.
+      url: https://github.com/moontreeapp
+
+  roadmap:
+    - name: Investigate BlueWallet Fork
+      value: complete
+    - name: Create Underlying Library for Dart/Flutter App
+      value: testing
+    - name: Create Flutter UI
+      value: upcoming
+    - name: Add Asset Creation and Transaction Functionality
+      value: upcoming
+    - name: Add Asset Management Functionality
+      value: upcoming
+    - name: Add Asset Distributed Exchange Functionality
+      value: upcoming
+  social:
+    - name: Discord
+      url: https://discord.gg/pEnHZbqhZV
+
+- name: Squawker Protocol
+  description: >
+    Squawker is an uncensorable way to communicate with the world. By using asset transfers 
+    to denote the meaning of IPFS filehashes, anyone can say what they want. Through the 
+    power of decentralized mining and proof of work your message will be accepted onto the 
+    blockchain. As long as your IPFS filehash is pinned anyone with accesss to the 
+    blockchain and an ipfs gateway (both are self hostable) can consume that content.
+  project_sites:
+    - name: Squawker
+      url: https://squawker.app
+    - name: Squawker Protocol and Proof of concept code
+      url: https://github.com/Tylerlhess/Squawker
+    - name: Squawker API - source for the backend api 
+      url: https://github.com/Tylerlhess/SquawkerAPI
+  roadmap:
+    - name: Provide Minimum Viable Product as a website
+      value: complete
+    - name: Add Profile creation/curation capabilities
+      value: complete
+    - name: Add Blog/Article posting
+      value: complete
+    - name: Source a web based signing mechanism
+      value: complete - Thanks @YerbasRebels
+    - name: Move site contents into a cached database from on-chain lookups.
+      value: ongoing
+    - name: Implement a reply system
+      value: upcoming
+    - name: RSS style feeds for users and articles
+      value: upcoming
+    - name: New Webui
+      value: Send Help
+    - name: Implement onboarding process w/ 12 word wallet generation and initial Kaw
+      value: upcoming
+    - name: Add Asset Encryption Tag sales directly through the site.
+      value: upcoming
+    - name: Source or generate a chrome plugin for in browser RIP 11 decryption
+      value: upcoming
+    - name: Add targeted encyption messages to the protocol - way to denote what decryption key is needed for this message.
+      value: upcoming
+  social:
+    - name: Squawker Twitter
+      url: https://twitter.com/Squawker__
+    - name: (Lead/only Dev) BadGuyTy Twitter
+      url: https://twitter.com/badguyty
+    - name: Discord - @badguyty
+      url: https://discord.gg/pEnHZbqhZV
+
+- name: NOWNodes
+  description: >
+    A blockchain as a service for Yerbas nodes via API key. Blockchain-as-a-service solution that lets users get access to full Yerbas nodes (shared & dedicated nodes on mainnet & testnet + archived nodes) via API key.
+    NOWNodes provides a high-quality, quick, cost-effective, and reliable infrastructure for developers, start-ups, and businesses that are developing Web 3 projects on the Yerbas blockchain.
+    Service provides free API key access.
+ 
+  project_sites:
+    - name: NOWNodes Set Up 
+      url: http://bit.do/nownodes-setup
+    - name: NOWNodes Documentation
+      url: https://documenter.getpostman.com/view/13630829/TVmFkLwy
+  
+  social:
+    - name: Support
+      url: https://t.me/+TdoSFV7MVXA1YWEy
+    - name: NOWNodes Twitter
+      url: https://twitter.com/NowNodes
