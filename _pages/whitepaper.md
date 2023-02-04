@@ -28,8 +28,8 @@ permalink: /whitepaper/
             <i class="zmdi zmdi-file-text text-5xl text-white"></i>
           </div>
         </a>
-        <h3><a id="x16r1" href="/assets/documents/GhostRider_Whitepaper.pdf" target="_blank">X16R algorithm paper</a></h3>
-        <p id="x16r2">X16R: ASIC Resistant by Design</p>
+        <h3><a id="x16r1" href="/assets/documents/GhostRider_Whitepaper.pdf" target="_blank">GhostRider algorithm paper</a></h3>
+        <p id="x16r2">GhostRider: ASIC Resistant by Design</p>
       </div>
       <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ X16R ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
       <div class="w-full sm:w-1/2 mb-8">
