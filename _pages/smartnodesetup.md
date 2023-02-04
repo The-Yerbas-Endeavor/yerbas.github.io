@@ -18,27 +18,27 @@ permalink: /Smartnodesetup/
     </div>  
         <h4>2. Add 4GB of SWAP</h4>
             <p><i>First check to make sure there is not already swap active:</i></p>
-            <div><p>free -h</p></div>
+            <div><p><b>free -h</b></p></div>
                <p>note<br/>
                   <i>If no swap it will return:<br/>
                      Swap:     0B     0B     0B</i>
                      Create SWAP and Activate:
                  </p>
             <div>
-                <p>sudo bash \<br/>
+                <p><b>sudo bash \<br/>
                    sudo dd if=/dev/zero of=/swapfile bs=1M count=4000 \<br/>
                    sudo mkswap /swapfile && sudo chmod 600 /swapfile && sudo swapon /swapfile<br/>
-                   exit<br/>
+                   exit<br/></b>
                </p>
               </div>
       <h4>3. Enable UFW & Open Ports</h4>
             <div>
-                <p>apt install ufw -y<br/>
+                <p><b>apt install ufw -y<br/>
                   ufw default deny incoming<br/>
                   ufw default allow outgoing<br/>
                   ufw allow ssh<br/>
                   ufw allow 15420/tcp<br/>
-                  ufw enable <br/></p></div>
+                  ufw enable <br/></p></div></b>
       <h4>4. Configure Fail2Ban</h4>
              <div>
                 <p><i>Setup jail for bad guys hitting SSH, and set it to ban after three failed logins to SSH</i></p>
@@ -46,31 +46,31 @@ permalink: /Smartnodesetup/
              </div>
                <p><i>Copy and paste the following into the file</i></p>
             <div>
-               <p> [sshd]<br/>
+               <p><b> [sshd]<br/>
                     enabled = true<br/>
                    port = 22<br/>
                    filter = sshd<br/>
                    logpath = /var/log/auth.log<br/>
-                   maxretry = 3  <br/>
+                   maxretry = 3  <br/></b>
                 </p>
             </div>
                  <p>Reboot the server</p>
-            <div><p>sudo reboot</p></div>
+            <div><p><b>sudo reboot</b></p></div>
                  <p>Add a system user to run yerbasd</p>
             <div>
-                <p>adduser username<br/>
+                <p><b>adduser username<br/>
                    adduser username sudo<br/>
-                   su username</p></div>
+                   su username</p></div></b>
                 <p>Get Yerbas wallet and daemon:</p>
             <div>
-                 <p>wget https://github.com/The-Yerbas-Endeavor/yerbas/releases/download/v2.1.1.4/yerbas-ubuntu20-2.1.1.4.tar.gz<br/>
+                 <p><b>wget https://github.com/The-Yerbas-Endeavor/yerbas/releases/download/v2.1.1.4/yerbas-ubuntu20-2.1.1.4.tar.gz<br/>
                      tar -xf yerbas-ubuntu20-2.1.1.4.tar.gz<br/>
                      mkdir ~/.yerbascore && touch ~/.yerbascore/yerbas.conf<br/>
                      echo daemon=1 >> ~/.yerbascore/yerbas.conf<br/>
                      cd .yerbascore<br/>
                      wget https://github.com/The-Yerbas-Endeavor/yerbas/releases/download/v2.1.1.4/powcache.dat<br/>
                      cd ~/yerbas-build<br/>
-                     ./yerbasd<br/> </p></div>
+                     ./yerbasd<br/> </p></div></b>
                   <p>Note<br/>
                       <i>You should see Yerbasd server starting. You can confirm it is running top -c it will be using 100% CPU (1 core). This shows you it is working, we will return to it later
                       </i>
