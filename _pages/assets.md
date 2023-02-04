@@ -2,7 +2,7 @@
 layout: page-w-banner
 title: Assets
 bannerTitle: A Guide to Yerbas Assets
-bannerImage: /assets/img/pages/about/about-banner.jpg
+bannerImage: /assets/img/pages/assets/highlight-nft.jpg
 permalink: /assets/
 ---
 
