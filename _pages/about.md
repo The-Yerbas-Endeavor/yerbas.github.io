@@ -14,11 +14,6 @@ permalink: /about/
 
   <h3>How Yerbas works</h3>
 
-  <p>A Yerbas post on&nbsp;<em>Medium</em>&nbsp;from November 2017 references Game of Thrones when introducing this experimental currency:</p>
-  <blockquote>
-    “Yerb Is The Word”
-  </blockquote>
-
   <p>Launched on May 9th, 2022. Yerbas is an open-source project designed to enable instant payments to anyone around the world. The aim of the project is to create a blockchain optimized specifically for the transfer of assets such as tokens from one holder to another.</p>
 
   <p>A fork of the bitcoin code, Yerbas features four key changes:</p>
@@ -34,19 +29,23 @@ permalink: /about/
 
   <p>The initial X16R algorithm aimed to overcome this problem by constantly disrupting the ordering of the hashing algorithms – it uses the same algorithms used in X15 and SHA512, but the ordering of those algorithms was changed based on the hash of the previous block. Eventually it became economically viable for X16R ASIC's and the community decided to implement new algorithms to mitigate the unfair distribution of Yerbas. The community has carried out 2 algorithm forks to date to mitigate the potential efficiency improvements of the ASIC miners equipment compared to over the counter consumer grade equipment.</p>
 
-  <p>The current &nbsp;<a href="https://medium.com/@tronblack/yerbas-v4-kawpow-16fb1f8ec372">GhosRider algorithm</a> aims to overcome the problem of centralisation of mining by utilising over the counter graphic processing unit (GPU) memory and compute capabilities. This is intended to allow most consumer grade GPU hardware to mine Yerbas. The KAWPOW algorithm was derived from ProgPOW and ethhash, with modifications, to improve the distribution of Yerbas to everyone.</p>
+  <p>The current &nbsp;<a href="https://docs.raptoreum.com/pdf/GhostRider_Whitepaper.pdf">GhosRider algorithm</a> aims to overcome the problem of centralisation of mining by utilising over the counter graphic processing unit (GPU) memory and compute capabilities. This is intended to allow most consumer grade GPU hardware to mine Yerbas. GhostRider is a combination of known mining technologies and methodologies
+  from x16r (Raven) and CryptoNight (Monero). X16r provides a randomness to an existing hash chaining methodology for mining, it lacks a memory requirement
+  which means asics can potentially gain significant advantages over gpus. CryptoNight, on other hand has features that require cpu/gpu memory which
+  makes it harder for asics to gain a significant advantage over cpu/gpu, but it
+  lacks the randomness that x16r has.</p>
 
   <p>No additional future algorithm forks are envisaged. Note that this may allow future ASIC development to proceed, albeit as there is a limited potential for ASIC efficiency gains compared to consumer grade hardware, we are resistant to this form of centralisation.</p>
 
   <h3>Unique characteristics of Yerbas</h3>
 
   <ul>
-    <li>ASIC resistant – Uses the KAWPOW hashing algorithm to discourage the development of ASIC hardware</li>
+    <li>ASIC/FPGA Resistant – Uses the GhostRider hashing algorithm to discourage the development of ASIC hardware</li>
     <li>Fair launch - Everyone has equal opportunity to mine or purchase YERB since day one.</li>
-    <li>No pre-mine, no ICO, and no coins held for developer or founders rewards.</li>
+    <li>No pre-mine, no ICO, Reward distribution: 75%miner - 20%Smartnode - 5%Development fee </li>
+    <li>Yerbas uses a tiered smartnode collateral and reward system which should avoid hyperinflation. 
+                    A common and potentially devastating problem with many projects that use Masternodes.</li>
     <li>Community Driven, and True Open Source</li>
   </ul>
-
-  <p><a href="https://medium.com/@yerbas/yerbas-4683cd00f83c">https://medium.com/@yerbas/yerbas-4683cd00f83c</a></p>
 
 </div>
