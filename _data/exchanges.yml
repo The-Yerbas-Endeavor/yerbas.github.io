@@ -5,7 +5,7 @@
   donates_to_project: false
 
 - name: Bitoreum Exchange
-  logo: /assets/img/pages/exchanges/bitoreum.png
+  logo: /assets/img/pages/exchanges/BitoreumLogo.png
   url: https://www.bitoreum.exchange/market/yerbusdt
   kyc: false
   donates_to_project: false
