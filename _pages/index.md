@@ -17,7 +17,7 @@ modalCacheRef: "3.0.0.1"
     border: 2px solid #4F7942;
   }
   .banner {
-    background: url("/assets/img/home/gplaypattern.png");
+    background: url("/assets/img/home/background-pattern-fade.jpg");
     padding: 12em 0 13em;
     animation: animatedBackground 15s linear infinite;
     -moz-animation: animatedBackground 15s linear infinite;
