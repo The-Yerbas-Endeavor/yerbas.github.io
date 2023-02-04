@@ -35,15 +35,6 @@ permalink: /wallet/
     <h2 class="">Electrum Community Wallet</h2>
     <a class="block mt-8 mb-6 text-lg bg-blue hover:bg-blue-dark rounded p-2 text-white" href="https://github.com/Electrum-YERB-SIG/Electrum-Yerbas/releases"><i class="zmdi zmdi-github-alt"></i><span class="inline-block ml-3">Electrum-Yerbas Releases (Downloadable Binaries)</span></a>
     <br>
-    <h2 class="mb-16">App Downloads With Asset Support</h2>
-    <div class="flex flex-wrap align-center justify-center pb-4">
-      <div class="px-3 w-full sm:w-1/2 text-center sm:text-right mb-5">
-          <a href="https://itunes.apple.com/us/app/yerb-wallet/id1371751946?mt=8" target="_blank" class="block"><img style="width:100%;width: 200px;" src="/assets/img/pages/wallet/app-store-badge.svg" alt="app store"/></a>
-      </div>
-      <div class="px-3 w-full sm:w-1/2 text-center sm:text-left">
-        <a href="https://play.google.com/store/apps/details?id=com.yerbaswallet" target="_blank" class="block"><img style="width:100%;width: 200px;" src="/assets/img/pages/wallet/google-play-badge.svg" alt="google play"/></a>
-      </div>
-    </div>
     <h2>3rd Party Wallets</h2>
     <div class="flex flex-wrap">
       {% for wallet in site.data.wallets %}
@@ -69,10 +60,10 @@ permalink: /wallet/
     <div class="pt-8 mb-8 pb-8">
       <div class="flex flex-wrap">
         <div class="w-full sm:w-1/2 px-2 mb-4">
-          <a class="inline-block text-lg bg-blue hover:bg-blue-dark rounded p-2 text-white px-8" href="https://github.com/todd1251/WalletGenerator.net/tree/yerbas" target="_blank"><span class="inline-block ml-3">Paper Wallet | Contributed by Penfold</span></a>
+          <a class="inline-block text-lg bg-blue hover:bg-blue-dark rounded p-2 text-white px-8" href="https://yerbas.org/paperwallet/index.html" target="_blank"><span class="inline-block ml-3">Paper Wallet | Contributed by Penfold</span></a>
         </div>
         <div class="w-full sm:w-1/2 px-2 mb-4">
-          <a class="inline-block text-lg bg-blue hover:bg-blue-dark rounded p-2 text-white px-8" href="https://paper.pocketyerbas.com/" target="_blank"><span class="inline-block ml-3">Paper Wallet | Contributed by Traysi</span></a>
+          <a class="inline-block text-lg bg-blue hover:bg-blue-dark rounded p-2 text-white px-8" href="https://yerbas.org/vanityyerb/index.html" target="_blank"><span class="inline-block ml-3">Paper Wallet | Contributed by Traysi</span></a>
         </div>
       </div>
   </div>
