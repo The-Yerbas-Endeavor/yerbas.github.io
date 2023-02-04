@@ -12,14 +12,6 @@ permalink: /community/
     <p>We have a number of active and growing communities for you to choose from:</p>
     <div class="flex flex-wrap pt-16 pb-32 m-auto" style="max-width: 800px;">
       <div class="w-1/2 sm:w-1/4 mb-8">
-        <a href="https://bitcointalk.org/index.php?topic=5398223.msg60105817#msg60105817" target="_blank">
-          <div class="mb-6 py-4 px-5 inline-block rounded-full bg-grey hover:bg-grey-dark">
-            <i class="zmdi zmdi-comments text-5xl text-white"></i>
-          </div>
-        </a>
-        <h3><a href="https://bitcointalk.org/index.php?topic=5398223.msg60105817#msg60105817" target="_blank">Bitcoin Talk</a></h3>
-      </div>
-      <div class="w-1/2 sm:w-1/4 mb-8">
         <a href="https://twitter.com/Yerbas_Endeavor" target="_blank">
           <div class="mb-6 py-4 px-5 inline-block rounded-full bg-grey hover:bg-grey-dark">
             <i class="zmdi zmdi-twitter text-5xl text-white"></i>
@@ -60,12 +52,12 @@ permalink: /community/
         <h3><a href="https://www.reddit.com/r/Yerbas/" target="_blank">Reddit - r/Yerbas</a></h3>
       </div>
       <div class="w-1/2 sm:w-1/4 mb-8">
-        <a href="https://www.reddit.com/r/yerb/" target="_blank">
+        <a href="https://bitcointalk.org/index.php?topic=5398223.msg60105817#msg60105817" target="_blank">
           <div class="mb-6 py-4 px-5 inline-block rounded-full bg-grey hover:bg-grey-dark">
-            <i class="zmdi zmdi-reddit text-5xl text-white"></i>
+            <i class="zmdi zmdi-comments text-5xl text-white"></i>
           </div>
         </a>
-        <h3><a href="https://www.reddit.com/r/yerb/" target="_blank">Reddit - r/yerb</a></h3>
+        <h3><a href="https://bitcointalk.org/index.php?topic=5398223.msg60105817#msg60105817" target="_blank">Bitcoin Talk</a></h3>
       </div>
       <div class="w-1/2 sm:w-1/4 mb-8">
         <a href="https://github.com/The-Yerbas-Endeavor/Yerbas" target="_blank">
@@ -105,7 +97,7 @@ permalink: /community/
             <i class="zmdi zmdi-view-list-alt text-5xl text-white"></i>
           </div>
         </a>
-        <h3><a href="https://www.assetsexplorer.yerbas.com/" target="_blank">Yerbas Asset Explorer by RealBokito</a></h3>
+        <h3><a href="https://www.assetsexplorer.yerbas.com/" target="_blank">Yerbas Asset Explorer</a></h3>
       </div>
     </div>
   </div>
