@@ -62,17 +62,19 @@ permalink: /Smartnodesetup/
             <div>
                 <p><b>adduser username<br/>
                    adduser username sudo<br/>
-                   su username</p></div></b>
+                   su username</b></p></div>
                 <p>Get Yerbas wallet and daemon:</p>
             <div>
-                 <p><b>wget https://github.com/The-Yerbas-Endeavor/yerbas/releases/download/v2.1.1.4/yerbas-ubuntu20-2.1.1.4.tar.gz<br/>
+                 <p><b>wget https://github.com/The-Yerbas-Endeavor/yerbas/releases/download/v3.0.0.1/yerbas-ubuntu20-3.0.0.1.tar.gz<br/>
                      tar -xf yerbas-ubuntu20-2.1.1.4.tar.gz<br/>
                      mkdir ~/.yerbascore && touch ~/.yerbascore/yerbas.conf<br/>
                      echo daemon=1 >> ~/.yerbascore/yerbas.conf<br/>
                      cd .yerbascore<br/>
-                     wget https://github.com/The-Yerbas-Endeavor/yerbas/releases/download/v2.1.1.4/powcache.dat<br/>
+                     wget https://github.com/The-Yerbas-Endeavor/yerbas/releases/download/v3.0.0.1/powcache.dat<br/>
                      cd ~/yerbas-build<br/>
-                     ./yerbasd<br/> </p></div></b>
+                     ./yerbasd<br/></b> 
+                  </p>
+            </div>
                   <p>Note<br/>
                       <i>You should see Yerbasd server starting. You can confirm it is running top -c it will be using 100% CPU (1 core). This shows you it is working, we will return to it later
                       </i>
@@ -83,14 +85,14 @@ permalink: /Smartnodesetup/
               <li>Encrypt wallet (Settings > Encrypt Wallet)</li>
               <li>Create new receiving address Backup wallet.dat (File > Backup Wallet).</li>
               <li>Store in multiple locations. Dump private key for receiving address (this should be printed and stored offline in multiple locations):</li>
-              <li>Send 22,000 YERB to self</li>
+              <li>Send 28,000 YERB to self</li>
               <li>Wait for 2 confirmations</li>
               <li>walletpassphrase yourpasswordhere 600   <i> from the debug console to unlock the wallet before running the protx setup script.</i> </li>
             </ul>
       <h4>6. Build protx command for control wallet</h4>
                     <p>An example protx quick_setup command</p>
               <div>
-                     <p> protx quick_setup d7898f44c6bdc39a49b0917d5c6bcb61455270ddb9e7eb1168a6b745434daf26 1 194.113.73.87:15420 yaDfcdCupB1T5YoVRjYr8fXCvB8U5AuNX8</p>
+                     <p><b> protx quick_setup d7898f44c6bdc39a49b0917d5c6bcb61455270ddb9e7eb1168a6b745434daf26 1 194.113.73.87:15420 yaDfcdCupB1T5YoVRjYr8fXCvB8U5AuNX8</b></p>
               </div>  
        <h5>The structure from left to right is:</h5>
               <ul>
@@ -104,25 +106,25 @@ permalink: /Smartnodesetup/
                      <i>Enter the protx quick_setup command in Debug console. This will create a .conf file for that node in the same directory you ran the wallet from. Open it and copy the contents</i></p>
                  <p>Back to the smartnode server</p>
              <div>
-                  <p> ~./yerbas-cli stop<br/>
-                      nano ~/.yerbascore/yerbas.conf
+                  <p><b> ~./yerbas-cli stop<br/>
+                      nano ~/.yerbascore/yerbas.conf</b>
                   </p>
               </div>
                     <p>Paste in what you copied from the .conf file made during the protx command, save and exit.</p>
                     <p>Start yerbasd</p> 
-                    <div><p>~./yerbasd</p></div>
+                    <div><p><b>~./yerbasd</b></p></div>
                     <p>Wait two minutes and do:Wait two minutes and do:</p>
               <div>
-                     <p>~./yerbas-cli smartnode status</p>
-              </div>>
+                     <p><b>~./yerbas-cli smartnode status</b></p>
+              </div>
                      <p>This should return:</p>
        <h5 class="heading4"><i>Ready Ready</i></h5>
             <h2>Congratulations: Your smartnode is now running. Time for a break</h2>
                       <br/>
        <h5>Extras:</h5>
                       <p>Check the node’s current height with:</p>
-                      <p><i>/yerbas-cli getblockcount</i></p>
-                      <p><i>./yerbas-cli -getinfo</i></p>
+                      <p><b><i>/yerbas-cli getblockcount</i></b></p>
+                      <p><b><i>./yerbas-cli -getinfo</i></b></p>
                       <p>To update a node that has been PoSe Banded:</p>
                       <p><i>protx update_service “protxhash” “ip”:15420 “BLSKEY”</i></p>
                       <p>You can get the proTxHash by right clicking your Smartnode in the QT wallet Smartnode list<br/>
