@@ -28,7 +28,7 @@ header_pages:
  - _pages/updates.md
  - _pages/about.md
  - _pages/assets.md
-# - _pages/projects.md
+ - _paperwallet/index.html
 # - _pages/ledger.md
  - _pages/smartnodesetup.md
 
@@ -42,6 +42,7 @@ include:
   - _posts
   - _wallets
   - _translations
+  - _paperwallet
 
 # Defaults
 defaults:
