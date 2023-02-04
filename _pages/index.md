@@ -14,7 +14,7 @@ modalCacheRef: "4.6.1"
     margin: 50px 0;
   }
   .hero-buttons .btn.btn-primary {
-    border: 2px solid #f15b22;
+    border: 2px solid #4F7942;
   }
   .banner {
     background: url("/assets/img/home/gplaypattern.png");
@@ -48,7 +48,7 @@ modalCacheRef: "4.6.1"
     border-color: #4c60b1;
   }
   .section-cta {
-    background: #f15b22;
+    background: #4F7942;
   }
   .section-cta .btn:hover {
     background: #fff;
