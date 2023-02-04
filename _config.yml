@@ -27,7 +27,8 @@ header_pages:
  - _pages/pools.md
  - _pages/updates.md
  - _pages/about.md
- - _pages/projects.md
+ - _pages/assets.md
+# - _pages/projects.md
 # - _pages/ledger.md
  - _pages/smartnodesetup.md
 
