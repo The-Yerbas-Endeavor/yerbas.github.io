@@ -36,10 +36,10 @@ permalink: /wallet/
     <div class="pt-8 mb-8 pb-8">
       <div class="flex flex-wrap">
         <div class="w-full sm:w-1/2 px-2 mb-4">
-          <a class="inline-block text-lg bg-blue hover:bg-blue-dark rounded p-2 text-white px-8" href="https://yerbas.org/paperwallet/index.html" target="_blank"><span class="inline-block ml-3">Paper Wallet | Contributed by Penfold</span></a>
+          <a class="inline-block text-lg bg-blue hover:bg-blue-dark rounded p-2 text-white px-8" href="https://yerbas.org/Yerbas-Paper-Wallet/#/" target="_blank"><span class="inline-block ml-3">Paper Wallet</span></a>
         </div>
         <div class="w-full sm:w-1/2 px-2 mb-4">
-          <a class="inline-block text-lg bg-blue hover:bg-blue-dark rounded p-2 text-white px-8" href="https://yerbas.org/vanityyerb/index.html" target="_blank"><span class="inline-block ml-3">Paper Wallet | Contributed by Traysi</span></a>
+          <a class="inline-block text-lg bg-blue hover:bg-blue-dark rounded p-2 text-white px-8" href="https://yerbas.org/vanity-yerb/" target="_blank"><span class="inline-block ml-3">Vanity Wallet</span></a>
         </div>
       </div>
   </div>
