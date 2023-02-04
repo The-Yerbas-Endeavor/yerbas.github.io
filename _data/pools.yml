@@ -1,15 +1,23 @@
-- name: Yerbaspool.ninja
-  url: https://yerbaspool.ninja/
-  twitter: '@YerbaspoolNinja'
+- name: Rplant
+  url: https://pool.rplant.xyz/
+  twitter: ''
 
-- name: YerbasMiner
-  url: https://www.yerbasminer.com/
-  twitter: '@YerbasMinerPool'
+- name: PmpMining
+  url: https://ypool.pmpmining.com/
+  twitter: ''
 
-- name: WoolyPooly
-  url: https://woolypooly.com/
-  twitter: '@Woolypooly_com'
+- name: xaiten
+  url: http://xnas.xaiten.com:39080/
+  twitter: ''
   
-- name: KryptexPool
-  url: https://pool.kryptex.com/yerb
-  twitter: '@KryptexMining'
+- name: Crimson-pool
+  url: https://crimson-pool.com/#yerb
+  twitter: ''
+
+- name: ZergPool
+  url: http://zergpool.com/
+  twitter: ''
+  
+  - name: Cryptoverse
+  url: https://pool.cryptoverse.eu/
+  twitter: ''
