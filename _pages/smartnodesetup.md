@@ -38,7 +38,9 @@ permalink: /Smartnodesetup/
                   ufw default allow outgoing<br/>
                   ufw allow ssh<br/>
                   ufw allow 15420/tcp<br/>
-                  ufw enable <br/></p></div></b>
+                  ufw enable <br/></b>
+                </p>
+            </div>
       <h4>4. Configure Fail2Ban</h4>
              <div>
                 <p><i>Setup jail for bad guys hitting SSH, and set it to ban after three failed logins to SSH</i></p>
