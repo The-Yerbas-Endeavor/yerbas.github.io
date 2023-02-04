@@ -30,10 +30,7 @@ header_pages:
  - _pages/assets.md
 # - _pages/ledger.md
  - _pages/smartnodesetup.md
-- name: "wYerbas"
-  icon: "fas fa-book"
-  url: "https://wrap.yerbas.org"
-
+ - <a href="https://wrap.yerbas.org">wYerbas</a>
 
 # Build settings
 theme: minima
