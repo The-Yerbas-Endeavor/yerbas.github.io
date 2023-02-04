@@ -23,7 +23,6 @@ permalink: /buy-yerbas/
             {% endif %}
       {% endfor %}
     </div>
-
     <h1><b>Custodial exchanges</b></h1><br>
     <div class="flex flex-wrap">
       {% for exchange in site.data.exchanges %}
