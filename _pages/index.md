@@ -103,6 +103,12 @@ modalCacheRef: "3.0.0.1"
   <h3><a href="https://wiki.yerbas.org/">Yerbas Wiki</a></h3>
   <h3><a href="https://yerbas.foundation/">Yerbas Foundation</a></h3>
   <h3><a href="https://yerb-dashboard.com/">Yerbas Dashboard</a></h3>
+      <div class="w-full sm:w-1/2 md:w-1/3 px-4 mb-12">
+        <div class="bg-grey-lighter max-w-sm rounded overflow-hidden shadow-md hover:by-grey">
+          <a class="block px-6 py-4" href="https://github.com/The-Yerbas-Endeavor/Yerbas/releases" target="_blank"><img style="max-height: 125px;" src="/assets/img/pages/wallet/windows.svg" align="middle" alt=" Windows wallet"/></a>
+        </div>
+        <a class="block mt-8 text-lg bg-blue hover:bg-blue-dark rounded p-2 text-white" href="https://github.com/The-Yerbas-Endeavor/yerbas/releases/download/v2.1.1.4/yerbas-win-2.1.1.4.zip" download><i class="zmdi zmdi-download"></i><span class="inline-block ml-3">Windows</span></a>
+      </div>
   <br>
   <br>
   <br>

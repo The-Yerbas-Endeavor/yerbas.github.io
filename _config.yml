@@ -25,12 +25,9 @@ header_pages:
  - _pages/whitepaper.md
  - _pages/community.md
  - _pages/pools.md
-# - _pages/updates.md
  - _pages/about.md
  - _pages/assets.md
-# - _pages/ledger.md
  - _pages/smartnodesetup.md
- - <a href="https://wrap.yerbas.org">wYerbas</a>
 
 # Build settings
 theme: minima
