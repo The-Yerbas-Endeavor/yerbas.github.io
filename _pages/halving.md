@@ -10,11 +10,6 @@ permalink: /halving/
     <h2>How it works...</h2>
    <h3> Yerbas has implemented a custom reward structure that not only makes Yerbas emissions smooth, but also unique. </h3>
     <p>The block reward emission schedule:</p>
-
-
-<P> Block# ~ Blockreward ~~ Miner Reward ~~ Smartnode Reward ~~ Dev Reward</p>
-
-
 <table>
   <tr>
     <th>Block#</th>
@@ -37,7 +32,7 @@ permalink: /halving/
     <td>20</td>
     <td>5</td>
   </tr>
-    <tr>
+  <tr>
     <td>1,000,000 - 2,000,000</td>
     <td>80</td>
     <td>60</td>
@@ -58,24 +53,99 @@ permalink: /halving/
     <td>10</td>
     <td>2.5</td>
   </tr>
-
-
+  <tr>
+    <td>4,000,000 - 5,000,000</td>
+    <td>40</td>
+    <td>30</td>
+    <td>8</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>5,000,000 - 6,000,000</td>
+    <td>20</td>
+    <td>15</td>
+    <td>4</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>6,000,000 - 7,000,000</td>
+    <td>10</td>
+    <td>7.5</td>
+    <td>2</td>
+    <td>0.5</td>
+  </tr>
+  <tr>
+    <td>7,000,000 - 8,000,000</td>
+    <td>9</td>
+    <td>6.75</td>
+    <td>1.8</td>
+    <td>0.45</td>
+  </tr>
+  <tr>
+    <td>8,000,000 - 9,000,000</td>
+    <td>8</td>
+    <td>6</td>
+    <td>1.6</td>
+    <td>0.4</td>
+  </tr>
+  <tr>
+    <td>9,000,000 - 10,000,000</td>
+    <td>7</td>
+    <td>5.25</td>
+    <td>1.4</td>
+    <td>0.35</td>
+  </tr>
+  <tr>
+    <td>10,000,000 - 11,000,000</td>
+    <td>6</td>
+    <td>4.5</td>
+    <td>1.6</td>
+    <td>0.3</td>
+  </tr>
+  <tr>
+    <td>11,000,000 - 12,000,000</td>
+    <td>5</td>
+    <td>3.75</td>
+    <td>1.</td>
+    <td>0.25</td>
+  </tr>
+  <tr>
+    <td>12,000,000 - 13,000,000</td>
+    <td>4.20</td>
+    <td>3.15</td>
+    <td>0.84</td>
+    <td>0.21</td>
+  </tr>
+  <tr>
+    <td>13,000,000 - 14,000,000</td>
+    <td>3</td>
+    <td>2.25</td>
+    <td>0.6</td>
+    <td>0.15</td>
+  </tr>
+  <tr>
+    <td>14,000,000 - 15,000,000</td>
+    <td>2</td>
+    <td>1.5</td>
+    <td>0.4</td>
+    <td>0.1</td>
+  </tr>
+  <tr>
+    <td>15,000,000 - 16,000,000</td>
+    <td>1</td>
+    <td>0.75</td>
+    <td>0.2</td>
+    <td>0.05</td>
+  </tr>
+  <tr>
+    <td>16,000,000 +</td>
+    <td>0.420</td>
+    <td>0.315</td>
+    <td>0.084</td>
+    <td>0.021</td>
+  </tr>
 </table>
 
-<li>4,000,000 - 5,000,000 40 30 8 2</li>
-<li>5,000,000 - 6,000,000 20 15 4 1</li>
-<li>6,000,000 - 7,000,000 10 7.5 2 0.5</li>
-<li>7,000,000 - 8,000,000 9 6.75 1.8 0.45</li>
-<li>8,000,000 - 9,000,000 8 6 1.6 0.4</li>
-<li>9,000,000 - 10,000,000 7 5.25 1.4 0.35</li>
-<li>10,000,000 - 11,000,000 6 4.5 1.6 0.3</li>
-<li>11,000,000 - 12,000,000 5 3.75 1 0.25</li>
-<li>12,000,000 - 13,000,000 4.20 3.15 0.84 0.21</li>
-<li>13,000,000 - 14,000,000 3 2.25 0.6 0.15</li>
-<li>14,000,000 - 15,000,000 2 1.5 0.4 .1</li>
-<li>15,000,000 - 16,000,000 1 0.75 0.2 0.05</li>
-<li>> 16,000,000 0.420 0.315 0.084 0.021</li>
-</p>
 
 
     <hr class="border-grey border-t mt-8">
