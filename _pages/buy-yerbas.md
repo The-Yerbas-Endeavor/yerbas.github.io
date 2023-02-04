@@ -1,7 +1,7 @@
 ---
 layout: page-w-banner
 title: Buy Yerbas
-bannerTitle: Yerbas Buying Guide
+bannerTitle: Where to buy Yerbas
 bannerImage: /assets/img/pages/exchanges/exchange-banner.jpg
 permalink: /buy-yerbas/
 ---
