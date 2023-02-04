@@ -16,18 +16,23 @@ permalink: /halving/
 
 
 <table>
-<th><P> Block# ~ Blockreward ~~ Miner Reward ~~ Smartnode Reward ~~ Dev Reward</p></th>
   <tr>
-    <td>Genesis Block</td>
+    <th>Block#</th>
+    <th>Blockreward</th>
+    <th>Miner Reward</th>
+    <th>Smartnode Reward</th>
+    <th>Dev Reward</th>
+  </tr>
+  <tr>
+    <td>0 - 420</td>
     <td>420</td>
     <td>4.2</td>
     <td>4.2</td>
     <td>0</td>
     <td>0</td>
   </tr>
-
   <tr>
-    <td>421</td>
+    <td>421 – 1,000,000</td>
     <td>1,000,000</td>
     <td>100</td>
     <td>75</td>
@@ -38,7 +43,7 @@ permalink: /halving/
 </table>
 
 
-<li>~Genesis Block -- 420 ~    ~  4.2 ~    ~  4.2 ~    ~  0 ~    ~   0</li>
+<li>0 - 420 ~    ~  4.2 ~    ~  4.2 ~    ~  0 ~    ~   0</li>
 <li>      421 – 1,000,000 ~    ~  100 ~    ~  75 ~    ~   20 ~    ~  5</li>
 <li>1,000,000 - 2,000,000 ~    ~  80 ~    ~   60 ~    ~   16 ~    ~  4</li>
 <li>2,000,000 - 3,000,000 70 52.5 14 3.5</li>
