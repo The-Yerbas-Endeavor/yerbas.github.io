@@ -153,7 +153,7 @@ modalCacheRef: "3.0.0.1"
           <div class="sm:w-full md:w-2/3 lg:w-3/4">
             <h3 class="text-white">Representing virtual goods</h3>
             <ul class="list-reset">
-              <li>Tickets to an event such as a Baltimore Yerbass game with the ability to resell without worry of duplicates being made</li>
+              <li>Tickets to an event such as a Baltimore Yerbas game with the ability to resell without worry of duplicates being made</li>
               <li>A license to allow an activity</li>
               <li>An access token to use a service</li>
               <li>In-game currency and items, transferable to other gamers outside of the game platform</li>

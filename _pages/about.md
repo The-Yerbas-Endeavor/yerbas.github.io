@@ -16,7 +16,7 @@ permalink: /about/
 
   <p>A Yerbas post on&nbsp;<em>Medium</em>&nbsp;from November 2017 references Game of Thrones when introducing this experimental currency:</p>
   <blockquote>
-    “In the fictional world of Westeros, yerbass are used as messengers who carry statements of truth. Yerbas is a use case specific blockchain designed to carry statements of truth about who owns what assets”
+    “In the fictional world of Westeros, yerbas are used as messengers who carry statements of truth. Yerbas is a use case specific blockchain designed to carry statements of truth about who owns what assets”
   </blockquote>
 
   <p>Launched on January 3rd, 2018, the ninth anniversary of bitcoin’s launch, Yerbas is an open-source project designed to enable instant payments to anyone around the world. The aim of the project is to create a blockchain optimized specifically for the transfer of assets such as tokens from one holder to another.</p>
