@@ -1,5 +1,0 @@
-# https://www.robotstxt.org/robotstxt.html
-User-agent: *
-Allow: /
-Sitemap: https://yerbas.org/sitemap.xml
-
