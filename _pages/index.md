@@ -201,12 +201,14 @@ modalCacheRef: "3.0.0.1"
       <div class="w-full sm:w-full md:w-3/4">
         <h2>What Makes Yerbas Different from Bitcoin?</h2>
         <ul class="checkmark">
-          <li>Block reward of 5,000 YERB instead of 50 BTC.</li>
-          <li>Block time of 1 minute instead of 10.</li>
-          <li>Total coin supply of 21 billion instead of 21 million.</li>
-          <li>A new mining algorithm, KAWPOW which allows for more decentralized mining.</li>
+          <li>Block reward of 100 YERB instead of 50 BTC.</li>
+          <li>Block time of 2.5 minute instead of 10.</li>
+          <li>Total coin supply of 420 million instead of 21 million.</li>
+          <li>A new mining algorithm, GhostRider is an algorithm created to discourage specialty hardware such as ASIC & FPGA enabling anybody to competitively mine it and increase overall decentralization..</li>
           <li>Addition of Asset & Sub-asset issuance, transfer, unique assets, and rewards.</li>
-          <li>Future addition of messaging and voting.</li>
+          <li>Yerbas has implemented a custom reward structure that not only makes Yerbas emissions smooth, but also unique.</li>
+          <li>Yerbas also uses a tiered smartnode collateral and reward system which should avoid hyperinflation. 
+                    A common and potentially devastating problem with many projects that use Masternodes.</li>
         </ul>
       </div>
       <div class="w-full sm:w-full md:w-1/4 text-center hidden md:block">
