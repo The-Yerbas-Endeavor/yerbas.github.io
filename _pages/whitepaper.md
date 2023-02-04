@@ -42,7 +42,7 @@ permalink: /whitepaper/
         <p id="x16r2">X16R: ASIC Resistant by Design</p>
       </div>
       <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Road Map ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-<!-- -->      <div class="w-full sm:w-1/2 mb-8">
+<!--       <div class="w-full sm:w-1/2 mb-8">
         <a id="roadMap0" href="https://github.com/The-Yerbas-Endeavor/The-Yerbas-Endeavor.github.io/tree/master/roadmap" target="_blank">
           <div class="mb-6 py-4 px-6 inline-block rounded-full bg-grey hover:bg-grey-dark">
             <i class="zmdi zmdi-map text-5xl text-white"></i>
@@ -50,7 +50,7 @@ permalink: /whitepaper/
         </a>
         <h3><a id="roadMap1" href="https://github.com/The-Yerbas-Endeavor/The-Yerbas-Endeavor.github.io/tree/master/roadmap" target="_blank">Development roadmap</a></h3>
         <p id="roadMap2">Development roadmap</p>
-      </div>
+      </div>  -->
       <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Road Map MD ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
       <div id="roadMapMD" class="w-full sm:w-1/2 mb-8">
         <a href="https://github.com/The-Yerbas-Endeavor/The-Yerbas-Endeavor.github.io/tree/master/whitepaper" target="_blank">
