@@ -32,30 +32,6 @@ permalink: /wallet/
     <h3 class="">For verification hashes and signatures visit our github releases</h3>
     <a class="block mt-8 mb-6 text-lg bg-blue hover:bg-blue-dark rounded p-2 text-white" href="https://github.com/The-Yerbas-Endeavor/Yerbas/releases"><i class="zmdi zmdi-github-alt"></i><span class="inline-block ml-3">Github Releases (Downloadable Binaries)</span></a>
     <br>
-    <h2 class="">Electrum Community Wallet</h2>
-    <a class="block mt-8 mb-6 text-lg bg-blue hover:bg-blue-dark rounded p-2 text-white" href="https://github.com/Electrum-YERB-SIG/Electrum-Yerbas/releases"><i class="zmdi zmdi-github-alt"></i><span class="inline-block ml-3">Electrum-Yerbas Releases (Downloadable Binaries)</span></a>
-    <br>
-    <h2>3rd Party Wallets</h2>
-    <div class="flex flex-wrap">
-      {% for wallet in site.data.wallets %}
-      <div class="mb-6 px-2 sm:w-1/2 text-center">
-        <div class="bg-grey-lighter max-w-sm rounded overflow-hidden shadow-md hover:by-grey">
-          <a class="block px-6 py-4" href="{{ wallet.url }}" target="_blank"><img src="{{ wallet.logo }}" align="middle" alt="{{ wallet.name }} wallet"/>
-          {% if wallet.asset-support %}
-            <div style="width:125px;height:20px;background:orange;text-align:center;line-height:20px;border-radius:10px;margin-bottom:4px; margin-left:4px">Asset Support</div></a>
-          {% else %}
-            <div style="width:125px;height:20px;background:none;text-align:center;line-height:20px;border-radius:10px;margin-bottom:4px; margin-left:4px"></div></a>
-          {% endif %}
-        </div>
-        <div class="flex flex-wrap">
-          {% for platform in wallet.platforms %}
-            <img style="height: 25px; length: 16px; padding-right: 15px; padding-top: 4px;" src="/assets/img/pages/wallet/{{platform}}.svg"/>
-          {% endfor %}
-        </div>
-        <a class="block mt-4 mb-8 text-lg bg-blue hover:bg-blue-dark rounded p-2 text-white" href="{{ wallet.url }}"><i class="zmdi zmdi-download"></i><span class="inline-block ml-3">{{wallet.name}} Wallet</span></a>
-      </div>
-      {% endfor %}
-    </div>
     <h2 class="mt-16 mb-8">Paper Wallet</h2>
     <div class="pt-8 mb-8 pb-8">
       <div class="flex flex-wrap">
