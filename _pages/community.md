@@ -44,7 +44,6 @@ permalink: /community/
         <h3><a href="https://t.me/Yerbas420" target="_blank">Telegram</a></h3>
       </div>
       <div class="w-1/2 sm:w-1/4 mb-8">
-      <div class="w-1/2 sm:w-1/4 mb-8">
         <a href="https://t.me/yerbas_ru/4" target="_blank">
           <div class="mb-6 py-5 px-5 inline-block rounded-full bg-grey hover:bg-grey-dark">
             <img style="width:40px;" src="{{"/assets/img/pages/community/telegram.png"}}" alt="telegram"/>
