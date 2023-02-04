@@ -8,7 +8,7 @@ permalink: /halving/
 <div class="page-content">
   <div class="wrapper mt-4 mb-20">
     <h2>How it works...</h2>
-   <h3> Yerbas has implemented a custom reward structure that not only makes Yerbas emissions smooth, but also unique. </h3>
+   <h3>At every 1,000,000 blocks, Yerbas has implemented a custom reward structure that not only makes Yerb emissions smooth, but also unique.</h3>
     <p>The block reward emission schedule:</p>
 <table>
   <tr>
@@ -145,14 +145,11 @@ permalink: /halving/
     <td>0.021</td>
   </tr>
 </table>
-
-
-
     <hr class="border-grey border-t mt-8">
-    <h3 class="mt-8">How many days is 2,100,000 blocks?</h3>
-    <p>2,100,000 blocks = 1458.33333 days @ 1 minute blocks</p>
+    <h3 class="mt-8">How many days is 1,000,000 blocks?</h3>
+    <p>1,000,000 blocks = 1,388.88 days @ 2 minute blocks</p>
     <h3 class="mt-8">What is that in years?</h3>
-    <p>1458.33333 / 365.25 = 3.992699 years (with one leap year)</p>
+    <p>1,388.88 / 365.25 = 3.80 years (with one leap year)</p>
     <h3 class="mt-8">How accurate are those timelines</h3>
     <p>This is all dependent on the number of blocks, not calendar time. If the block speed is faster than one minute, it will be sooner. If slower, it will be longer than 3 years.</p>
     <h3 class="mt-8">Okay, but can I have an example?</h3>
