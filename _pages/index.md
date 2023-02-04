@@ -100,7 +100,6 @@ modalCacheRef: "3.0.0.1"
   </div>
   <br>
   <br>
-<div class="page-content">
   <div class="wrapper text-center pt-8 pb-20" style="max-width: 700px;">
     <h2 class="mt-10 mb-16">Desktop Downloads</h2>
     <div class="flex flex-wrap align-center justify-center">
@@ -112,7 +111,6 @@ modalCacheRef: "3.0.0.1"
       </div>
     </div>
   </div>
-</div>
   <br>
   <h3><a href="https://wiki.yerbas.org/">Yerbas Wiki</a></h3>
   <h3><a href="https://yerbas.foundation/">Yerbas Foundation</a></h3>
