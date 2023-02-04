@@ -2,7 +2,7 @@
 layout: page-w-banner
 title: Whitepaper
 bannerTitle: Whitepaper
-bannerImage: /assets/img/pages/whitepaper/whitepaper-banner.jpg
+bannerImage: /assets/img/pages/whitepaper/whitepaper-banner.png
 permalink: /whitepaper/
 ---
 
