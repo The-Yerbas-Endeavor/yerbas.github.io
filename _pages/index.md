@@ -108,11 +108,9 @@ modalCacheRef: "3.0.0.1"
       </div>
     </div>
   </div>
-  <br>
   <h3><a href="https://wiki.yerbas.org/">Yerbas Wiki</a></h3>
   <h3><a href="https://yerbas.foundation/">Yerbas Foundation</a></h3>
   <h3><a href="https://yerb-dashboard.com/">Yerbas Dashboard</a></h3>
-  <br>
 </div>
 <div class="section-intro text-white py-20">
   <div class="wrapper">
