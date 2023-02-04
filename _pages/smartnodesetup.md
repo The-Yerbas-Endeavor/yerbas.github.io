@@ -11,8 +11,8 @@ permalink: /Smartnodesetup/
   <h2>To build your Smartnode, follow these simple steps</h2>
      <h3>Ubuntu 20.04</h3>
       <h4>1. Update Server</h4>
-        <p>sudo apt update && apt upgrade -y <br/>
-          sudo apt install unzip fail2ban -y
+        <p><a>sudo apt update && apt upgrade -y <br/>
+          sudo apt install unzip fail2ban -y</a>
         </p>
     <div>
         <p>sudo apt update && apt upgrade -y <br/>
