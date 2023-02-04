@@ -257,8 +257,7 @@ modalCacheRef: "3.0.0.1"
 </div>
 <div class="bg-grey-lighter text-center" style="padding-bottom:50px">
   <h2 class="font-medium">Twitter Updates</h2>
-  <a class="twitter-timeline" data-width="600" data-height="600" data-dnt="true" data-theme="dark" href="https://twitter.com/Yerbas?ref_src=twsrc%5Etfw">Tweets by Yerbas</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-  <a class="twitter-timeline" data-width="600" data-height="600" data-dnt="true" data-theme="dark" href="https://twitter.com/Yerbas/likes?ref_src=twsrc%5Etfw">Tweets Liked by Yerbas</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<a class="twitter-timeline" href="https://twitter.com/Yerbas_Endeavor?ref_src=twsrc%5Etfw">Tweets by Yerbas_Endeavor</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 </div>
 <script src="/assets/vendors/mediabox/mediabox.js"></script>
 <script>
