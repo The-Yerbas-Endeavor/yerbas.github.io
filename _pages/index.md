@@ -17,7 +17,7 @@ modalCacheRef: "3.0.0.1"
     border: 2px solid #4F7942;
   }
   .banner {
-    background: url("/assets/img/home/minimal-background14.jpg");
+    background: url("/assets/img/home/spine.jpg");
     padding: 12em 0 13em;
     animation: animatedBackground 15s linear infinite;
     -moz-animation: animatedBackground 15s linear infinite;
