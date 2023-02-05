@@ -108,7 +108,6 @@ modalCacheRef: "3.0.0.1"
         </div>
     </div>
   </div>
-</div>
 <div class="section-intro text-white py-20">
   <div class="wrapper">
     <div class="text-center m-auto" style="max-width: 900px;">
