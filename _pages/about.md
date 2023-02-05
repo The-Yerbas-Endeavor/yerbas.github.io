@@ -10,7 +10,7 @@ permalink: /about/
 <div class="wrapper mt-16 pb-20">
   <h2>What is Yerbas?</h2>
 
-  <p>Yerbas is a digital peer to peer network that aims to implement a use case specific blockchain, designed to efficiently handle one specific function: the transfer of assets from one party to another. Built on a fork of the Bitcoin code, Yerbas was launched MAy 9th, 2022, and is a truly open source project (no ICO or premine). It focuses on building a useful technology, with a strong and growing community.</p>
+  <p>Yerbas is a digital peer to peer network that aims to implement a use case specific blockchain, designed to efficiently handle one specific function: the transfer of assets from one party to another. Built on a fork of the Bitcoin code, Yerbas was launched May 9th, 2022, and is a truly open source project (no ICO or premine). It focuses on building a useful technology, with a strong and growing community.</p>
 
   <h3>How Yerbas works</h3>
 
