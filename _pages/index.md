@@ -196,7 +196,7 @@ modalCacheRef: "3.0.0.1"
   <div class="wrapper">
     <div class="flex flex-wrap">
       <div class="w-full sm:w-full md:w-3/4">
-        <h2>What Makes Yerbas Different from Bitcoin?</h2>
+        <h2>What Makes Yerbas Different?</h2>
         <ul class="checkmark">
           <li>Block reward of 100 YERB instead of 50 BTC.</li>
           <li>Block time of 2.5 minute instead of 10.</li>
