@@ -2,6 +2,7 @@
 layout: page-w-banner
 title: Halving
 bannerTitle: Yerbas Halving
+bannerImage: /assets/img/pages/halving/grass.jpg
 permalink: /halving/
 ---
 
