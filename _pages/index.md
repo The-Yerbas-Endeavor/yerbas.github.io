@@ -199,7 +199,7 @@ modalCacheRef: "3.0.0.1"
         <h2>What Makes Yerbas Different?</h2>
         <ul class="checkmark">
           <li>Block reward of 100 YERB instead of 50 BTC.</li>
-          <li>Block time of 2.5 minute instead of 10.</li>
+          <li>Block time of 2 minute instead of 10.</li>
           <li>Total coin supply of 420 million instead of 21 million.</li>
           <li>Fair launch - No premine - No ICO<br/>Total Supply - 420 million<br/>Reward distribution: <br/>75%miner - 20%Smartnode - 5%Development fee.</li>
           <li>A new mining algorithm, GhostRider is an algorithm created to discourage specialty hardware such as ASIC & FPGA enabling anybody to competitively mine it and increase overall decentralization..</li>
