@@ -101,7 +101,6 @@ modalCacheRef: "3.0.0.1"
   <br>
         <a class="block px-6 py-4" href="https://wrap.yerbas.org" target="_blank"><img style="max-height: 50px;" src="/assets/img/pages/wallet/wyerbas.png"      align="middle" alt=" wYerbas"/>wYerbas</a>
     <h3><a href="https://wiki.yerbas.org/">Yerbas Wiki</a></h3>
-    <h3><a href="https://yerbas.foundation/">Yerbas Foundation</a></h3>
     <h3><a href="https://yerb-dashboard.com/">Yerbas Dashboard</a></h3>
 </div>  
 <div class="section-intro text-white py-20">
