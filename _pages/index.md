@@ -131,7 +131,7 @@ modalCacheRef: "3.0.0.1"
                 <li>Gold bar</li>
                 <li>Silver coins</li>
                 <li>Physical Euros</li>
-                <li>Buffalo nickles</li>
+                <li>Buffalo Nickels</li>
               </ul>
               <ul class="list-reset w-full sm:w-1/2 md:w-1/3">
                 <li>Land Deeds</li>
