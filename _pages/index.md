@@ -17,7 +17,7 @@ modalCacheRef: "3.0.0.1"
     border: 2px solid #4F7942;
   }
   .banner {
-    background: url("/assets/img/home/digital-background.jpg");
+    background: url("/assets/img/home/spine.jpg");
     padding: 12em 0 13em;
     animation: animatedBackground 15s linear infinite;
     -moz-animation: animatedBackground 15s linear infinite;
@@ -89,24 +89,26 @@ modalCacheRef: "3.0.0.1"
       <a class="btn btn-primary mx-2 mt-4 mb-3 px-3 py-3 font-medium text-base rounded text-white hover:text-white" href="/wallet/">Get Your Wallet</a>
       <a class="btn btn-ghost mx-2 mt-4 mb-3 px-3 py-3 font-medium text-base rounded text-black hover:text-white" href="/buy-yerbas/">Buy Yerbas</a>
     </div>
-</div>
-<div class="wrapper text-center pt-8 pb-20" style="max-width: 700px;">
+    <div class="video-icon animated fadeInRight flex content-center justify-center font-semibold mt-4" uk-lightbox>
+      <a class="video-icon-button mr-4 mediabox" href="https://youtu.be/qVqGfhezRzQ">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+          <path d="M256,0C114.617,0,0,114.615,0,256s114.617,256,256,256s256-114.615,256-256S397.383,0,256,0z M344.48,269.57l-128,80  c-2.59,1.617-5.535,2.43-8.48,2.43c-2.668,0-5.34-0.664-7.758-2.008C195.156,347.172,192,341.82,192,336V176  c0-5.82,3.156-11.172,8.242-13.992c5.086-2.836,11.305-2.664,16.238,0.422l128,80c4.676,2.93,7.52,8.055,7.52,13.57  S349.156,266.641,344.48,269.57z" fill="#4F7942"/>
+        </svg>
+      </a>
+    <span class="mt-2">How to mine Yerbas?</span>
+    </div>
+  </div>
+  <div class="wrapper text-center pt-8 pb-20" style="max-width: 700px;">
     <div class="flex flex-wrap align-center justify-center">
       <div class="w-full sm:w-1/2 md:w-1/3 px-4 mb-12">
-          <a class="block px-6 py-4" href="https://wrap.yerbas.org" target="_blank"><img style="max-height: 50px;" src="/assets/img/pages/wallet/wyerbas.png" align="middle" alt=" wYerbas"/>wYerbas</a>
-              <div class="video-icon animated fadeInRight flex content-center justify-center font-semibold mt-4" uk-lightbox>
-                  <a class="video-icon-button mr-4 mediabox" href="https://youtu.be/9ggB5VjveYQ">
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                  <path d="M256,0C114.617,0,0,114.615,0,256s114.617,256,256,256s256-114.615,256-256S397.383,0,256,0z M344.48,269.57l-128,80  c-2.59,1.617-5.535,2.43-8.48,2.43c-2.668,0-5.34-0.664-7.758-2.008C195.156,347.172,192,341.82,192,336V176  c0-5.82,3.156-11.172,8.242-13.992c5.086-2.836,11.305-2.664,16.238,0.422l128,80c4.676,2.93,7.52,8.055,7.52,13.57  S349.156,266.641,344.48,269.57z" fill="#4F7942"/>
-                    </svg></a>
-                       <span class="mt-2">How to mine Yerbas?</span>         
-                   <h3><a href="https://wiki.yerbas.org/">Yerbas Wiki</a></h3>
-                   <h3><a href="https://yerbas.foundation/">Yerbas Foundation</a></h3>
-                   <h3><a href="https://yerb-dashboard.com/">Yerbas Dashboard</a></h3>
-              </div>
-          </div>
-     </div>
-</div>     
+          <a class="block px-6 py-4" href="https://wrap.yerbas.org" target="_blank"><img style="max-height: 50px;" src="/assets/img/pages/wallet/wyerbas.png"      align="middle" alt=" wYerbas"/>wYerbas</a>
+           <h3><a href="https://wiki.yerbas.org/">Yerbas Wiki</a></h3>
+           <h3><a href="https://yerbas.foundation/">Yerbas Foundation</a></h3>
+           <h3><a href="https://yerb-dashboard.com/">Yerbas Dashboard</a></h3>
+        </div>
+    </div>
+  </div>
+</div>
 <div class="section-intro text-white py-20">
   <div class="wrapper">
     <div class="text-center m-auto" style="max-width: 900px;">
