@@ -97,7 +97,8 @@ modalCacheRef: "3.0.0.1"
       </a>
     <span class="mt-2">How to mine Yerbas?</span>
     </div>
-  </div>
+ </div>
+</div>
   <div class="wrapper text-center pt-8 pb-20" style="max-width: 700px;">
     <div class="flex flex-wrap align-center justify-center">
       <div class="w-full sm:w-1/2 md:w-1/3 px-4 mb-12">
