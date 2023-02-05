@@ -209,7 +209,7 @@ modalCacheRef: "3.0.0.1"
         </ul>
       </div>
       <div class="w-full sm:w-full md:w-1/4 text-center hidden md:block">
-        <img id="logo-why" class="animated" style="margin-top: 30px;" src="{{"/assets/img/home/yerbas-flock.png"}}" alt="yerbas logo">
+        <img id="logo-why" class="animated" style="margin-top: 30px;" src="{{"/assets/img/home/yerbas.png"}}" alt="yerbas logo">
       </div>
     </div>
   </div>
