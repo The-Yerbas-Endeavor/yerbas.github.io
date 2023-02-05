@@ -225,7 +225,6 @@ modalCacheRef: "3.0.0.1"
       <a class="btn btn-primary mx-2 mt-5 mb-3 px-4 py-3 font-normal text-base rounded text-white border-white border-solid border-2 hover:text-black" href="/community">Join the Community</a>
     </div>
   </div>
-
 </div>
 <div class="section-exchange pt-20 pb-24 bg-grey-lighter text-center">
   <h2 class="font-medium">Exchanges</h2>
@@ -244,15 +243,16 @@ modalCacheRef: "3.0.0.1"
       </div>
   </div>
 </div>
+<div class="wrapper">
 <div class="bg-grey-lighter text-center" style="padding-bottom:50px">
   <h2 class="font-medium">Twitter Updates</h2>
   <a class="twitter-timeline" data-width="600" data-height="600" data-dnt="true" data-theme="dark" href="https://twitter.com/Yerbas_Endeavor?ref_src=twsrc%5Etfw">Tweets by Yerbas</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
 </div>
 <script src="/assets/vendors/mediabox/mediabox.js"></script>
 <script>
   MediaBox('.mediabox');
 </script>
-
 <script type="text/javascript">
   window.addEventListener("load", function() {
 
