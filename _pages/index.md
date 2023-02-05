@@ -83,7 +83,7 @@ modalCacheRef: "3.0.0.1"
 </style>
 <div class="banner text-center">
   <div class="wrapper">
-    <h1 class="animated fadeInRight mb-3 mb-2 m-auto leading-tight">Yerbas is a peer-to-peer blockchain, handling the efficient creation and transfer of assets from one party to another.</h1>
+    <h1 class="animated fadeInRight mb-3 mb-2 m-auto leading-tight">Yerbas is a peer-to-peer decentralized blockchain, handling the efficient creation and transfer of assets from one party to another.</h1>
     <div class="animated fadeInLeft hero-buttons">
       <a class="btn btn-primary mx-2 mt-4 mb-3 px-3 py-3 font-medium text-base rounded text-white hover:text-white" href="/wallet/">Get Your Wallet</a>
       <a class="btn btn-ghost mx-2 mt-4 mb-3 px-3 py-3 font-medium text-base rounded text-black hover:text-white" href="/buy-yerbas/">Buy Yerbas</a>
