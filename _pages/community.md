@@ -89,7 +89,7 @@ permalink: /community/
             <i class="zmdi zmdi-chart text-5xl text-white"></i>
           </div>
         </a>
-        <h3><a href="http://www.yerbasnodes.com/" target="_blank">Yerbas Node Map</a></h3>
+        <h3><a href="http://nodes.yerbas.org/" target="_blank">Yerbas Node Map</a></h3>
       </div>
       <div class="w-1/2 sm:w-1/4 mb-8">
         <a href="https://www.assetsexplorer.yerbas.com/" target="_blank">
@@ -97,7 +97,7 @@ permalink: /community/
             <i class="zmdi zmdi-view-list-alt text-5xl text-white"></i>
           </div>
         </a>
-        <h3><a href="https://www.assetsexplorer.yerbas.com/" target="_blank">Yerbas Asset Explorer</a></h3>
+        <h3><a href="https://assetsviewer.yerbas.org/" target="_blank">Yerbas Asset Explorer</a></h3>
       </div>
     </div>
   </div>
