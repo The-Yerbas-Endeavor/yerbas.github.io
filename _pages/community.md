@@ -84,7 +84,7 @@ permalink: /community/
         <h3><a href="https://medium.com/@codef1re" target="_blank">Medium (@codef1re)</a></h3>
       </div>
       <div class="w-1/2 sm:w-1/4 mb-8">
-        <a href="http://www.yerbasnodes.com/" target="_blank">
+        <a href="http://nodes.yerbas.org/" target="_blank">
           <div class="mb-6 py-4 px-5 inline-block rounded-full bg-grey hover:bg-grey-dark">
             <i class="zmdi zmdi-chart text-5xl text-white"></i>
           </div>
@@ -92,7 +92,7 @@ permalink: /community/
         <h3><a href="http://nodes.yerbas.org/" target="_blank">Yerbas Node Map</a></h3>
       </div>
       <div class="w-1/2 sm:w-1/4 mb-8">
-        <a href="https://www.assetsexplorer.yerbas.com/" target="_blank">
+        <a href="https://assetsviewer.yerbas.org/" target="_blank">
           <div class="mb-6 py-4 px-5 inline-block rounded-full bg-grey hover:bg-grey-dark">
             <i class="zmdi zmdi-view-list-alt text-5xl text-white"></i>
           </div>
