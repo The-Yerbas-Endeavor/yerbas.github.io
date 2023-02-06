@@ -1,5 +1,8 @@
-# https://www.robotstxt.org/robotstxt.html
-User-agent: *
-Allow: /
-Sitemap: https://yerbas.org/sitemap.xml
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
 
+layout: null
+---
+
+Sitemap: https://yerbas.org/sitemap.xml

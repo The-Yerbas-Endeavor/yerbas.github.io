@@ -1,0 +1,11 @@
+- name: Atomic
+  logo: /assets/img/pages/wallet/atomic.png
+  url: https://atomicwallet.io/
+  asset-support: false
+  platforms:
+    - app-store-badge
+    - google-play-badge
+    - windows
+    - mac
+    - linux
+

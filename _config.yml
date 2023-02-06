@@ -1,11 +1,11 @@
 title: Yerbas
-author: The-Yerbas-Endeavor
+author: Yerbas
 description: A peer-to-peer blockchain designed to handle the efficient creation and transfer of assets from one party to another. It's an open-source project based on Bitcoin
 
 baseurl: ""
 
 # social links
-twitter_username: yerbas
+twitter_username: Yerbas-Endeavor
 github_username:  The-Yerbas-Endeavor
 rss: rss
 
@@ -19,12 +19,15 @@ minima:
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
 header_pages:
- - _index.html
- - _paperwallet.html
- - _yerbvanity.html
- - _pages/index.html
- - _pages/yerbvanity.html
-
+ - _pages/index.md
+ - _pages/buy-yerbas.md
+ - _pages/wallet.md
+ - _pages/whitepaper.md
+ - _pages/community.md
+ - _pages/pools.md
+ - _pages/about.md
+ - _pages/assets.md
+ - _pages/smartnodesetup.md
 
 # Build settings
 theme: minima
@@ -32,11 +35,11 @@ relative_permalinks: false
 
 # Reading Files
 include:
-  - _static
   - _pages
   - _posts
   - _wallets
   - _translations
+  - _paperwallet
 
 # Defaults
 defaults:
