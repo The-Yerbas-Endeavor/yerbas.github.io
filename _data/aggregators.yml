@@ -1,0 +1,11 @@
+- name: CoinPaprika
+  logo: /assets/img/pages/aggregators/coinpaprika.png
+  url:  https://coinpaprika.com/coin/yerb-yerbas/
+
+- name: Nomics
+  logo: /assets/img/pages/aggregators/nomics.png
+  url:  https://nomics.com/assets/YERB-YERBAS?d=1669131794
+
+- name: AltBusters
+  logo: /assets/img/pages/aggregators/altbusters.png
+  url:  https://altbuster.com/

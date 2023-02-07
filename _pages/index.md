@@ -243,6 +243,23 @@ modalCacheRef: "3.0.0.1"
       </div>
   </div>
 </div>
+<div class="section-aggregators pt-20 pb-24 bg-grey-lighter text-center">
+  <h2 class="font-medium">Aggregators</h2>
+  <div class="wrapper mt-8 m-auto">
+    <div class="flex flex-wrap">
+      {% for aggregators in site.data.aggregators %}
+      <div class="mb-6 px-2 sm:w-1/2 md:w-1/3">
+        <div class="bg-grey-lighter max-w-sm rounded overflow-hidden shadow-md hover:by-grey enlarge-on-hover">
+          <a class="block px-6 py-4" href="{{ aggregators.url }}" target="_blank" rel="nofollow"><img src="{{ aggregators.logo }}" alt="{{ aggregators.name }} aggregators"/></a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+      <div class="text-center">
+        <a class="btn btn-primary d-block mx-2 mt-4 mb-3 px-3 py-3 font-medium text-base rounded text-white hover:text-white" href="/buy-yerbas/">See All Exchanges</a>
+      </div>
+  </div>
+</div>
 <div class="bg-grey-lighter text-center" style="padding-bottom:50px">
   <h2 class="font-medium">Twitter Updates</h2>
   <a class="twitter-timeline" data-width="600" data-height="600" data-dnt="true" data-theme="dark" href="https://twitter.com/Yerbas_Endeavor?ref_src=twsrc%5Etfw">Tweets by Yerbas</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
