@@ -256,7 +256,7 @@ modalCacheRef: "3.0.0.1"
       {% endfor %}
     </div>
       <div class="text-center">
-        <a class="btn btn-primary d-block mx-2 mt-4 mb-3 px-3 py-3 font-medium text-base rounded text-white hover:text-white" href="/buy-yerbas/">See All Exchanges</a>
+        <a class="btn btn-primary d-block mx-2 mt-4 mb-3 px-3 py-3 font-medium text-base rounded text-white hover:text-white" href="/watch-yerbas/">See All Aggregators</a>
       </div>
   </div>
 </div>

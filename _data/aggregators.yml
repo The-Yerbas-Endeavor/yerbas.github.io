@@ -1,15 +1,23 @@
 - name: CoinPaprika
   logo: /assets/img/pages/aggregators/coinpaprika.png
   url:  https://coinpaprika.com/coin/yerb-yerbas/
+  kyc: false
+  donates_to_project: false
 
 - name: Nomics
   logo: /assets/img/pages/aggregators/nomics.png
   url:  https://nomics.com/assets/YERB-YERBAS?d=1669131794
+  kyc: false
+  donates_to_project: false
 
 - name: AltBusters
   logo: /assets/img/pages/aggregators/altbusters.png
   url:  https://altbuster.com/
+  kyc: false
+  donates_to_project: false
 
 - name: PooCoinCharts
   logo: /assets/img/pages/aggregators/poocoin.png
   url:  https://poocoin.app/tokens/0x2100591c0b692c53a0E11cc328646309e6ea12eF
+  kyc: false
+  donates_to_project: false
