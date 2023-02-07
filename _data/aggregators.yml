@@ -9,3 +9,7 @@
 - name: AltBusters
   logo: /assets/img/pages/aggregators/altbusters.png
   url:  https://altbuster.com/
+
+- name: PooCoinCharts
+  logo: /assets/img/pages/aggregators/poocoin.png
+  url:  https://poocoin.app/tokens/0x2100591c0b692c53a0E11cc328646309e6ea12eF
