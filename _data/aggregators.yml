@@ -4,6 +4,12 @@
   kyc: false
   donates_to_project: false
 
+- name: LiveCoinWatch
+  logo: /assets/img/pages/aggregators/livecoinwatch.png
+  url:  https://www.livecoinwatch.com/price/Yerbas-YERB
+  kyc: false
+  donates_to_project: false
+
 - name: Nomics
   logo: /assets/img/pages/aggregators/nomics.png
   url:  https://nomics.com/assets/YERB-YERBAS?d=1669131794
