@@ -242,12 +242,18 @@ pre {
   background-color: #b3b3b3;
 }
 
-.footerlist {
-  color: $text-color;
+footerlist {
+  color: #fdfdfd;
+  text-decoration: none;
 
-  &:hover 
-    color: #323332;
+  &:visited {
+    color: #323332);
+  }
+
+  &:hover {
+    color: $text-color;
     text-decoration: underline;
+  }
 
 }
 
