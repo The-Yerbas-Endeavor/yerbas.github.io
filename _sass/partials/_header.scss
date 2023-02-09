@@ -36,7 +36,7 @@
   }
 
   .page-link {
-    color: $text-color;
+    color: $grey-secondary;
     line-height: $base-line-height;
     text-transform: uppercase;
     text-decoration: none;
@@ -59,7 +59,7 @@
     position: absolute;
     top: 9px;
     right: $spacing-unit / 2;
-    background-color: $background-color;
+    background-color: #fdfdfd;
     border: 1px solid $grey-color-light;
     border-radius: 5px;
     text-align: right;
