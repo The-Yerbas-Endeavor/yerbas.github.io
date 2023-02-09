@@ -242,6 +242,15 @@ pre {
   background-color: #b3b3b3;
 }
 
+.footerlist {
+  color: $text-color;
+}
+  &:hover {
+    color: #323332;
+    text-decoration: underline;
+
+}
+
 /**
  * Tables
  */
