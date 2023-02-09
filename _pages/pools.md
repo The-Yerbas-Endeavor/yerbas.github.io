@@ -19,7 +19,7 @@ permalink: /pools/
       {% for pool in random_sorted_pools %}
       <div class="mb-2 px-2 sm:w-1/2 md:w-1/3 text-center">
         <div class="btn btn-primary max-w-sm rounded overflow-hidden shadow-md text-white hover:text-white">
-          <span class="mb-0"><a class="block p-4" href="{{ pool.url }}" target="_blank">{{ pool.name }}</a></span>
+          <a class="block p-4" href="{{ pool.url }}" target="_blank">{{ pool.name }}</a>
         </div>
       </div>
       {% endfor %}
