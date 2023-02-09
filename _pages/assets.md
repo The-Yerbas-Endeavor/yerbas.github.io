@@ -33,7 +33,7 @@ overlooked. If you come across any problems or believe information needs to be c
     </ul>
     </li>
     <li><a href="#what_is_on_chain">What is on the chain?</a></li>
-    <li><a href="#burn_addresses">Burn Addresses</a></li>
+    <li><a href="#asset_fees">Asset Fees</a></li>
     <li><a href="#scripts">Standard Asset Scripts</a>
     <ul>
     <li><a href="#chain_parsing_note">A note on chain parsing</a></li>
@@ -546,8 +546,8 @@ overlooked. If you come across any problems or believe information needs to be c
   <p>You may have been surprised earlier when learning that the associated data of an asset is only 32 bytes. You are correct in believing that is not a lot of information. This is an intentional decision to keep clutter off of the chain. Typically, users will use this field for an <a href="https://ipfs.io/#how">IPFS hash</a> allowing for websites and files to be stored and hosted off chain whether it be on personal hardware or <a href="https://yerbasipfs.com/">cloud file management hosts</a>. IPFS hashs are unique (literally a SHA256 hash of the data) and therefore a user can be confident that an IPFS hash on an asset will always point to the correct data.</p>
 
   <br>
-  <h3 id="burn_addresses">Burn Addresses</h3>
-  <p>In order to create an asset, a certain amount of YERB must be sent to a burn address.</p>
+  <h3 id="asset_fees">Asset Fees</h3>
+  <p>In order to create an asset, a certain amount of YERB must be sent.</p>
   <p>The first two characters are due to Yerbas's P2PKH address type of 0x3C and the seeming random characters at the end of each address are the <a href="https://en.bitcoin.it/wiki/File:Address_map.jpg">public key's checksum</a>.</p>
   <table style="width:100%">
     <tr>
@@ -984,10 +984,10 @@ overlooked. If you come across any problems or believe information needs to be c
     </tr>
     <tr>
       <td>
-      <p>YERB outpoint(s) for fee and burn</p>
+      <p>YERB outpoint(s) for fees</p>
       </td>
       <td>
-      <p>Issue asset burn address</p>
+      <p>Issue asset fee address</p>
       <p>YERB change address(s)</p>
       <p>Ownership asset script</p>
       <p>New asset script</p>
@@ -1004,11 +1004,11 @@ overlooked. If you come across any problems or believe information needs to be c
     </tr>
     <tr>
       <td>
-      <p>YERB outpoint(s) for fee and burn</p>
+      <p>YERB outpoint(s) for fees</p>
       <p>Parent ownership asset outpoint</p>
       </td>
       <td>
-      <p>Issue sub-asset burn address</p>
+      <p>Issue sub-asset fee address</p>
       <p>YERB change address(s)</p>
       <p>Transfer asset script (For parent ownership asset)</p>
       <p>Ownership asset script</p>
@@ -1026,11 +1026,11 @@ overlooked. If you come across any problems or believe information needs to be c
     </tr>
     <tr>
       <td>
-      <p>YERB outpoint(s) for fee and burn</p>
+      <p>YERB outpoint(s) for fees</p>
       <p>Parent ownership asset outpoint</p>
       </td>
       <td>
-      <p>Issue unique asset burn address</p>
+      <p>Issue unique asset fee address</p>
       <p>YERB change address(s)</p>
       <p>Transfer asset script (For parent ownership asset)</p>
       <p>New asset script</p>
@@ -1047,11 +1047,11 @@ overlooked. If you come across any problems or believe information needs to be c
     </tr>
     <tr>
       <td>
-      <p>YERB outpoint(s) for fee and burn</p>
+      <p>YERB outpoint(s) for fees</p>
       <p>Ownership asset outpoint</p>
       </td>
       <td>
-      <p>Reissue asset burn address</p>
+      <p>Reissue asset fee address</p>
       <p>YERB change address(s)</p>
       <p>Transfer asset script (For ownership asset)</p>
       <p>Reissue asset script</p>
@@ -1068,11 +1068,11 @@ overlooked. If you come across any problems or believe information needs to be c
     </tr>
     <tr>
       <td>
-      <p>YERB outpoint(s) for fee and burn</p>
+      <p>YERB outpoint(s) for fees</p>
       <p>Parent ownership asset outpoint</p>
       </td>
       <td>
-      <p>Issue message channel asset burn address</p>
+      <p>Issue message channel asset fee address</p>
       <p>YERB change address(s)</p>
       <p>Transfer asset script (For parent ownership asset)</p>
       <p>New asset script</p>
@@ -1090,10 +1090,10 @@ overlooked. If you come across any problems or believe information needs to be c
     </tr>
     <tr>
       <td>
-      <p>YERB outpoint(s) for fee and burn</p>
+      <p>YERB outpoint(s) for fees</p>
       </td>
       <td>
-      <p>Issue qualifier asset burn address</p>
+      <p>Issue qualifier asset fee address</p>
       <p>YERB change address(s)</p>
       <p>New asset script</p>
       </td>
@@ -1109,11 +1109,11 @@ overlooked. If you come across any problems or believe information needs to be c
     </tr>
     <tr>
       <td>
-      <p>YERB outpoint(s) for fee and burn</p>
+      <p>YERB outpoint(s) for fees</p>
       <p>Parent asset outpoint</p>
       </td>
       <td>
-      <p>Issue sub-qualifier asset burn address</p>
+      <p>Issue sub-qualifier asset fee address</p>
       <p>YERB change address(s)</p>
       <p>Transfer asset script (For parent asset)</p>
       <p>New asset script</p>
@@ -1130,10 +1130,10 @@ overlooked. If you come across any problems or believe information needs to be c
     </tr>
     <tr>
       <td>
-      <p>YERB outpoint(s) for fee and burn</p>
+      <p>YERB outpoint(s) for fees</p>
       </td>
       <td>
-      <p>Issue restricted asset burn address</p>
+      <p>Issue restricted asset fee address</p>
       <p>YERB change address(s)</p>
       <p>Verifier asset tag script</p>
       <p>Ownership asset script</p>
@@ -1152,11 +1152,11 @@ overlooked. If you come across any problems or believe information needs to be c
     </tr>
     <tr>
       <td>
-      <p>YERB outpoint(s) for fee and burn</p>
+      <p>YERB outpoint(s) for fees</p>
       <p>Ownership asset outpoint</p>
       </td>
       <td>
-      <p>Reissue asset burn address</p>
+      <p>Reissue asset fee address</p>
       <p>YERB change address(s)</p>
       <p>Verifier asset tag script</p>
       <p>Transfer asset script (For ownership asset)</p>
@@ -1174,11 +1174,11 @@ overlooked. If you come across any problems or believe information needs to be c
     </tr>
     <tr>
       <td>
-      <p>YERB outpoint(s) for fee and burn</p>
+      <p>YERB outpoint(s) for fees</p>
       <p>Qualifier or restricted ownership asset outpoint</p>
       </td>
       <td>
-      <p>Tag burn address</p>
+      <p>Tag fee address</p>
       <p>YERB change address(s)</p>
       <p>Transfer asset script (For qualifier or restricted ownership asset)</p>
       <p>Null asset tag script</p>
@@ -1195,11 +1195,11 @@ overlooked. If you come across any problems or believe information needs to be c
     </tr>
     <tr>
       <td>
-      <p>YERB outpoint(s) for fee and burn</p>
+      <p>YERB outpoint(s) for fees</p>
       <p>Restricted ownership asset outpoint</p>
       </td>
       <td>
-      <p>Tag burn address</p>
+      <p>Tag fee address</p>
       <p>YERB change address(s)</p>
       <p>Transfer asset script (For restricted ownership asset)</p>
       <p>Global restriction asset tag script</p>
