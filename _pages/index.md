@@ -17,8 +17,7 @@ modalCacheRef: "3.0.0.1"
     border: 2px solid #4F7942;
   }
   .banner {
-    background: url("/assets/img/home/hexagonal-grid.png");
-    background-color: rgba(69, 142, 225, 0);
+   /* background: url("/assets/img/home/hexagonal-grid.png");*/
     padding: 12em 0 13em;
     animation: animatedBackground 15s linear infinite;
     -moz-animation: animatedBackground 15s linear infinite;
@@ -64,6 +63,9 @@ modalCacheRef: "3.0.0.1"
   .enlarge-on-hover:hover {
     transform: scale(1.05);
   }
+  .bg-grey-lighter {
+  background-color: #111;
+}
 
 @keyframes animatedBackground {
 0% { background-position: 0 0; }
