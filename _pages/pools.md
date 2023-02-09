@@ -18,7 +18,7 @@ permalink: /pools/
       {% assign random_sorted_pools = site.data.pools | sample: n %}
       {% for pool in random_sorted_pools %}
       <div class="mb-2 px-2 sm:w-1/2 md:w-1/3 text-center">
-        <div class="btn btn-primary mx-2 mt-5 mb-3 px-4 py-3 font-normal text-base rounded text-white border-white border-solid border-2 hover:text-black">
+        <div class="bg-grey-lighter btn btn-primary max-w-sm rounded overflow-hidden shadow-md hover:text-black">
           <span class="mb-0"><a class="block p-4" href="{{ pool.url }}" target="_blank">{{ pool.name }}</a></span>
         </div>
       </div>
@@ -26,3 +26,4 @@ permalink: /pools/
     </div>
   </div>
 </div>
+btn btn-primary mx-2 mt-5 mb-3 px-4 py-3 font-normal text-base rounded text-white border-white border-solid border-2 hover:text-black
