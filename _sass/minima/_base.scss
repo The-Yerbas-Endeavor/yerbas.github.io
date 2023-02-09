@@ -247,9 +247,10 @@ table {
   }
   th, td {
     padding: ($spacing-unit / 3) ($spacing-unit / 2);
+
   }
   th {
-    background-color: lighten($grey-color-light, 3%);
+    background-color: #4F7942;
     border: 1px solid darken($grey-color-light, 4%);
     border-bottom-color: darken($grey-color-light, 12%);
   }

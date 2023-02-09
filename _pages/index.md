@@ -18,6 +18,7 @@ modalCacheRef: "3.0.0.1"
   }
   .banner {
     background: url("/assets/img/home/hexagonal-grid.png");
+    background-color: rgba(69, 142, 225, 0);
     padding: 12em 0 13em;
     animation: animatedBackground 15s linear infinite;
     -moz-animation: animatedBackground 15s linear infinite;
