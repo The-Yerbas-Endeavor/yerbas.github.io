@@ -50,7 +50,7 @@ overlooked. If you come across any problems or believe information needs to be c
 
   <br>
   <h3 id ="where_can_i_trade_assets">Where can I trade assets?</h3>
-  <p><a href="https://yerbastrader.net/">Yerbas Trader</a> is a on-chain peer to peer market which utilises <a href="https://github.com/The-Yerbas-Endeavor/rips/blob/master/rip-0015.mediawiki">RIP-15</a> for users to post half-signed atomic swaps. There are also asset markets such as <a href="https://www.yerbft.art/">YERBFT</a> and <a href="https://yerbbay.com/">YERBBay</a>. In addition, one can pay for a listing at <a href="https://cryptosx.io/">Cryptosx</a> for security tokens or <a href="https://www.okex.com"> OKEX</a> for regular tokens.</p>
+  <p>Comming soon</p>
   <br>
 
   <h3 id="privacy">Privacy and Access</h3>
@@ -552,69 +552,63 @@ overlooked. If you come across any problems or believe information needs to be c
   <table style="width:100%">
     <tr>
       <th></th>
-      <th>Mainnet Address</th>
-      <th>Testnet Address</th>
+      <th>Smartnode Reward 80%</th>
+      <th>Miner Reward 20%</th>
       <th>Amount</th>
     </tr>
     <tr>
       <td>Issue Asset</td>
-      <td>RXissueAssetXXXXXXXXXXXXXXXXXhhZGt</td>
-      <td>n1issueAssetXXXXXXXXXXXXXXXXWdnemQ</td>
+      <td>100</td>
+      <td>400</td>
       <td>500 YERB</td>
     </tr>
     <tr>
       <td>Reissue Asset</td>
-      <td>RXReissueAssetXXXXXXXXXXXXXXVEFAWu</td>
-      <td>n1ReissueAssetXXXXXXXXXXXXXXWG9NLd</td>
+      <td>20</td>
+      <td>80</td>
       <td>100 YERB</td>
     </tr>
     <tr>
       <td>Issue Sub-Asset</td>
-      <td>RXissueSubAssetXXXXXXXXXXXXXWcwhwL</td>
-      <td>n1issueSubAssetXXXXXXXXXXXXXbNiH6v</td>
+      <td>20</td>
+      <td>80</td>
       <td>100 YERB</td>
     </tr>
     <tr>
       <td>Issue Unique Asset</td>
-      <td>RXissueUniqueAssetXXXXXXXXXXWEAe58</td>
-      <td>n1issueUniqueAssetXXXXXXXXXXS4695i</td>
+      <td>1</td>
+      <td>4</td>
       <td>5 YERB</td>
     </tr>
     <tr>
       <td>Issue Message Channel</td>
-      <td>RXissueMsgChanneLAssetXXXXXXSjHvAY</td>
-      <td>n1issueMsgChanneLAssetXXXXXXT2PBdD</td>
+      <td>20</td>
+      <td>80</td>
       <td>100 YERB</td>
     </tr>
     <tr>
       <td>Issue Qualifier</td>
-      <td>RXissueQuaLifierXXXXXXXXXXXXUgEDbC</td>
-      <td>n1issueQuaLifierXXXXXXXXXXXXUysLTj</td>
+      <td>200</td>
+      <td>800</td>
       <td>1000 YERB</td>
     </tr>
     <tr>
       <td>Issue Sub-Qualifier</td>
-      <td>RXissueSubQuaLifierXXXXXXXXXVTzvv5</td>
-      <td>n1issueSubQuaLifierXXXXXXXXXYffPLh</td>
+      <td>20</td>
+      <td>80</td>
       <td>100 YERB</td>
     </tr>
     <tr>
       <td>Issue Restricted Asset</td>
-      <td>RXissueRestrictedXXXXXXXXXXXXzJZ1q</td>
-      <td>n1issueRestrictedXXXXXXXXXXXXZVT9V</td>
+      <td>300</td>
+      <td>1200</td>
       <td>1500 YERB</td>
     </tr>
     <tr>
       <td>Add Asset Tag</td>
-      <td>RXaddTagBurnXXXXXXXXXXXXXXXXZQm5ya</td>
-      <td>n1addTagBurnXXXXXXXXXXXXXXXXX5oLMH</td>
+      <td>0.02</td>
+      <td>0.08</td>
       <td>0.1 YERB</td>
-    </tr>
-    <tr>
-      <td>General Burn</td>
-      <td>RXBurnXXXXXXXXXXXXXXXXXXXXXXWUo9FV</td>
-      <td>n1BurnXXXXXXXXXXXXXXXXXXXXXXU1qejP</td>
-      <td>N/A</td>
     </tr>
   </table>
   <br>
