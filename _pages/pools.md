@@ -18,8 +18,8 @@ permalink: /pools/
       {% assign random_sorted_pools = site.data.pools | sample: n %}
       {% for pool in random_sorted_pools %}
       <div class="mb-2 px-2 sm:w-1/2 md:w-1/3 text-center">
-        <div class="max-w-sm rounded overflow-hidden shadow-md hover:text-white">
-          <span class="mb-0"><a class="btn btn-primary mx-2 mt-4 mb-3 px-20 py-3 font-medium text-base rounded hover:text-white" href="{{ pool.url }}" target="_blank">{{ pool.name }}</a></span>
+        <div class="max-w-sm rounded overflow-hidden shadow-md hover:text-black">
+          <span class="mb-0"><a class="btn btn-primary mx-2 mt-4 mb-3 px-20 py-3 font-medium text-base rounded hover:text-black" href="{{ pool.url }}" target="_blank">{{ pool.name }}</a></span>
         </div>
       </div>
       {% endfor %}
