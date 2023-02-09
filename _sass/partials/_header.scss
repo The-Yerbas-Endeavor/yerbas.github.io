@@ -4,7 +4,8 @@
 .site-header {
   border-bottom: 1px solid $grey-color-light;
   min-height: $spacing-unit * 1.865;
-  background-color: #ffffff;
+  $text-color:#fdfdfd !default;
+  background-color: #4F7942;
 
   position: fixed;
   width:100%;
