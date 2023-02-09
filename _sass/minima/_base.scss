@@ -241,7 +241,7 @@ table {
   border: 1px solid $grey-color-light;
   tr {
     &:nth-child(even) {
-      text-color:#fdfdfd !default;
+      text-color:#fdfdfd;
       background-color: #3a3535;
     }
   }
