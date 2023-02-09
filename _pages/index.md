@@ -17,7 +17,7 @@ modalCacheRef: "3.0.0.1"
     border: 2px solid #4F7942;
   }
   .banner {
-   /* background: url("/assets/img/home/hexagonal-grid.png");*/
+    background: url("/assets/img/home/dots2.png");
     padding: 12em 0 13em;
     animation: animatedBackground 15s linear infinite;
     -moz-animation: animatedBackground 15s linear infinite;
@@ -89,7 +89,7 @@ modalCacheRef: "3.0.0.1"
     <h1 class="animated fadeInRight mb-3 mb-2 m-auto leading-tight">Yerbas is a peer-to-peer decentralized blockchain, handling the efficient creation and transfer of assets from one party to another.</h1>
     <div class="animated fadeInLeft hero-buttons">
       <a class="btn btn-primary mx-2 mt-4 mb-3 px-3 py-3 font-medium text-base rounded text-white hover:text-white" href="/wallet/">Get Your Wallet</a>
-      <a class="btn btn-ghost mx-2 mt-4 mb-3 px-3 py-3 font-medium text-base rounded text-black hover:text-white" href="/buy-yerbas/">Buy Yerbas</a>
+      <a class="btn btn-primary mx-2 mt-4 mb-3 px-3 py-3 font-medium text-base rounded text-black hover:text-white" href="/buy-yerbas/">Buy Yerbas</a>
     </div>
     <div class="video-icon animated fadeInRight flex content-center justify-center font-semibold mt-4" uk-lightbox>
       <a class="video-icon-button mr-4 mediabox" href="https://youtu.be/9ggB5VjveYQ">
