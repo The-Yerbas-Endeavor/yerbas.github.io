@@ -20,10 +20,10 @@ permalink: /pools/
       <div class="mb-2 px-2 sm:w-1/2 md:w-1/3 text-center">
         <div class="max-w-sm rounded overflow-hidden shadow-md hover:text-white">
           <span class="mb-0"><a class="block walbg2 mx-2 mt-4 mb-3 px-20 py-3 font-medium text-base rounded hover:text-white" href="{{ pool.url }}" target="_blank">{{ pool.name }}</a></span>
-          <p>You pool missing form this list? Please submit a pull request to add <a href="https://github.com/The-Yerbas-Endeavor/yerbas.github.io/blob/main/_data/pools.yml" target="_blank" rel="noopener">here</a></p>
         </div>
       </div>
       {% endfor %}
     </div>
+          <p>You pool missing form this list? Please submit a pull request to add <a href="https://github.com/The-Yerbas-Endeavor/yerbas.github.io/blob/main/_data/pools.yml" target="_blank" rel="noopener">here</a></p>
   </div>
 </div>
