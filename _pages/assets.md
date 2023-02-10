@@ -219,7 +219,7 @@ overlooked. If you come across any problems or believe information needs to be c
     </tr>
     <tr>
       <td>Cost</td>
-      <td>500 YERB</td>
+      <td>20 YERB</td>
     </tr>
     <tr>
       <td>Reissuability</td>
@@ -265,7 +265,7 @@ overlooked. If you come across any problems or believe information needs to be c
     </tr>
     <tr>
       <td>Cost</td>
-      <td>100 YERB</td>
+      <td>4 YERB</td>
     </tr>
     <tr>
       <td>Reissuability</td>
@@ -309,7 +309,7 @@ overlooked. If you come across any problems or believe information needs to be c
     </tr>
     <tr>
       <td>Cost</td>
-      <td>5 YERB</td>
+      <td>0.2 YERB</td>
     </tr>
     <tr>
       <td>Reissuability</td>
@@ -673,8 +673,7 @@ overlooked. If you come across any problems or believe information needs to be c
     </tr>
     <tr>
       <td>Associated data (Optional; only if previous byte is 01)</td>
-      <td>0x12 and 0x20 if IPFS data in which case API will encode/decode as IPFS content identifier
-      <td>32 bytes of user defined data</td>
+      <td>0x12 and 0x20 if IPFS data in which case API will encode/decode as IPFS content identifier 32 bytes of user defined data</td>
     </tr>
     <tr>
       <td>OP_DROP (75)</td>
