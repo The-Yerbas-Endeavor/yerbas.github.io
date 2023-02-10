@@ -552,63 +552,63 @@ overlooked. If you come across any problems or believe information needs to be c
   <table style="width:100%">
     <tr>
       <th></th>
-      <th>Smartnode Reward 80%</th>
       <th>Miner Reward 20%</th>
+      <th>Smartnode Reward 80%</th>
       <th>Amount</th>
     </tr>
     <tr>
       <td>Issue Asset</td>
-      <td>100</td>
-      <td>400</td>
-      <td>500 YERB</td>
+      <td>4</td>
+      <td>16</td>
+      <td>20 YERB</td>
     </tr>
     <tr>
       <td>Reissue Asset</td>
-      <td>20</td>
-      <td>80</td>
-      <td>100 YERB</td>
+      <td>0.8</td>
+      <td>3.2</td>
+      <td>4 YERB</td>
     </tr>
     <tr>
       <td>Issue Sub-Asset</td>
-      <td>20</td>
-      <td>80</td>
-      <td>100 YERB</td>
+      <td>4</td>
+      <td>16</td>
+      <td>20 YERB</td>
     </tr>
     <tr>
       <td>Issue Unique Asset</td>
-      <td>1</td>
-      <td>4</td>
-      <td>5 YERB</td>
+      <td>0.04</td>
+      <td>0.16</td>
+      <td>0.2 YERB</td>
     </tr>
     <tr>
       <td>Issue Message Channel</td>
-      <td>20</td>
-      <td>80</td>
-      <td>100 YERB</td>
+      <td>0.8</td>
+      <td>3.2</td>
+      <td>4 YERB</td>
     </tr>
     <tr>
       <td>Issue Qualifier</td>
-      <td>200</td>
-      <td>800</td>
-      <td>1000 YERB</td>
+      <td>8</td>
+      <td>32</td>
+      <td>40 YERB</td>
     </tr>
     <tr>
       <td>Issue Sub-Qualifier</td>
-      <td>20</td>
-      <td>80</td>
-      <td>100 YERB</td>
+      <td>0.8</td>
+      <td>3.2</td>
+      <td>4 YERB</td>
     </tr>
     <tr>
       <td>Issue Restricted Asset</td>
-      <td>300</td>
-      <td>1200</td>
-      <td>1500 YERB</td>
+      <td>13.8</td>
+      <td>55.2</td>
+      <td>69 YERB</td>
     </tr>
     <tr>
       <td>Add Asset Tag</td>
-      <td>0.02</td>
-      <td>0.08</td>
-      <td>0.1 YERB</td>
+      <td>0.0008</td>
+      <td>0.0032</td>
+      <td>0.004 YERB</td>
     </tr>
   </table>
   <br>
