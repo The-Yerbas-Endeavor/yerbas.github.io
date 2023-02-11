@@ -547,8 +547,8 @@ overlooked. If you come across any problems or believe information needs to be c
 
   <br>
   <h3 id="asset_fees">Asset Fees</h3>
-  <p>In order to create an asset, a certain amount of YERB must be sent.</p>
-  <p>The first two characters are due to Yerbas's P2PKH address type of 0x3C and the seeming random characters at the end of each address are the <a href="https://en.bitcoin.it/wiki/File:Address_map.jpg">public key's checksum</a>.</p>
+  <p>In order to create an asset, a certain amount of YERB must be sent. These fees are then distributed to the miners (20%) and smartnode opperators (80%)</p>
+  
   <table style="width:100%">
     <tr>
       <th></th>
