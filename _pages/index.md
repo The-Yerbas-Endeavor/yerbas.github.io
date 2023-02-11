@@ -194,7 +194,7 @@ modalCacheRef: "3.0.0.1"
     </div>
   </div>
 </div>
-<div class="section-why bg-grey-lighter py-24">
+<div class="section-why py-24">
   <div class="wrapper">
     <div class="flex flex-wrap">
       <div class="w-full sm:w-full md:w-3/4">
@@ -245,7 +245,7 @@ modalCacheRef: "3.0.0.1"
       </div>
   </div>
 </div>
-<div class="section-aggregators pt-20 pb-24 bg-grey-lighter text-center">
+<div class="section-aggregators pt-20 pb-24 text-center">
   <h2 class="font-medium">Aggregators</h2>
   <div class="wrapper mt-8 m-auto">
     <div class="flex flex-wrap">
@@ -262,7 +262,7 @@ modalCacheRef: "3.0.0.1"
       </div>
   </div>
 </div>
-<div class="bg-grey-lighter text-center" style="padding-bottom:50px">
+<div class="text-center" style="padding-bottom:50px">
   <h2 class="font-medium">Twitter Updates</h2>
   <a class="twitter-timeline" data-width="600" data-height="600" data-dnt="true" data-theme="dark" href="https://twitter.com/Yerbas_Endeavor?ref_src=twsrc%5Etfw">Tweets by Yerbas</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
