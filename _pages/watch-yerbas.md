@@ -12,7 +12,7 @@ permalink: /watch-yerbas/
     <div class="flex flex-wrap">
       {% for aggregators in site.data.aggregators %}
             {% if aggregators.kyc == false %}
-                <div class="mb-6 px-2 sm:w-1/2 md:w-1/3 text-center">
+                <div class="mb-6 px-2 sm:w-1/2 md:w-1/4 text-center">
                   <div class="bg-grey-dark max-w-sm rounded overflow-hidden shadow-md hover:by-grey">
                     <a class="block px-6 py-8" href="{{ aggregators.url }}" target="_blank"><img src="{{ aggregators.logo }}" alt="{{ aggregators.name }} aggregators"/></a>
                   </div>
