@@ -25,7 +25,7 @@ permalink: /community/
             <img style="width:40px;" src="{{"/assets/img/pages/community/discord.png"}}" alt="discord 1"/>
           </div>
         </a>
-        <h3><a href="https://discord.gg/XGEp2cKSKF" target="_blank">Discord - Yerbas Community</a></h3>
+        <h3><a href="https://discord.gg/XGEp2cKSKF" target="_blank">Discord</a></h3>
       </div>
       <div class="w-1/2 sm:w-1/4 mb-8">
         <a href="https://t.me/Yerbas420" target="_blank">
