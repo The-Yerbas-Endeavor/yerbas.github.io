@@ -16,13 +16,14 @@ permalink: /about/
 
   <p>Launched on May 9th, 2022. Yerbas is an open-source project designed to enable instant payments to anyone around the world. The aim of the project is to create a blockchain optimized specifically for the transfer of assets such as tokens from one holder to another.</p>
 
-  <p>A fork of the bitcoin code, Yerbas features four key changes:</p>
+  <p>A combination of several forks of bitcoin code, Yerbas features five key changes:</p>
 
   <ul>
     <li>The issuance schedule (original <a href="/halving/">block reward</a> of 100 YERB)</li>
     <li>Block time (123 seconds)</li>
     <li>Total coin supply (421 Million)</li>
     <li>Mining algorithm (GhostRider)</li>
+    <li>On-chain Asset Creation</li>
   </ul>
 
   <p>The algorithm is intended to address the centralization of mining caused by ASIC hardware. In the original X16R&nbsp;<a href="/assets/documents/X16R-Whitepaper.pdf">algorithm paper</a>, the team behind the currency explains that the fixed order of ordinary hashing algorithms lends itself to the construction of ASIC miners.</p>
@@ -46,6 +47,7 @@ permalink: /about/
     <li>Yerbas uses a tiered smartnode collateral and reward system which should avoid hyperinflation. 
                     A common and potentially devastating problem with many projects that use Masternodes.</li>
     <li>Community Driven, and True Open Source</li>
+    <li>Yerbas assets (also less commonly referred to as a token) is an on-chain way of creating, storing, and transfering custom end-user generated information.</li
   </ul>
 
 </div>
