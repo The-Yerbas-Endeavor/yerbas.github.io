@@ -49,7 +49,7 @@ permalink: /about/
     <li>Yerbas uses a tiered smartnode collateral and reward system which should avoid hyperinflation. 
                     A common and potentially devastating problem with many projects that use Masternodes.</li>
     <li>Community Driven, and True Open Source</li>
-    <li>Yerbas assets</li
+    <li>Yerbas assets</li>
   </ul>
 
 </div>
