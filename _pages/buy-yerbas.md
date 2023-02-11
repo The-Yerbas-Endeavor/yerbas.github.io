@@ -12,7 +12,7 @@ permalink: /buy-yerbas/
     <div class="flex flex-wrap">
       {% for exchange in site.data.exchanges %}
             {% if exchange.kyc == false %}
-                <div class="mb-6 px-2 sm:w-1/2 md:w-1/3 text-center">
+                <div class="mb-6 px-2 sm:w-1/2 md:w-1/4 text-center">
                   <div class="bg-grey-dark max-w-sm rounded overflow-hidden shadow-md hover:by-grey">
                     <a class="block px-6 py-8" href="{{ exchange.url }}" target="_blank"><img src="{{ exchange.logo }}" alt="{{ exchange.name }} exchange"/></a>
                   </div>
@@ -27,7 +27,7 @@ permalink: /buy-yerbas/
     <div class="flex flex-wrap">
       {% for exchange in site.data.exchanges %}
         {% if exchange.kyc %}
-          <div class="mb-6 px-2 sm:w-1/2 md:w-1/3 text-center">
+          <div class="mb-6 px-2 sm:w-1/2 md:w-1/4 text-center">
             <div class="bg-grey-dark max-w-sm rounded overflow-hidden shadow-md hover:by-grey">
               <a class="block px-6 py-8" href="{{ exchange.url }}" target="_blank"><img src="{{ exchange.logo }}" alt="{{ exchange.name }} exchange"/></a>
             </div>
