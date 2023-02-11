@@ -228,7 +228,7 @@ modalCacheRef: "3.0.0.1"
     </div>
   </div>
 </div>
-<div class="section-exchange pt-20 pb-24 bg-grey-lighter text-center">
+<div class="section-exchange pt-20 pb-24 text-center">
   <h2 class="font-medium">Exchanges</h2>
   <div class="wrapper mt-8 m-auto">
     <div class="flex flex-wrap">
