@@ -27,7 +27,7 @@ header_pages:
  - _pages/pools.md
  - _pages/about.md
  - _pages/assets.md
- - _pages/smartnodesetup.md
+# - _pages/smartnodesetup.md
 
 # Build settings
 theme: minima
