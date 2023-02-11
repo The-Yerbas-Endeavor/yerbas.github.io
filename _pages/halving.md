@@ -152,7 +152,7 @@ permalink: /halving/
     <h3 class="mt-8">What is that in years?</h3>
     <p>1,388.88 / 365.25 = 3.80 years (with one leap year)</p>
     <h3 class="mt-8">How accurate are those timelines</h3>
-    <p>This is all dependent on the number of blocks, not calendar time. If the block speed is faster than one minute, it will be sooner. If slower, it will be longer than 3 years.</p>
+    <p>This is all dependent on the number of blocks, not calendar time. If the block speed is faster than two minutes, it will be sooner. If slower, it will be longer than the 3.8 years.</p>
     <h3 class="mt-8">Okay, but can I have an example?</h3>
     <p>Example: I'll work on one</p>
   </div>
