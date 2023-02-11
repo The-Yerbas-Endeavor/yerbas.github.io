@@ -36,18 +36,20 @@ permalink: /about/
   makes it harder for asics to gain a significant advantage over cpu/gpu, but it
   lacks the randomness that x16r has.</p>
 
+   <p>Yerbas assets (also less commonly referred to as a token) is an on-chain way of creating, storing, and transfering custom end-user generated information.</p>
+
   <p>No additional future algorithm forks are envisaged. Note that this may allow future ASIC development to proceed, albeit as there is a limited potential for ASIC efficiency gains compared to consumer grade hardware, we are resistant to this form of centralisation.</p>
 
   <h3>Unique characteristics of Yerbas</h3>
 
   <ul>
     <li>ASIC/FPGA Resistant – Uses the GhostRider hashing algorithm to discourage the development of ASIC hardware</li>
-    <li>Fair launch - Everyone has equal opportunity to mine or purchase YERB since day one.</li>
+    <li>Fair launch - Everyone has equal opportunity to mine or purchase YERB since day one</li>
     <li>No pre-mine, no ICO, Reward distribution: 75%miner - 20%Smartnode - 5%Development fee </li>
     <li>Yerbas uses a tiered smartnode collateral and reward system which should avoid hyperinflation. 
                     A common and potentially devastating problem with many projects that use Masternodes.</li>
     <li>Community Driven, and True Open Source</li>
-    <li>Yerbas assets (also less commonly referred to as a token) is an on-chain way of creating, storing, and transfering custom end-user generated information.</li
+    <li>Yerbas assets</li
   </ul>
 
 </div>
