@@ -105,7 +105,7 @@ modalCacheRef: "3.0.0.1"
     <h3><a href="https://wiki.yerbas.org/">Yerbas Wiki</a></h3>
     <h3><a href="https://docs.yerbas.org/">Yerbas Docs</a></h3>
 </div>  
-<div class="section-intro text-white py-20">
+<div class="bg-grey-lighter section-intro text-white py-20">
   <div class="wrapper">
     <div class="text-center m-auto" style="max-width: 900px;">
       <h2 class="text-white">Welcome to Yerbas</h2>
