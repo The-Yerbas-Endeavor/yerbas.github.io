@@ -358,7 +358,7 @@ overlooked. If you come across any problems or believe information needs to be c
     </tr>
     <tr>
       <td>Cost</td>
-      <td>100 YERB</td>
+      <td>4 YERB</td>
     </tr>
     <tr>
       <td>Reissuability</td>
