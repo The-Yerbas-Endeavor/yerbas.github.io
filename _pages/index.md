@@ -234,7 +234,7 @@ modalCacheRef: "3.0.0.1"
     <div class="flex flex-wrap">
       {% for exchange in site.data.exchanges %}
       <div class="mb-6 px-2 sm:w-1/2 md:w-1/3">
-        <div class="bg-grey-darker max-w-sm rounded overflow-hidden shadow-md hover:by-grey enlarge-on-hover">
+        <div class="bg-grey-dark max-w-sm rounded overflow-hidden shadow-md hover:by-grey enlarge-on-hover">
           <a class="block walbg3 px-6 py-4" href="{{ exchange.url }}" target="_blank" rel="nofollow"><img src="{{ exchange.logo }}" alt="{{ exchange.name }} exchange"/></a>
         </div>
       </div>
@@ -251,7 +251,7 @@ modalCacheRef: "3.0.0.1"
     <div class="flex flex-wrap">
       {% for aggregators in site.data.aggregators %}
       <div class="mb-6 px-2 sm:w-1/2 md:w-1/3">
-        <div class="bg-grey-darker max-w-sm rounded overflow-hidden shadow-md hover:by-grey enlarge-on-hover">
+        <div class="bg-grey-dark max-w-sm rounded overflow-hidden shadow-md hover:by-grey enlarge-on-hover">
           <a class="block walbg3 px-6 py-4" href="{{ aggregators.url }}" target="_blank" rel="nofollow"><img src="{{ aggregators.logo }}" alt="{{ aggregators.name }} aggregators"/></a>
         </div>
       </div>
