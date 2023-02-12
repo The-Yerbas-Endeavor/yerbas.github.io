@@ -2,7 +2,7 @@
 layout: page-w-banner
 title: About
 description: "Yerbas is a digital peer to peer network that aims to implement a use case specific blockchain, designed to efficiently handle one specific function: the transfer of assets from one party to another."
-bannerTitle: About the Yerbas Project
+bannerTitle: About the Yerbas Endeavor
 bannerImage: /assets/img/pages/about/about-banner.jpg
 permalink: /about/
 ---
