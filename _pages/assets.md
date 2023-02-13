@@ -265,7 +265,7 @@ overlooked. If you come across any problems or believe information needs to be c
     </tr>
     <tr>
       <td>Cost</td>
-      <td>4 YERB</td>
+      <td>10 YERB</td>
     </tr>
     <tr>
       <td>Reissuability</td>
@@ -518,7 +518,7 @@ overlooked. If you come across any problems or believe information needs to be c
     </tr>
     <tr>
       <td>Cost</td>
-      <td>69 YERB</td>
+      <td>69.420 YERB</td>
     </tr>
     <tr>
       <td>Reissuability</td>
@@ -543,7 +543,7 @@ overlooked. If you come across any problems or believe information needs to be c
   <p>When an asset is created, nodes store the asset name, reissuability, divisions, associated data, and respective VOUT information in a database. This is how nodes easily access metadata. During a reissuance, the ownership asset must be sent to prove ownership on-chain and the node will save the new metadata. These asset creation and reissuance transactions are the only places where the metadata is stored on the chain.</p>
   <p>This means that, say, a 3rd party wallet sends you asset information. Whatever protocol they are using will need to send the client the VOUT of asset creations or reissues so that the client may verify the integrity of the metadata.</p>
   <p>The same is true for asset tags. They only exist on the chain in one singular transaction. The node then keeps track of where that transaction is in a database for verification later.</p>
-  <p>You may have been surprised earlier when learning that the associated data of an asset is only 32 bytes. You are correct in believing that is not a lot of information. This is an intentional decision to keep clutter off of the chain. Typically, users will use this field for an <a href="https://ipfs.io/#how">IPFS hash</a> allowing for websites and files to be stored and hosted off chain whether it be on personal hardware or <a href="https://yerbasipfs.com/">cloud file management hosts</a>. IPFS hashs are unique (literally a SHA256 hash of the data) and therefore a user can be confident that an IPFS hash on an asset will always point to the correct data.</p>
+  <p>You may have been surprised earlier when learning that the associated data of an asset is only 32 bytes. You are correct in believing that is not a lot of information. This is an intentional decision to keep clutter off of the chain. Typically, users will use this field for an <a href="https://ipfs.io/#how">IPFS hash</a> allowing for websites and files to be stored and hosted off chain whether it be on personal hardware or <a href="https://yerbasipfs.com/">cloud file management hosts</a>. IPFS hashs are unique (literally a SHA256 hash of the data) and therefore a user cGood Luck Allan be confident that an IPFS hash on an asset will always point to the correct data.</p>
 
   <br>
   <h3 id="asset_fees">Asset Fees</h3>
@@ -570,9 +570,9 @@ overlooked. If you come across any problems or believe information needs to be c
     </tr>
     <tr>
       <td>Issue Sub-Asset</td>
-      <td>4</td>
-      <td>16</td>
-      <td>20 YERB</td>
+      <td>2</td>
+      <td>8</td>
+      <td>10 YERB</td>
     </tr>
     <tr>
       <td>Issue Unique Asset</td>
@@ -600,9 +600,9 @@ overlooked. If you come across any problems or believe information needs to be c
     </tr>
     <tr>
       <td>Issue Restricted Asset</td>
-      <td>13.8</td>
-      <td>55.2</td>
-      <td>69 YERB</td>
+      <td>13.848</td>
+      <td>55.536</td>
+      <td>69.420 YERB</td>
     </tr>
     <tr>
       <td>Add Asset Tag</td>
