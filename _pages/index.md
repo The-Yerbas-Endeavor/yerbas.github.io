@@ -109,7 +109,7 @@ modalCacheRef: "3.0.0.1"
   <div class="wrapper">
     <div class="text-center m-auto" style="max-width: 900px;">
       <h2 class="text-white">Welcome to Yerbas</h2>
-      <p style="max-width: 900px;" class="m-auto">Yerbas is a protocol based on a fork of the Bitcoin code which adds features specifically focused on allowing tokens to be issued on the Yerbas blockchain. These tokens can have whatever properties the issue of the token decides - so they can be limited in quantity, named and be issued as securities or as collectibles.</p>
+      <p style="max-width: 900px;" class="m-auto">Yerbas is a protocol based on a fork of the Bitcoin/Dash/Raptoreum and a pinch of Raven code which adds features specifically focused on allowing tokens to be issued on the Yerbas blockchain. These tokens can have whatever properties the issue of the token decides - so they can be limited in quantity, named and be issued as securities or as collectibles.</p>
       <p class="mt-8">You can make your own security token within minutes and have it trade worldwide.</p>
       <hr class="border-b pt-6"/>
     </div>
@@ -132,13 +132,13 @@ modalCacheRef: "3.0.0.1"
               <ul class="list-reset w-full sm:w-1/2 md:w-1/3">
                 <li>Gold bar</li>
                 <li>Silver coins</li>
-                <li>Physical Euros</li>
+                <li>Brownies</li>
                 <li>Buffalo Nickels</li>
               </ul>
               <ul class="list-reset w-full sm:w-1/2 md:w-1/3">
                 <li>Land Deeds</li>
-                <li>DC Comics Presents #26</li>
-                <li>Energy credits (Electricity, Wood, Gas, Oil, Wind)</li>
+                <li>Cook NFT's</li>
+                <li>Farm credits (Soil, Nutrients, Water, Lumens, Wind)</li>
               </ul>
             </div>
           </div>
@@ -153,7 +153,7 @@ modalCacheRef: "3.0.0.1"
             <h3 class="text-white">Representing virtual goods</h3>
             <ul class="list-reset">
               <li>Tickets to an event such as a Sacramento Kings game with the ability to resell without worry of duplicates being made</li>
-              <li>A license to allow an activity</li>
+              <li>A license to allow an activity ;)</li>
               <li>An access token to use a service</li>
               <li>In-game currency and items, transferable to other gamers outside of the game platform</li>
             </ul>
@@ -163,7 +163,7 @@ modalCacheRef: "3.0.0.1"
       <div id="tab-3" class="tab-pane">
         <div class="flex flex-wrap">
           <div class="w-full md:w-1/3 lg:w-1/4 text-center">
-            <img class="animated mb-4" id="tab-token" style="max-width: 150px;margin-top: 15px;" src="{{"/assets/img/svg/token.svg"}}" alt="token"/>
+            <img class="animated mb-4" id="tab-token" style="max-width: 150px;margin-top: 15px;" src="{{"/assets/img/svg/yerb.svg"}}" alt="yerb"/>
           </div>
           <div class="sm:w-full md:w-2/3 lg:w-3/4">
            <h3 class="text-white">Representing real world custodied physical or digital asset</h3>
@@ -186,7 +186,7 @@ modalCacheRef: "3.0.0.1"
             <ul class="list-reset">
               <li>Gift cards</li>
               <li>Airline miles</li>
-              <li>Reward points</li>
+              <li>Fronts points</li>
             </ul>
           </div>
         </div>

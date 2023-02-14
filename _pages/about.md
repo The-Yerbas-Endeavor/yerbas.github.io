@@ -21,7 +21,7 @@ permalink: /about/
   <ul>
     <li>The issuance schedule (original <a href="/halving/">block reward</a> of 100 YERB)</li>
     <li>Block time (123 seconds)</li>
-    <li>Total coin supply (421 Million)</li>
+    <li>Total coin supply (420 Million)</li>
     <li>Mining algorithm (GhostRider)</li>
     <li>On-chain Asset Creation</li>
   </ul>
