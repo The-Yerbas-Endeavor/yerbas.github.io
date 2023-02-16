@@ -558,9 +558,9 @@ overlooked. If you come across any problems or believe information needs to be c
     </tr>
     <tr>
       <td>Issue Asset</td>
-      <td>4</td>
-      <td>16</td>
-      <td>20 YERB</td>
+      <td>13.848</td>
+      <td>55.536</td>
+      <td>69.420 YERB</td>
     </tr>
     <tr>
       <td>Reissue Asset</td>
@@ -570,9 +570,9 @@ overlooked. If you come across any problems or believe information needs to be c
     </tr>
     <tr>
       <td>Issue Sub-Asset</td>
-      <td>2</td>
-      <td>8</td>
-      <td>10 YERB</td>
+      <td>4</td>
+      <td>16</td>
+      <td>20 YERB</td>
     </tr>
     <tr>
       <td>Issue Unique Asset</td>
@@ -582,9 +582,9 @@ overlooked. If you come across any problems or believe information needs to be c
     </tr>
     <tr>
       <td>Issue Message Channel</td>
-      <td>0.8</td>
-      <td>3.2</td>
-      <td>4 YERB</td>
+      <td>0.84</td>
+      <td>3.36</td>
+      <td>4.20 YERB</td>
     </tr>
     <tr>
       <td>Issue Qualifier</td>
