@@ -219,7 +219,7 @@ overlooked. If you come across any problems or believe information needs to be c
     </tr>
     <tr>
       <td>Cost</td>
-      <td>20 YERB</td>
+      <td>69.420 YERB</td>
     </tr>
     <tr>
       <td>Reissuability</td>
@@ -265,7 +265,7 @@ overlooked. If you come across any problems or believe information needs to be c
     </tr>
     <tr>
       <td>Cost</td>
-      <td>10 YERB</td>
+      <td>20 YERB</td>
     </tr>
     <tr>
       <td>Reissuability</td>
@@ -431,7 +431,7 @@ overlooked. If you come across any problems or believe information needs to be c
     </tr>
     <tr>
       <td>Cost</td>
-      <td>40 YERB</td>
+      <td>42 YERB</td>
     </tr>
     <tr>
       <td>Reissuability</td>
@@ -590,7 +590,7 @@ overlooked. If you come across any problems or believe information needs to be c
       <td>Issue Qualifier</td>
       <td>8</td>
       <td>32</td>
-      <td>40 YERB</td>
+      <td>42.0 YERB</td>
     </tr>
     <tr>
       <td>Issue Sub-Qualifier</td>
