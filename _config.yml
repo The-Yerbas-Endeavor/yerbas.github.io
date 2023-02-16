@@ -26,7 +26,7 @@ header_pages:
  - _pages/community.md
  - _pages/pools.md
  - _pages/about.md
- - _pages/assets.md
+# - _pages/assets.md
 # - _pages/smartnodesetup.md
 
 # Build settings
