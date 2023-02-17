@@ -22,7 +22,7 @@
   kyc: false
   donates_to_project: false
 
-  - name: CoinPaprika
+- name: CoinPaprika
   logo: /assets/img/pages/aggregators/coinpaprika.png
   url:  https://coinpaprika.com/coin/yerb-yerbas/
   kyc: false
