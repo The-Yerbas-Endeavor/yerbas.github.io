@@ -284,3 +284,9 @@ table {
     border: 1px solid $grey-color-light;
   }
 }
+.center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}
