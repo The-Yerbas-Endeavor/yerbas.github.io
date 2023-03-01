@@ -3,9 +3,9 @@ layout: default
 title: Home
 permalink: /
 modalTitle: "Announcement"
-modalContent: 'New Wallet Release: Upgrade to Version 3.0.0.1 <a href="/wallet">Click Here to Upgrade</a>'
+modalContent: 'New Wallet Release: Upgrade to Version 3.1.1.5 <a href="/wallet">Click Here to Upgrade</a>'
 modalId: "upgrade-notification"
-modalCacheRef: "3.0.0.1"
+modalCacheRef: "3.1.1.5"
 ---
 
 <link href="/assets/vendors/mediabox/mediabox.css" rel="stylesheet">
