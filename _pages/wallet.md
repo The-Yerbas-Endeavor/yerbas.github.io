@@ -8,7 +8,7 @@ permalink: /wallet/
 
 <div class="page-content">
   <div class="wrapper text-center pt-8 pb-20" style="max-width: 700px;">
-    <h2 class="mt-10 mb-16">Desktop Downloads Here</h2>
+    <h2 class="mt-10 mb-16">Desktop Downloads</h2>
     <div class="flex flex-wrap align-center justify-center">
       <div class="w-full sm:w-1/2 md:w-1/3 px-4 mb-12">
         <div class="bg-grey-lighter max-w-sm rounded overflow-hidden shadow-md hover:by-grey">
