@@ -26,7 +26,7 @@ permalink: /wallet/
         <div class="bg-grey-lighter max-w-sm rounded overflow-hidden shadow-md hover:by-grey">
           <a class="block px-6 py-4" href="https://github.com/The-Yerbas-Endeavor/Yerbas/releases" target="_blank"><img style="max-height: 125px;" src="/assets/img/pages/wallet/linux.svg" align="middle" alt="Linux wallet"/></a>
         </div>
-        <a class="block mt-8 text-lg bg-green hover:bg-green-dark rounded p-2 text-white" href="https://github.com/The-Yerbas-Endeavor/yerbas/releases/download/v3.0.0.1/yerbas-ubuntu20-3.1.1.5.tar.gz" download><i class="zmdi zmdi-download"></i><span class="inline-block ml-3">Linux</span></a>
+        <a class="block mt-8 text-lg bg-green hover:bg-green-dark rounded p-2 text-white" href="https://github.com/The-Yerbas-Endeavor/yerbas/releases/download/v3.1.1.5/yerbas-ubuntu20-3.1.1.5.tar.gz" download><i class="zmdi zmdi-download"></i><span class="inline-block ml-3">Linux</span></a>
       </div>
     </div>
     <h3 class="">For verification hashes and signatures visit our github releases</h3>
