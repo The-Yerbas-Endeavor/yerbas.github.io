@@ -65,7 +65,7 @@ permalink: /smartnode-setup/
                    su username</b></p></div>
                 <p>Get Yerbas wallet and daemon:</p>
             <div>
-                 <p><b>wget https://github.com/The-Yerbas-Endeavor/yerbas/releases/download/v3.1.1.5/yerbas-ubuntu20-3.1.1.5.tar.gz<br/>
+                 <p><b>wget https://github.com/The-Yerbas-Endeavor/yerbas/releases/download/v3.1.1.5/yerbas-ubuntu20-v3.1.1.5.tar.gz<br/>
                      tar -xf yerbas-ubuntu20-2.1.1.4.tar.gz<br/>
                      mkdir ~/.yerbascore && touch ~/.yerbascore/yerbas.conf<br/>
                      echo daemon=1 >> ~/.yerbascore/yerbas.conf<br/>
