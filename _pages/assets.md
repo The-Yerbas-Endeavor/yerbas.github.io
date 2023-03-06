@@ -564,9 +564,9 @@ overlooked. If you come across any problems or believe information needs to be c
     </tr>
     <tr>
       <td>Reissue Asset</td>
-      <td>0.8</td>
-      <td>3.2</td>
-      <td>4 YERB</td>
+      <td>4</td>
+      <td>16</td>
+      <td>20 YERB</td>
     </tr>
     <tr>
       <td>Issue Sub-Asset</td>
