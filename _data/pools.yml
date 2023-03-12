@@ -69,3 +69,7 @@
 - name: ZeusMiningPool
   url: https://zeusminingpool.com/
   twitter: ''
+  
+- name: TazMining
+  url: https://tazmining.ch/
+  twitter: ''
