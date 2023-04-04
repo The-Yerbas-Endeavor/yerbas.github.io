@@ -4,12 +4,6 @@
   kyc: false
   donates_to_project: false
 
-- name: Nomics
-  logo: /assets/img/pages/aggregators/nomics.png
-  url:  https://nomics.com/assets/YERB-YERBAS?d=1669131794
-  kyc: false
-  donates_to_project: false
-
 - name: AltBusters
   logo: /assets/img/pages/aggregators/altbusters.png
   url:  https://altbuster.com/
