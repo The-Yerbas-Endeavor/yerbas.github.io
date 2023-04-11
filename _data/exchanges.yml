@@ -1,9 +1,3 @@
-- name: Exbitron
-  logo: /assets/img/pages/exchanges/exbitron.png
-  url:  https://www.exbitron.com/trading/yerbusdt
-  kyc: true
-  donates_to_project: false
-
 - name: Bitoreum Exchange
   logo: /assets/img/pages/exchanges/BitoreumLogo.png
   url: https://www.bitoreum.exchange/market/yerbusdt
