@@ -1,3 +1,9 @@
+- name: coindex
+  logo: /assets/img/pages/aggregators/cc-logo-3.png
+  url:  https://coincodex.com/crypto/yerbas/
+  kyc: false
+  donates_to_project: false
+
 - name: LiveCoinWatch
   logo: /assets/img/pages/aggregators/livecoinwatch.png
   url:  https://www.livecoinwatch.com/price/Yerbas-YERB
