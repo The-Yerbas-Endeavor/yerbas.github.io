@@ -1,5 +1,5 @@
 - name: coindex
-  logo: /assets/img/pages/aggregators/cc-logo-3.png
+  logo: /assets/img/pages/aggregators/cc-logo.png
   url:  https://coincodex.com/crypto/yerbas/
   kyc: false
   donates_to_project: false
