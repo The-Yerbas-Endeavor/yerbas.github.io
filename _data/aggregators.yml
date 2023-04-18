@@ -5,13 +5,13 @@
   donates_to_project: false
 
 - name: LiveCoinWatch
-  logo: /assets/img/pages/aggregators/livecoinwatch.png
+  logo: /assets/img/pages/aggregators/livecoinwatch2.png
   url:  https://www.livecoinwatch.com/price/Yerbas-YERB
   kyc: false
   donates_to_project: false
 
 - name: AltBusters
-  logo: /assets/img/pages/aggregators/altbusters.png
+  logo: /assets/img/pages/aggregators/altbusters2.png
   url:  https://altbuster.com/
   kyc: false
   donates_to_project: false
