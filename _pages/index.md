@@ -17,7 +17,7 @@ modalCacheRef: "3.1.2.6"
     border: 2px solid #4F7942;
   }
   .banner {
-    background: url("/assets/img/media/YerbasLogo3.png");
+  /* background: url("/assets/img/media/YerbasLogo3.png");*/ 
     padding: 12em 0 13em;
     animation: animatedBackground 15s linear infinite;
     -moz-animation: animatedBackground 15s linear infinite;
