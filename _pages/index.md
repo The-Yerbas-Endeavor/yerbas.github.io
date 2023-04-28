@@ -3,9 +3,9 @@ layout: default
 title: Home
 permalink: /
 modalTitle: "Announcement"
-modalContent: 'New Wallet Release: Upgrade to Version 3.1.1.5 <a href="/wallet">Click Here to Upgrade</a>'
+modalContent: 'New Wallet Release: Upgrade to Version 3.1.2.6 <a href="/wallet">Click Here to Upgrade</a>'
 modalId: "upgrade-notification"
-modalCacheRef: "3.1.1.5"
+modalCacheRef: "3.1.2.6"
 ---
 
 <link href="/assets/vendors/mediabox/mediabox.css" rel="stylesheet">
@@ -17,7 +17,7 @@ modalCacheRef: "3.1.1.5"
     border: 2px solid #4F7942;
   }
   .banner {
-    background: url("/assets/img/media/YerbasLogo2.png");
+    background: url("/assets/img/media/YerbasLogo3.png");
     padding: 12em 0 13em;
     animation: animatedBackground 15s linear infinite;
     -moz-animation: animatedBackground 15s linear infinite;
