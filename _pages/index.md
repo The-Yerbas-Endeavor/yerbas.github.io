@@ -19,11 +19,11 @@ modalCacheRef: "3.1.2.6"
   .banner {
     background: url("/assets/img/media/YerbasLogo3.png");
     padding: 12em 0 13em;
-    animation: animatedBackground 15s linear infinite;
-    -moz-animation: animatedBackground 15s linear infinite;
-    -webkit-animation: animatedBackground 15s linear infinite;
-    -ms-animation: animatedBackground 15s linear infinite;
-    -o-animation: animatedBackground 15s linear infinite;
+    animation: animatedBackground 150s linear infinite;
+    -moz-animation: animatedBackground 150s linear infinite;
+    -webkit-animation: animatedBackground 150s linear infinite;
+    -ms-animation: animatedBackground 150s linear infinite;
+    -o-animation: animatedBackground 150s linear infinite;
   }
   .banner h1 {
     max-width: 800px;
