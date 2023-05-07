@@ -29,7 +29,7 @@
   donates_to_project: false
 
 - name: Will it Trade
-  logo: /assets/img/pages/aggregators/wit.png
+  logo: /assets/img/pages/aggregators/poocoin.png
   url:  https://beta.nikovash.com/
   kyc: false
   donates_to_project: false
