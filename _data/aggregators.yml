@@ -27,3 +27,9 @@
   url:  https://poocoin.app/tokens/0x2100591c0b692c53a0E11cc328646309e6ea12eF
   kyc: false
   donates_to_project: false
+
+- name: Will it Trade
+  logo: /assets/img/pages/aggregators/WIT.png
+  url:  https://beta.nikovash.com/
+  kyc: false
+  donates_to_project: false
