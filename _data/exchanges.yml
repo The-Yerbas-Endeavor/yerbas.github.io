@@ -1,9 +1,3 @@
-- name: Bitoreum Exchange
-  logo: /assets/img/pages/exchanges/BitoreumLogo.png
-  url: https://www.bitoreum.exchange/market/yerbusdt
-  kyc: true
-  donates_to_project: false
-
 - name: Xeggex
   logo: /assets/img/pages/exchanges/xeggex_blue_with_box.png
   url: https://xeggex.com/market/YERB_USDT
