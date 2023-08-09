@@ -14,19 +14,19 @@ permalink: /wallet/
         <div class="bg-grey-lighter max-w-sm rounded overflow-hidden shadow-md hover:by-grey">
           <a class="block px-6 py-4" href="https://github.com/The-Yerbas-Endeavor/Yerbas/releases" target="_blank"><img style="max-height: 125px;" src="/assets/img/pages/wallet/windows.svg" align="middle" alt=" Windows wallet"/></a>
         </div>
-        <a class="block walbg mt-8 text-lg rounded p-2 text-white" href="https://github.com/The-Yerbas-Endeavor/yerbas/releases/download/v3.1.2.8/yerbas-win-v3.1.2.8.zip" download><i class="zmdi zmdi-download"></i><span class="inline-block ml-3">Windows</span></a>
+        <a class="block walbg mt-8 text-lg rounded p-2 text-white" href="https://github.com/The-Yerbas-Endeavor/yerbas/releases/download/v3.1.2.7/yerbas-win-v3.1.2.7.zip" download><i class="zmdi zmdi-download"></i><span class="inline-block ml-3">Windows</span></a>
       </div>
       <div class="w-full sm:w-1/2 md:w-1/3 px-4 mb-12">
         <div class="bg-grey-lighter max-w-sm rounded overflow-hidden shadow-md hover:by-grey">
           <a class="block px-6 py-4" href="https://github.com/The-Yerbas-Endeavor/Yerbas/releases" target="_blank"><img style="max-height: 125px;" src="/assets/img/pages/wallet/mac.svg" align="middle" alt=" Mac wallet"/></a>
         </div>
-        <a class="block walbg mt-8 text-lg rounded p-2 text-white" href="https://github.com/The-Yerbas-Endeavor/yerbas/releases/download/v3.1.2.8/Yerbas-Qt-v3.1.2.8.dmg" download><i class="zmdi zmdi-download"></i><span class="inline-block ml-3">Mac</span></a>
+        <a class="block walbg mt-8 text-lg rounded p-2 text-white" href="https://github.com/The-Yerbas-Endeavor/yerbas/releases/download/v3.1.2.7/Yerbas-Qt-v3.1.2.7.dmg" download><i class="zmdi zmdi-download"></i><span class="inline-block ml-3">Mac</span></a>
       </div>
       <div class="w-full sm:w-1/2 md:w-1/3 px-4 mb-12">
         <div class="bg-grey-lighter max-w-sm rounded overflow-hidden shadow-md hover:by-grey">
           <a class="block px-6 py-4" href="https://github.com/The-Yerbas-Endeavor/Yerbas/releases" target="_blank"><img style="max-height: 125px;" src="/assets/img/pages/wallet/linux.svg" align="middle" alt="Linux wallet"/></a>
         </div>
-        <a class="block walbg mt-8 text-lg rounded p-2 text-white" href="https://github.com/The-Yerbas-Endeavor/yerbas/releases/download/v3.1.2.8/yerbas-ubuntu20-v3.1.2.8.tar.gz" download><i class="zmdi zmdi-download"></i><span class="inline-block ml-3">Linux</span></a>
+        <a class="block walbg mt-8 text-lg rounded p-2 text-white" href="https://github.com/The-Yerbas-Endeavor/yerbas/releases/download/v3.1.2.7/yerbas-ubuntu20-v3.1.2.7.tar.gz" download><i class="zmdi zmdi-download"></i><span class="inline-block ml-3">Linux</span></a>
       </div>
     </div>
     <h3 class="">For verification hashes and signatures visit our github releases</h3>
