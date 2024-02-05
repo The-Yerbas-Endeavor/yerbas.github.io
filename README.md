@@ -4,7 +4,6 @@ Current Build Status: ![Build Status](https://travis-ci.org/YerbasProject/Yerbas
 Live site: [yerbas.org](https://yerbas.org)
 Report problems or help improve the site by opening a [new issue](https://github.com/The-Yerbas-Endeavor/The-Yerbas-Endeavor.github.io.org/issues/new) or [pull request](https://github.com/The-Yerbas-Endeavor/The-Yerbas-Endeavor.github.io.org/compare).
 
-> Note: The Yerbas.com website now redirects to yerbas.org
 
 ## Earn Yerbas for Contributing to the Yerbas website (TBD)
 Open issues [labeled with "Bounty"](https://github.com/The-Yerbas-Endeavor/The-Yerbas-Endeavor.github.io/labels/Bounty)

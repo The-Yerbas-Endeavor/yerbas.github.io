@@ -4,6 +4,12 @@
   kyc: true
   donates_to_project: false
 
+- name: Exbitron
+  logo: /assets/img/pages/exchanges/exbitron.png
+  url:  https://exbitron.com/trade?market=yerb-usdt
+  kyc: false
+  donates_to_project: false
+
 - name: PancakeSwap
   logo: /assets/img/pages/exchanges/pancakeswap.png
   url: https://pancakeswap.finance/swap?outputCurrency=0x2100591c0b692c53a0E11cc328646309e6ea12eF&inputCurrency=0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56
