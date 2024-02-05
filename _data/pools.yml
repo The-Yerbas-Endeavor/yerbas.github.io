@@ -1,13 +1,9 @@
-- name: Rplant
-  url: https://pool.rplant.xyz/
-  twitter: ''
-
 - name: PmpMining
-  url: https://ypool.pmpmining.com/
+  url: https://pmpmining.com/#yerbas
   twitter: ''
   
-- name: Crimson-pool
-  url: https://crimson-pool.com/#yerb
+- name: Mining4People
+  url: https://mining4people.com/pool/yerbas-pplns
   twitter: ''
 
 - name: ZergPool
@@ -18,42 +14,26 @@
   url: https://zpool.ca/
   twitter: ''
 
-- name: Bitoreum
-  url: https://pool.bitoreum.org/
+- name: Miningpools
+  url: https://miningpools.pro/
   twitter: ''
 
-- name: Ausminers
-  url: https://rtm.ausminers.com/
+- name: Mining-Dutch
+  url: https://www.mining-dutch.nl/pools/yerbas.php
   twitter: ''
 
-- name: Coinxpool
-  url: https://coinxpool.com/
+- name: Tazmining
+  url: https://tazmining.ch/#yerb1
   twitter: ''
 
 - name: Kriptokyng
   url: https://kriptokyng.com/#yerb
   twitter: ''
 
-- name: TazMining
-  url: https://tazmining.ch/
+- name: Cminer
+  url: https://cminer.org/
   twitter: ''
 
-- name: Phalanxmine
-  url: https://pool.phalanxmine.com/
-  twitter: ''
-  
-- name: Phalanxmine
-  url: https://pool.mr-miner.org/
-  twitter: ''
-
-- name: xaiten
-  url: http://xnas.xaiten.com:39080/
-  twitter: ''
-
-- name: GoPool.Cash
-  url: https://gopool.cash/
-  twitter: ''
-
-- name: GoPool.Cash
-  url: https://gopool.cash/
+- name: Miningpower
+  url: https://prop.miningpower.eu/#yerbas-prop
   twitter: ''
