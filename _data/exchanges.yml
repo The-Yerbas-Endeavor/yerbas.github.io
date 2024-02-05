@@ -7,7 +7,7 @@
 - name: Exbitron
   logo: /assets/img/pages/exchanges/exbitron.png
   url:  https://exbitron.com/trade?market=yerb-usdt
-  kyc: false
+  kyc: true
   donates_to_project: false
 
 - name: PancakeSwap
