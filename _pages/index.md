@@ -2,13 +2,13 @@
 layout: default
 title: Home
 permalink: /
-
+---
 
 /* modalTitle: "Announcement"
 modalContent: 'New Wallet Release: Upgrade to Version 3.1.2.8 <a href="/wallet">Click Here to Upgrade</a>'
 modalId: "upgrade-notification"
 modalCacheRef: "3.1.4.20" */
----
+
 <link href="/assets/vendors/mediabox/mediabox.css" rel="stylesheet">
 <style>
   .hero-buttons {
