@@ -14,7 +14,7 @@ permalink: /community/
       <div class="w-1/2 sm:w-1/4 mb-8">
         <a href="https://x.com/Yerbas_Endeavor" target="_blank">
           <div class="mb-6 py-4 px-5 inline-block rounded-full bg-grey hover:bg-grey-dark">
-            <i class="zmdi zmdi-x text-5xl text-white"></i>
+            <i class="zmdi zmdi-twitter text-5xl text-white"></i>
           </div>
         </a>
         <h3><a href="https://x.com/Yerbas_Endeavor" target="_blank">X</a></h3>
