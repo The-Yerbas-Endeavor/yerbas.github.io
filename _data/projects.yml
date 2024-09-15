@@ -30,7 +30,7 @@
       value: upcoming
   social:
     - name: YerbasHelper OS
-      url: https://twitter.com/technobuddha
+      url: https://x.com/technobuddha
 
 - name: Electrum Yerbas
   description: >
@@ -128,8 +128,8 @@
   social:
     - name: YERBFT Discord
       url: https://discord.gg/ZSqqS5Gr
-    - name: YERBFT Twitter
-      url: https://twitter.com/YERBFT_ART
+    - name: YERBFT x
+      url: https://x.com/YERBFT_ART
     - name: YERBFT Instagram
       url: https://www.instagram.com/yerbft.art/
     - name: Find YERBFT NFTs on Yerbas Trader
@@ -155,8 +155,8 @@
   social:
     - name: SYNTH Discord
       url: https://discord.gg/R2pveQWx
-    - name: SYNTH Twitter
-      url: https://twitter.com/NiftySynth
+    - name: SYNTH x
+      url: https://x.com/NiftySynth
 
 - name: YerbasWallet by MoonTree
   description: >
@@ -225,10 +225,10 @@
     - name: Add targeted encyption messages to the protocol - way to denote what decryption key is needed for this message.
       value: upcoming
   social:
-    - name: Squawker Twitter
-      url: https://twitter.com/Squawker__
-    - name: (Lead/only Dev) BadGuyTy Twitter
-      url: https://twitter.com/badguyty
+    - name: Squawker x
+      url: https://x.com/Squawker__
+    - name: (Lead/only Dev) BadGuyTy x
+      url: https://x.com/badguyty
     - name: Discord - @badguyty
       url: https://discord.gg/pEnHZbqhZV
 
@@ -247,5 +247,5 @@
   social:
     - name: Support
       url: https://t.me/+TdoSFV7MVXA1YWEy
-    - name: NOWNodes Twitter
-      url: https://twitter.com/NowNodes
+    - name: NOWNodes x
+      url: https://x.com/NowNodes
