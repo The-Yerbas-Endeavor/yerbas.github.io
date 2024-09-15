@@ -12,12 +12,12 @@ permalink: /community/
     <p>We have a number of active and growing communities for you to choose from:</p>
     <div class="flex flex-wrap pt-16 pb-32 m-auto" style="max-width: 800px;">
       <div class="w-1/2 sm:w-1/4 mb-8">
-        <a href="https://twitter.com/Yerbas_Endeavor" target="_blank">
+        <a href="https://x.com/Yerbas_Endeavor" target="_blank">
           <div class="mb-6 py-4 px-5 inline-block rounded-full bg-grey hover:bg-grey-dark">
             <i class="zmdi zmdi-twitter text-5xl text-white"></i>
           </div>
         </a>
-        <h3><a href="https://twitter.com/Yerbas_Endeavor" target="_blank">Twitter</a></h3>
+        <h3><a href="https://x.com/Yerbas_Endeavor" target="_blank">Twitter</a></h3>
       </div>
       <div class="w-1/2 sm:w-1/4 mb-8">
         <a href="https://discord.gg/XGEp2cKSKF" target="_blank">
