@@ -99,9 +99,7 @@ modalCacheRef: "3.1.4.20" */
     </div>
   </div>
   <br>
-        <a class="block px-6 py-4" href="https://wrap.yerbas.org" target="_blank"><img style="max-height: 50px;" src="/assets/img/pages/wallet/wyerbas.png" align="middle" alt=" wYerbas"/>wYerbas</a>
     <h3><a href="https://docs.yerbas.org/">Yerbas Docs</a></h3>
-    
 </div>  
 <div class="bg-grey-lighter section-intro text-white py-20">
   <div class="wrapper">
