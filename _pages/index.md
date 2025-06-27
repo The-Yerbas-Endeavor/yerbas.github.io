@@ -95,7 +95,8 @@ modalCacheRef: "3.1.4.20" */
     <div class="video-icon animated fadeInRight flex content-center justify-center font-semibold mt-4" uk-lightbox>
       <a class="video-icon-button mr-4 mediabox" href="https://youtu.be/9ggB5VjveYQ">
       </a>
-    <span class="mt-2">How to mine Yerbas</span>
+    <span class="mt-2">How to mine Yerbas<a class="video-icon-button mr-4 mediabox" href="https://youtu.be/9ggB5VjveYQ">
+      </a></span>
     </div>
   </div>
   <br>
