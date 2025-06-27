@@ -95,11 +95,13 @@ modalCacheRef: "3.1.4.20" */
     <div class="video-icon animated fadeInRight flex content-center justify-center font-semibold mt-4" uk-lightbox>
       <a class="video-icon-button mr-4 mediabox" href="https://youtu.be/9ggB5VjveYQ">
       </a>
-    <span class="mt-2">How to mine Yerbas</span>
+    <h3><a href="https://youtu.be/9ggB5VjveYQ">How to mine YERB</a></h3>
     </div>
   </div>
   <br>
+        <a class="block px-6 py-4" href="https://wrap.yerbas.org" target="_blank"><img style="max-height: 50px;" src="/assets/img/pages/wallet/wyerbas.png" align="middle" alt=" wYerbas"/>wYerbas</a>
     <h3><a href="https://docs.yerbas.org/">Yerbas Docs</a></h3>
+    
 </div>  
 <div class="bg-grey-lighter section-intro text-white py-20">
   <div class="wrapper">
