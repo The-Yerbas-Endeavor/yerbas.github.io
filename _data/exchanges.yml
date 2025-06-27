@@ -4,16 +4,20 @@
   kyc: true
   donates_to_project: false
 
-- name: Bitoreum Exchange
-  logo: /assets/img/pages/exchanges/BitoreumLogo.png
-  url: https://www.bitoreum.exchange/market/yerbusdt
-  kyc: true
-  donates_to_project: false
-
-- name: PancakeSwap
-  logo: /assets/img/pages/exchanges/pancakeswap.png
-  url: https://pancakeswap.finance/swap?outputCurrency=0x2100591c0b692c53a0E11cc328646309e6ea12eF&inputCurrency=0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56
+- name: Spectrade
+  logo: /assets/img/pages/exchanges/Spectrade.png
+  url: https://trade.spectrade.io/#/market/DEX.YERB_DEX.USDT
   kyc: false
   donates_to_project: false
 
+//- name: Bitoreum Exchange
+//  logo: /assets/img/pages/exchanges/BitoreumLogo.png
+//  url: https://www.bitoreum.exchange/market/yerbusdt
+//  kyc: true
+//  donates_to_project: false
 
+//- name: PancakeSwap
+//  logo: /assets/img/pages/exchanges/pancakeswap.png
+//  url: https://pancakeswap.finance/swap?outputCurrency=0x2100591c0b692c53a0E11cc328646309e6ea12eF&inputCurrency=0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56
+//  kyc: false
+//  donates_to_project: false
