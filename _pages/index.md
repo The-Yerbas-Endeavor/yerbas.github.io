@@ -2,11 +2,12 @@
 layout: default
 title: Home
 permalink: /
-modalTitle: "Announcement"
-modalContent: 'New Wallet Release: Upgrade to Version 3.0.0.1 <a href="/wallet">Click Here to Upgrade</a>'
-modalId: "upgrade-notification"
-modalCacheRef: "3.0.0.1"
 ---
+
+/* modalTitle: "Announcement"
+modalContent: 'New Wallet Release: Upgrade to Version 3.1.2.8 <a href="/wallet">Click Here to Upgrade</a>'
+modalId: "upgrade-notification"
+modalCacheRef: "3.1.4.20" */
 
 <link href="/assets/vendors/mediabox/mediabox.css" rel="stylesheet">
 <style>
@@ -17,7 +18,7 @@ modalCacheRef: "3.0.0.1"
     border: 2px solid #4F7942;
   }
   .banner {
-    background: url("/assets/img/home/hexagonal-grid.png");
+  /* background: url("/assets/img/media/YerbasLogo3.png");*/ 
     padding: 12em 0 13em;
     animation: animatedBackground 15s linear infinite;
     -moz-animation: animatedBackground 15s linear infinite;
@@ -63,6 +64,9 @@ modalCacheRef: "3.0.0.1"
   .enlarge-on-hover:hover {
     transform: scale(1.05);
   }
+  .bg-grey-lighter {
+  background-color: #111;
+}
 
 @keyframes animatedBackground {
 0% { background-position: 0 0; }
@@ -86,28 +90,22 @@ modalCacheRef: "3.0.0.1"
     <h1 class="animated fadeInRight mb-3 mb-2 m-auto leading-tight">Yerbas is a peer-to-peer decentralized blockchain, handling the efficient creation and transfer of assets from one party to another.</h1>
     <div class="animated fadeInLeft hero-buttons">
       <a class="btn btn-primary mx-2 mt-4 mb-3 px-3 py-3 font-medium text-base rounded text-white hover:text-white" href="/wallet/">Get Your Wallet</a>
-      <a class="btn btn-ghost mx-2 mt-4 mb-3 px-3 py-3 font-medium text-base rounded text-black hover:text-white" href="/buy-yerbas/">Buy Yerbas</a>
+      <a class="btn btn-primary mx-2 mt-4 mb-3 px-3 py-3 font-medium text-base rounded text-black hover:text-white" href="/buy-yerbas/">Buy Yerbas</a>
     </div>
     <div class="video-icon animated fadeInRight flex content-center justify-center font-semibold mt-4" uk-lightbox>
       <a class="video-icon-button mr-4 mediabox" href="https://youtu.be/9ggB5VjveYQ">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-          <path d="M256,0C114.617,0,0,114.615,0,256s114.617,256,256,256s256-114.615,256-256S397.383,0,256,0z M344.48,269.57l-128,80  c-2.59,1.617-5.535,2.43-8.48,2.43c-2.668,0-5.34-0.664-7.758-2.008C195.156,347.172,192,341.82,192,336V176  c0-5.82,3.156-11.172,8.242-13.992c5.086-2.836,11.305-2.664,16.238,0.422l128,80c4.676,2.93,7.52,8.055,7.52,13.57  S349.156,266.641,344.48,269.57z" fill="#2e3e80"/>
-        </svg>
       </a>
     <span class="mt-2">How to mine Yerbas</span>
     </div>
   </div>
   <br>
-  <br>
-        <a class="block px-6 py-4" href="https://wrap.yerbas.org" target="_blank"><img style="max-height: 50px;" src="/assets/img/pages/wallet/wyerbas.png"      align="middle" alt=" wYerbas"/>wYerbas</a>
-    <h3><a href="https://wiki.yerbas.org/">Yerbas Wiki</a></h3>
-    <h3><a href="https://yerb-dashboard.com/">Yerbas Dashboard</a></h3>
+    <h3><a href="https://docs.yerbas.org/">Yerbas Docs</a></h3>
 </div>  
-<div class="section-intro text-white py-20">
+<div class="bg-grey-lighter section-intro text-white py-20">
   <div class="wrapper">
     <div class="text-center m-auto" style="max-width: 900px;">
       <h2 class="text-white">Welcome to Yerbas</h2>
-      <p style="max-width: 900px;" class="m-auto">Yerbas is a protocol based on a fork of the Bitcoin code which adds features specifically focused on allowing tokens to be issued on the Yerbas blockchain. These tokens can have whatever properties the issue of the token decides - so they can be limited in quantity, named and be issued as securities or as collectibles.</p>
+      <p style="max-width: 900px;" class="m-auto">Yerbas is a protocol based on a fork of the Bitcoin/Dash/Raptoreum and a pinch of Raven code which adds features specifically focused on allowing tokens to be issued on the Yerbas blockchain. These tokens can have whatever properties the issue of the token decides - so they can be limited in quantity, named and be issued as securities or as collectibles.</p>
       <p class="mt-8">You can make your own security token within minutes and have it trade worldwide.</p>
       <hr class="border-b pt-6"/>
     </div>
@@ -130,13 +128,13 @@ modalCacheRef: "3.0.0.1"
               <ul class="list-reset w-full sm:w-1/2 md:w-1/3">
                 <li>Gold bar</li>
                 <li>Silver coins</li>
-                <li>Physical Euros</li>
+                <li>Brownies</li>
                 <li>Buffalo Nickels</li>
               </ul>
               <ul class="list-reset w-full sm:w-1/2 md:w-1/3">
                 <li>Land Deeds</li>
-                <li>DC Comics Presents #26</li>
-                <li>Energy credits (Electricity, Wood, Gas, Oil, Wind)</li>
+                <li>Cook NFT's</li>
+                <li>Farm credits (Soil, Nutrients, Water, Lumens, Wind)</li>
               </ul>
             </div>
           </div>
@@ -151,7 +149,7 @@ modalCacheRef: "3.0.0.1"
             <h3 class="text-white">Representing virtual goods</h3>
             <ul class="list-reset">
               <li>Tickets to an event such as a Sacramento Kings game with the ability to resell without worry of duplicates being made</li>
-              <li>A license to allow an activity</li>
+              <li>A license to allow an activity ;)</li>
               <li>An access token to use a service</li>
               <li>In-game currency and items, transferable to other gamers outside of the game platform</li>
             </ul>
@@ -161,7 +159,7 @@ modalCacheRef: "3.0.0.1"
       <div id="tab-3" class="tab-pane">
         <div class="flex flex-wrap">
           <div class="w-full md:w-1/3 lg:w-1/4 text-center">
-            <img class="animated mb-4" id="tab-token" style="max-width: 150px;margin-top: 15px;" src="{{"/assets/img/svg/token.svg"}}" alt="token"/>
+            <img class="animated mb-4" id="tab-token" style="max-width: 150px;margin-top: 15px;" src="{{"/assets/img/svg/yerb.svg"}}" alt="yerb"/>
           </div>
           <div class="sm:w-full md:w-2/3 lg:w-3/4">
            <h3 class="text-white">Representing real world custodied physical or digital asset</h3>
@@ -184,7 +182,7 @@ modalCacheRef: "3.0.0.1"
             <ul class="list-reset">
               <li>Gift cards</li>
               <li>Airline miles</li>
-              <li>Reward points</li>
+              <li>Fronts points</li>
             </ul>
           </div>
         </div>
@@ -192,7 +190,7 @@ modalCacheRef: "3.0.0.1"
     </div>
   </div>
 </div>
-<div class="section-why bg-grey-lighter py-24">
+<div class="section-why py-24">
   <div class="wrapper">
     <div class="flex flex-wrap">
       <div class="w-full sm:w-full md:w-3/4">
@@ -226,13 +224,13 @@ modalCacheRef: "3.0.0.1"
     </div>
   </div>
 </div>
-<div class="section-exchange pt-20 pb-24 bg-grey-lighter text-center">
+<div class="section-exchange pt-20 pb-24 text-center">
   <h2 class="font-medium">Exchanges</h2>
   <div class="wrapper mt-8 m-auto">
     <div class="flex flex-wrap">
       {% for exchange in site.data.exchanges %}
       <div class="mb-6 px-2 sm:w-1/2 md:w-1/3">
-        <div class="bg-grey-lighter max-w-sm rounded overflow-hidden shadow-md hover:by-grey enlarge-on-hover">
+        <div class="bg-white max-w-sm rounded overflow-hidden shadow-md hover:by-grey enlarge-on-hover">
           <a class="block px-6 py-4" href="{{ exchange.url }}" target="_blank" rel="nofollow"><img src="{{ exchange.logo }}" alt="{{ exchange.name }} exchange"/></a>
         </div>
       </div>
@@ -243,9 +241,28 @@ modalCacheRef: "3.0.0.1"
       </div>
   </div>
 </div>
-<div class="bg-grey-lighter text-center" style="padding-bottom:50px">
-  <h2 class="font-medium">Twitter Updates</h2>
-  <a class="twitter-timeline" data-width="600" data-height="600" data-dnt="true" data-theme="dark" href="https://x.com/Yerbas_Endeavor">Tweets by Yerbas</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<div class="section-aggregators pt-20 pb-24 text-center">
+  <h2 class="font-medium">Aggregators</h2>
+  <div class="wrapper mt-8 m-auto">
+    <div class="flex flex-wrap">
+      {% for aggregators in site.data.aggregators %}
+      <div class="mb-6 px-2 sm:w-1/2 md:w-1/4">
+        <div class="bg-white max-w-sm rounded overflow-hidden shadow-md hover:by-grey enlarge-on-hover">
+          <a class="block px-6 py-4" href="{{ aggregators.url }}" target="_blank" rel="nofollow"><img src="{{ aggregators.logo }}" alt="{{ aggregators.name }} aggregators"/></a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+      <div class="text-center">
+        <a class="btn btn-primary d-block mx-2 mt-4 mb-3 px-3 py-3 font-medium text-base rounded text-white hover:text-white" href="/watch-yerbas/">See All Aggregators</a>
+      </div>
+  </div>
+</div>
+<div class="text-center" style="padding-bottom:50px">
+  <h2 class="font-medium">X Updates</h2>
+  <div class="center">
+  <a class="x-timeline" data-width="600" data-height="600" data-dnt="true" data-theme="dark" href="https://x.com/Yerbas_Endeavor">Tweets by Yerbas</a> <script async src="https://platform.x.com/widgets.js" charset="utf-8"></script>
+</div>
 </div>
 <script src="/assets/vendors/mediabox/mediabox.js"></script>
 <script>
