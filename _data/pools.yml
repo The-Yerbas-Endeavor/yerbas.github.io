@@ -1,39 +1,15 @@
-- name: PmpMining
-  url: https://pmpmining.com/#yerbas
-  x: ''
-  
 - name: Mining4People
   url: https://mining4people.com/pool/yerbas-pplns
   x: ''
-
-- name: ZergPool
-  url: http://zergpool.com/
-  x: ''
-
+  
 - name: Zpool
   url: https://zpool.ca/
   x: ''
 
-- name: Miningpools
-  url: https://miningpools.pro/
+- name: AikaPool
+  url: https://aikapool.com/yerb/
   x: ''
 
-- name: Mining-Dutch
-  url: https://www.mining-dutch.nl/pools/yerbas.php
-  x: ''
-
-- name: Tazmining
-  url: https://tazmining.ch/#yerb1
-  x: ''
-
-- name: Kriptokyng
-  url: https://kriptokyng.com/#yerb
-  x: ''
-
-- name: Cminer
-  url: https://cminer.org/
-  x: ''
-
-- name: Miningpower
-  url: https://prop.miningpower.eu/#yerbas-prop
+- name: rwinfo
+  url: https://pool.rwinfo.club/
   x: ''
