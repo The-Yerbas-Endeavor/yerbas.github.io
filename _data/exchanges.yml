@@ -1,11 +1,5 @@
-- name: Exbitron
-  logo: /assets/img/pages/exchanges/exbitron.png
-  url:  https://www.exbitron.com/trading/yerbusdt
-  kyc: true
-  donates_to_project: false
-
-- name: Spectrade
-  logo: /assets/img/pages/exchanges/Spectrade.png
-  url: https://trade.spectrade.io/#/market/DEX.YERB_DEX.USDT
+- name: NestEx
+  logo: /assets/img/pages/exchanges/nestex.png
+  url:  https://trade.nestex.one/spot/YERB_USDT
   kyc: false
   donates_to_project: false
