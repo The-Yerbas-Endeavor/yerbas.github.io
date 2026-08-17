@@ -1,15 +1,15 @@
-- name: Mining4People
-  url: https://mining4people.com/pool/yerbas-pplns
+- name: pool.yerbas.org
+  url: https://pool.yerbas.org/
   x: ''
   
 - name: Zpool
   url: https://zpool.ca/
   x: ''
 
-- name: AikaPool
-  url: https://aikapool.com/yerb/
+- name: KriptoKyng
+  url: https://kriptokyng.com/pools/yerb
   x: ''
 
-- name: rwinfo
-  url: https://pool.rwinfo.club/
+- name: miningdutch
+  url: https://www.mining-dutch.nl/pools/yerbas.php
   x: ''
