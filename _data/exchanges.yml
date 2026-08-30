@@ -1,5 +1,5 @@
 - name: NestEx
   logo: /assets/img/pages/exchanges/nestex.png
   url:  https://trade.nestex.one/spot/YERB_USDT
-  kyc: false
+  kyc: true
   donates_to_project: false
