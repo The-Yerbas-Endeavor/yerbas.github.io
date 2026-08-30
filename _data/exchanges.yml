@@ -3,3 +3,9 @@
   url:  https://trade.nestex.one/spot/YERB_USDT
   kyc: true
   donates_to_project: false
+
+- name: Gatevia
+  logo: /assets/img/pages/exchanges/gatevia.png
+  url:  https://gatevia.io/exchange/YERB_DOGE
+  kyc: true
+  donates_to_project: false
