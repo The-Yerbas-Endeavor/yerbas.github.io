@@ -13,3 +13,7 @@
 - name: miningdutch
   url: https://www.mining-dutch.nl/pools/yerbas.php
   x: ''
+
+- name: VEIN Pool
+  url: https://veinpool.fr/coin/yerb?lang=en
+  x: ''
