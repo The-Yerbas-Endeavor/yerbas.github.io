@@ -1,42 +1,17 @@
 ---
 layout: page-w-banner
 title: Buy Yerbas
-bannerTitle: Where to buy Yerbas
+bannerTitle: Where to Find Yerbas
 bannerImage: /assets/img/pages/exchanges/exchange-banner.jpg
 permalink: /buy-yerbas/
+description: "View exchange links listed by the Yerbas community."
 ---
-
-<div class="page-content">
-  <div class="wrapper mt-8 mb-32 m-auto">
-    <h1><b>Non-Custodial exchanges</b></h1><br>
-    <div class="flex flex-wrap">
-      {% for exchange in site.data.exchanges %}
-            {% if exchange.kyc == false %}
-                <div class="mb-6 px-2 sm:w-1/2 md:w-1/4 text-center">
-                  <div class="bg-white max-w-sm rounded overflow-hidden shadow-md hover:by-grey">
-                    <a class="block px-6 py-8" href="{{ exchange.url }}" target="_blank"><img src="{{ exchange.logo }}" alt="{{ exchange.name }} exchange"/></a>
-                  </div>
-                  {% if exchange.donates_to_project == true %}
-                    <span><i class="zmdi zmdi-balance"></i> &nbsp; Donates to foundation</span>
-                  {% endif %}
-                </div>
-            {% endif %}
-      {% endfor %}
-    </div>
-    <h1><b>Custodial exchanges</b></h1><br>
-    <div class="flex flex-wrap">
-      {% for exchange in site.data.exchanges %}
-        {% if exchange.kyc %}
-          <div class="mb-6 px-2 sm:w-1/2 md:w-1/4 text-center">
-            <div class="bg-white max-w-sm rounded overflow-hidden shadow-md hover:by-grey">
-              <a class="block px-6 py-8" href="{{ exchange.url }}" target="_blank"><img src="{{ exchange.logo }}" alt="{{ exchange.name }} exchange"/></a>
-            </div>
-                  {% if exchange.donates_to_project == true %}
-                    <span><i class="zmdi zmdi-balance"></i> &nbsp; Donates to foundation</span>
-                  {% endif %}
-          </div>
-        {% endif %}
-      {% endfor %}
-    </div>
-  </div>
-</div>
+<section class="wrapper yb-section">
+ <div class="yb-eyebrow">Markets</div><h2>Find YERB trading markets</h2>
+ <p class="yb-intro">Explore community-listed venues. Verify market availability, the exact trading pair, fees, custody and withdrawal policies before transferring funds. This directory is not an endorsement of an exchange.</p>
+ {% assign exchanges = site.data.exchanges | sort: 'name' %}
+ <div class="yb-grid">{% for exchange in exchanges %}
+  <article class="yb-card"><h3>{{ exchange.name | escape }}</h3><p>{% if exchange.kyc %}KYC may be required; verify current requirements on the venue.{% else %}Confirm account and identity requirements directly with the venue.{% endif %}</p><a href="{{ exchange.url }}" target="_blank" rel="noopener noreferrer nofollow">View trading market →</a></article>
+ {% endfor %}</div>
+ <div class="yb-notice"><strong>Trade carefully.</strong> Liquidity and markets can change without notice. Double-check addresses, network selection, and account restrictions.</div>
+</section>
