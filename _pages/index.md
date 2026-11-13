@@ -2,56 +2,64 @@
 layout: default
 title: Home
 permalink: /
-description: "Yerbas is an open-source peer-to-peer blockchain for digital assets, payments, mining, and smartnodes."
+description: "Yerbas is an open-source peer-to-peer blockchain for digital assets, mining, smartnodes, and community-built tools."
 ---
-<section class="yb-hero">
+<section class="yb-hero" aria-labelledby="yb-hero-heading">
+  <div class="wrapper yb-hero-layout">
+    <div class="yb-hero-content">
+      <p class="yb-eyebrow">The Yerbas Endeavor</p>
+      <h1 id="yb-hero-heading">A decentralized network for <span>digital assets.</span></h1>
+      <p class="yb-lead">Yerbas is an open-source, community-driven blockchain supporting peer-to-peer transactions, digital assets, mining, and smartnodes.</p>
+      <div class="yb-actions">
+        <a class="yb-button yb-button-primary" href="/wallet/">Download wallet <span aria-hidden="true">↓</span></a>
+        <a class="yb-button" href="#ecosystem">Explore the ecosystem <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="yb-hero-caption">Open source. Permissionless participation. Built by the community.</div>
+    </div>
+    <div class="yb-hero-art" aria-hidden="true"><div class="yb-hero-orbit"><img src="/assets/img/home/yerbas200x200.png" alt="" width="220" height="220"></div></div>
+  </div>
+</section>
+<section class="yb-feature-strip" aria-label="Network highlights">
+  <div class="wrapper yb-feature-grid">
+    <div class="yb-feature"><span class="yb-feature-icon" aria-hidden="true">⚡</span><div><h2>Peer to peer</h2><p>Open blockchain transactions</p></div></div>
+    <div class="yb-feature"><span class="yb-feature-icon" aria-hidden="true">▱</span><div><h2>Digital assets</h2><p>Create and transfer assets</p></div></div>
+    <div class="yb-feature"><span class="yb-feature-icon" aria-hidden="true">⬡</span><div><h2>Smartnodes</h2><p>Support network services</p></div></div>
+    <div class="yb-feature"><span class="yb-feature-icon" aria-hidden="true">♧</span><div><h2>Community driven</h2><p>Open development and tools</p></div></div>
+  </div>
+</section>
+<section class="yb-section yb-ecosystem-section" id="ecosystem" aria-labelledby="yb-ecosystem-heading">
   <div class="wrapper">
-    <div class="yb-eyebrow">Open source · Community driven · Peer to peer</div>
-    <h1>Own your assets.<br>Build on Yerbas.</h1>
-    <p class="yb-lead">A decentralized blockchain for creating, transferring, and exploring digital assets. Run a wallet, help secure the network, or build something new.</p>
-    <div class="yb-actions">
-      <a class="yb-button yb-button-primary" href="/wallet/">Get the wallet</a>
-      <a class="yb-button" href="https://explorer.yerbas.org/">Explore the blockchain</a>
-      <a class="yb-button" href="https://docs.yerbas.org/">Read the docs</a>
+    <div class="yb-section-heading">
+      <p class="yb-eyebrow">Explore Yerbas</p>
+      <h2 id="yb-ecosystem-heading">Discover the <span>Yerbas</span> ecosystem</h2>
+      <p class="yb-intro">Tools and resources to get started, participate in the network, and build on Yerbas.</p>
+    </div>
+    <div class="yb-grid yb-ecosystem-grid">
+      <article class="yb-card"><span class="yb-mark" aria-hidden="true">▣</span><h3>Wallets &amp; Downloads</h3><p>Get Yerbas Core, verify releases, and find setup resources.</p><a href="/wallet/" aria-label="Explore wallets and downloads">Explore wallets <span aria-hidden="true">↗</span></a></article>
+      <article class="yb-card"><span class="yb-mark" aria-hidden="true">⬡</span><h3>Network &amp; Smartnodes</h3><p>Explore network activity, smartnode guidance, and node monitoring.</p><a href="/smartnode-setup/" aria-label="Learn about Yerbas smartnodes">Explore smartnodes <span aria-hidden="true">↗</span></a></article>
+      <article class="yb-card"><span class="yb-mark" aria-hidden="true">◇</span><h3>Digital Assets</h3><p>Learn how assets are created, issued, and transferred on Yerbas.</p><a href="/assets/" aria-label="Read about Yerbas assets">Explore assets <span aria-hidden="true">↗</span></a></article>
+      <article class="yb-card"><span class="yb-mark" aria-hidden="true">⚒</span><h3>Mining</h3><p>Find mining documentation, community pools, and network statistics.</p><a href="/pools/" aria-label="Learn about Yerbas mining">Explore mining <span aria-hidden="true">↗</span></a></article>
+      <article class="yb-card"><span class="yb-mark" aria-hidden="true">⬢</span><h3>Projects &amp; Tools</h3><p>Discover projects contributed by the Yerbas community.</p><a href="/projects/" aria-label="Explore Yerbas projects">Browse projects <span aria-hidden="true">↗</span></a></article>
+      <article class="yb-card"><span class="yb-mark" aria-hidden="true">⌘</span><h3>Developers</h3><p>Explore open-source code, documentation, and development resources.</p><a href="https://github.com/The-Yerbas-Endeavor/" aria-label="Explore Yerbas source repositories">View source <span aria-hidden="true">↗</span></a></article>
     </div>
   </div>
 </section>
-<section class="yb-section yb-section-alt" aria-labelledby="yb-start">
-  <div class="wrapper">
-    <div class="yb-eyebrow">Get started</div><h2 id="yb-start">Everything you need to explore Yerbas</h2>
-    <p class="yb-intro">A practical starting point for users, miners, node operators, and builders.</p>
-    <div class="yb-grid">
-      <article class="yb-card"><div class="yb-mark" aria-hidden="true">◈</div><h3>Wallet</h3><p>Download the Yerbas Core wallet and check release details before installing.</p><a href="/wallet/">Wallet downloads →</a></article>
-      <article class="yb-card"><div class="yb-mark" aria-hidden="true">◎</div><h3>Block explorer</h3><p>Explore transactions, blocks, assets, and network activity.</p><a href="https://explorer.yerbas.org/">Open explorer →</a></article>
-      <article class="yb-card"><div class="yb-mark" aria-hidden="true">⬡</div><h3>Smartnodes</h3><p>Learn about running and monitoring a Yerbas smartnode.</p><a href="/smartnode-setup/">Smartnode guide →</a></article>
-      <article class="yb-card"><div class="yb-mark" aria-hidden="true">▤</div><h3>Assets</h3><p>Create and transfer distinct assets on the Yerbas network.</p><a href="/assets/">Discover assets →</a></article>
-      <article class="yb-card"><div class="yb-mark" aria-hidden="true">⚙</div><h3>Mining</h3><p>Discover mining pools and the GhostRider proof-of-work ecosystem.</p><a href="/pools/">Explore pools →</a></article>
-      <article class="yb-card"><div class="yb-mark" aria-hidden="true">⌘</div><h3>Developers</h3><p>Browse source code, project documentation, and community contributions.</p><a href="https://github.com/The-Yerbas-Endeavor/">View on GitHub →</a></article>
+<section class="yb-section yb-section-alt" aria-labelledby="yb-network-heading">
+  <div class="wrapper yb-network-split">
+    <div><p class="yb-eyebrow">Connected infrastructure</p><h2 id="yb-network-heading">Explore the live blockchain</h2><p class="yb-intro">Browse blocks, transactions, assets, and smartnode information using tools built for the Yerbas network.</p><div class="yb-actions"><a class="yb-button yb-button-primary" href="https://explorer.yerbas.org/">Open explorer <span aria-hidden="true">↗</span></a><a class="yb-button" href="https://pool.yerbas.org/">Mining pool <span aria-hidden="true">↗</span></a></div></div>
+    <div class="yb-network-panel" aria-label="Yerbas network resources">
+      <div class="yb-network-panel-head"><span class="yb-network-dot" aria-hidden="true"></span><strong>Network resources</strong><span>External tools</span></div>
+      <a href="https://explorer.yerbas.org/"><span>Block explorer</span><span aria-hidden="true">↗</span></a>
+      <a href="https://explorer.yerbas.org/masternodes"><span>Smartnode directory</span><span aria-hidden="true">↗</span></a>
+      <a href="https://explorer.yerbas.org/node-map"><span>Network node map</span><span aria-hidden="true">↗</span></a>
+      <a href="https://docs.yerbas.org/"><span>Network documentation</span><span aria-hidden="true">↗</span></a>
     </div>
   </div>
 </section>
-<section class="yb-section" aria-labelledby="yb-why">
-  <div class="wrapper">
-    <div class="yb-eyebrow">The network</div><h2 id="yb-why">Built for permissionless participation</h2>
-    <p class="yb-intro">Yerbas combines open-source blockchain infrastructure with asset issuance and a smartnode network. Its GhostRider proof-of-work algorithm is designed around accessible CPU mining.</p>
-    <div class="yb-grid">
-      <article class="yb-card"><h3>Digital assets</h3><p>Issue and transfer blockchain-native assets without relying on a centralized operator.</p></article>
-      <article class="yb-card"><h3>Distributed infrastructure</h3><p>Participate through wallets, mining, and smartnodes. Review current technical requirements in official documentation.</p></article>
-      <article class="yb-card"><h3>Open development</h3><p>Inspect the code, follow releases, report issues, and contribute through the public repositories.</p></article>
-    </div>
-  </div>
-</section>
-<section class="yb-section yb-section-alt" aria-labelledby="yb-ecosystem">
-  <div class="wrapper">
-    <div class="yb-eyebrow">Connected tools</div><h2 id="yb-ecosystem">The Yerbas ecosystem</h2>
-    <p class="yb-intro">Jump straight into the services built around the chain.</p>
-    <div class="yb-grid">
-      <article class="yb-card"><h3>Explorer</h3><p>Blocks, transactions, assets, and smartnode views.</p><a href="https://explorer.yerbas.org/">Visit explorer →</a></article>
-      <article class="yb-card"><h3>Pool</h3><p>Mining statistics and pool information.</p><a href="https://pool.yerbas.org/">Visit mining pool →</a></article>
-      <article class="yb-card"><h3>Documentation</h3><p>Technical guides, installation instructions, and background information.</p><a href="https://docs.yerbas.org/">Read documentation →</a></article>
-    </div>
-  </div>
-</section>
-<section class="yb-section">
-  <div class="wrapper"><div class="yb-cta"><div class="yb-eyebrow">Community</div><h2>Help shape what comes next.</h2><p>Yerbas is built in the open. Connect with the community, explore the code, and help improve the network.</p><div class="yb-actions"><a class="yb-button yb-button-primary" href="/community/">Join the community</a><a class="yb-button" href="https://github.com/The-Yerbas-Endeavor/yerbas">Contribute on GitHub</a></div></div></div>
+<section class="yb-section" aria-labelledby="yb-community-heading">
+  <div class="wrapper"><div class="yb-cta">
+    <div class="yb-cta-icon" aria-hidden="true">♧</div>
+    <div><p class="yb-eyebrow">A growing ecosystem</p><h2 id="yb-community-heading">Help shape what comes next.</h2><p>From assets and smartnodes to community projects, Yerbas continues to evolve through open development and participation.</p></div>
+    <div class="yb-actions"><a class="yb-button yb-button-primary" href="/community/">Get involved <span aria-hidden="true">↗</span></a><a class="yb-button" href="/projects/">View projects</a></div>
+  </div></div>
 </section>
