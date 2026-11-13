@@ -1,11 +1,12 @@
 title: Yerbas
 author: Yerbas
-description: A peer-to-peer blockchain designed to handle the efficient creation and transfer of assets from one party to another. It's an open-source project based on Bitcoin
+description: Open-source peer-to-peer blockchain for digital assets, payments, mining, and smartnodes.
 
+url: "https://yerbas.org"
 baseurl: ""
 
 # social links
-x_username: Yerbas-Endeavor
+x_username: Yerbas_Endeavor
 github_username:  The-Yerbas-Endeavor
 rss: rss
 
