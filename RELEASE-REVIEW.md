@@ -64,3 +64,21 @@ Sources:
 - Replaced the broken language switcher with an accessible static document library. All linked PDFs were verified to exist in the `gh-pages` Git tree: `assets/documents/YerbasWhitePaper.pdf`, `GhostRider_Whitepaper.pdf`, `X16R-Whitepaper.pdf`, and `X16R-Whitepaper.German.pdf`.
 - Preserved the `/whitepaper/` URL and original PDF files; no legacy assets were deleted.
 - Browser CI now verifies four PDF links return HTTP 200 with a PDF-compatible content type and runs an axe-core accessibility scan for the page.
+
+
+## Public external directory review (2026-11-12, Pacific)
+
+- NestEx public `/spot` overview lists YERB; the exact `/spot/YERB_USDT` deep link could not be inspected directly through the public fetcher. Deposits and market depth remain unverified.
+- Gatevia `/exchange/YERB_DOGE` loads an exchange interface and Gatevia publicly lists YERB. Its public coin-info page displayed a YERB node running `3.2.0.15` as of 2026-10-30, potentially stale relative to Core v4.0.1.4. Confirm synchronization and wallet deposits/withdrawals with the operator.
+- Zpool, Mining-Dutch, KriptoKyng and `pool.yerbas.org` have publicly reachable sites or YERB listings. These pages do not establish current successful payouts, stratum connectivity or consistent chain tips. At inspection, the public Yerbas pool dashboard described its last-found block as 33 days old.
+- CoinCodex, LiveCoinWatch and CoinPaprika list YERB. CoinCodex displayed 'No Recent Exchange Data'; LiveCoinWatch displayed 'Last traded 2026-05-26'; CoinPaprika displayed incomplete/zero market fields. None should be treated as a fresh price feed.
+- The `/buy-yerbas/`, `/pools/` and `/watch-yerbas/` pages were updated to clearly distinguish third-party directory links from independently verified trading/mining operations.
+
+### Pending third-party verification
+
+- Check NestEx's exact YERB/USDT deep link in an authenticated human browser.
+- Confirm Gatevia YERB wallet synchronization, deposits and withdrawals with the venue.
+- Compare mining pool chain tips against a known-good synced node and verify stratum/payout operations.
+- Confirm live market liquidity and aggregator data timestamps, rather than merely HTTP reachability.
+
+No external listing was removed based solely on incomplete web visibility or stale crawler snapshots.
