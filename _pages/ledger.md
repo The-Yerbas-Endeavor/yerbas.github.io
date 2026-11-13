@@ -6,6 +6,8 @@ bannerImage: /assets/img/pages/wallet/wallet-banner.jpg
 permalink: /ledger/
 ---
 
+<aside class="yb-notice" role="note" aria-label="Historical hardware-wallet instructions"><strong>Historical instructions — do not use without verification.</strong> This guide describes an older Ledger Live and Electrum-Yerbas workflow. Current device app availability, firmware compatibility, chain support, and transaction behavior have not been verified for Yerbas Core 4.x. Check the <a href="https://github.com/The-Yerbas-Endeavor/yerbas/releases">official Yerbas releases</a>, <a href="https://github.com/Electrum-YERB-SIG/electrum-yerbas">Electrum-Yerbas project</a>, and manufacturer documentation before transferring assets or installing software.</aside>
+
 <div class="wrapper mt-16 pb-20">
   <h2>How to use the Ledger Nano S and Ledger Nano X</h2>
 
