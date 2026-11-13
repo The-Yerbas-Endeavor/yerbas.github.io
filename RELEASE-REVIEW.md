@@ -169,3 +169,15 @@ The initial whole-site inventory found 148 missing local URLs/assets across 51 a
 - Following the clean result, `tests/site_inventory.py` was promoted from an advisory report to a **required CI gate** for missing local links/assets or duplicate IDs.
 - This is a local-path integrity result, **not** verification that archive instructions, historic security guidance, third-party HTTP services, or external exchanges are trustworthy.
 - The 54 legacy mobilewallet HTML pages remain visibly archived and `noindex`; do not promote them as current Yerbas support.
+
+
+## Build dependency audit (2026-11-12 Pacific)
+
+- GitHub Actions build logs initially exposed a real Ruby Bundler mismatch: the locally checked-out `minima.gemspec` declared version 2.5.0, but the installed `github-pages` gem version 233 required `minima (= 2.5.1)`. Updated only the local version declaration to 2.5.1. [Build 43375088094](https://github.com/The-Yerbas-Endeavor/yerbas.github.io/actions/runs/43375088094) successfully installed Minima 2.5.1 without the earlier invalid-resolution message and passed Jekyll/browser QA.
+- `package.json` previously declared `gh-pages ^5.0.0` as its sole development dependency. No npm publishing script was present and the website is built with Jekyll/GitHub Pages, not the Node-based gh-pages publisher.
+- The previous browser-test npm installation reported three high-severity transitive advisories involving `brace-expansion`, `minimatch`, and `semver` (all development tooling, not website-delivered JavaScript).
+- Replaced the old npm publisher package with directly pinned browser-test dependencies `playwright@1.56.1` and `axe-core@4.10.3`. Regenerated and checked in `package-lock.json` from the successful GitHub Actions npm installation.
+- The regenerated-lockfile npm audit in [run 43375446556](https://github.com/The-Yerbas-Endeavor/yerbas.github.io/actions/runs/43375446556) reported **0 critical, 0 high, 0 moderate, and 0 low vulnerabilities**.
+- CI now uses `npm ci --ignore-scripts --no-audit` to enforce lockfile consistency, then separately runs and archives `npm audit --json` and enforces `npm audit --audit-level=high`.
+- Audit results reflect the dependency-advisory database at inspection time. They do not replace future updates or a full security assessment of old archived static JS assets (which are not installed from this npm package lock).
+- Publishing remains manual/GitHub Pages-dependent; removing the unused Node publishing dependency is **not** authorization to change GitHub Pages source/settings.
