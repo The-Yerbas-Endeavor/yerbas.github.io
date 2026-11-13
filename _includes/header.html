@@ -1,14 +1,14 @@
 <header class="site-header" role="banner">
   <div class="wrapper yb-header-inner">
-    <a class="yb-brand" href="/" aria-label="Yerbas home"><img src="/YERB_logo.png" alt="" width="46" height="46"><span>YERBAS</span></a>
-    <button class="yb-mobile-button" type="button" aria-expanded="false" aria-controls="yb-nav" id="yb-menu-toggle">Menu ☰</button>
+    <a class="yb-brand" href="/" aria-label="Yerbas home"><img src="/assets/img/media/logo-icon-small.png" alt="" width="42" height="42"><span>Yerbas</span></a>
+    <button class="yb-mobile-button" type="button" aria-expanded="false" aria-controls="yb-nav" id="yb-menu-toggle">Menu <span aria-hidden="true">☰</span></button>
     <nav class="yb-nav" id="yb-nav" aria-label="Main navigation">
-      <a href="/wallet/" {% if page.url == '/wallet/' %}aria-current="page"{% endif %}>Wallet</a>
+      <a href="/" {% if page.url == '/' %}aria-current="page"{% endif %}>Home</a>
+      <a href="/wallet/" {% if page.url == '/wallet/' %}aria-current="page"{% endif %}>Wallets</a>
+      <a href="/smartnode-setup/" {% if page.url == '/smartnode-setup/' %}aria-current="page"{% endif %}>Network</a>
       <a href="/assets/" {% if page.url == '/assets/' %}aria-current="page"{% endif %}>Assets</a>
-      <a href="/smartnode-setup/" {% if page.url == '/smartnode-setup/' %}aria-current="page"{% endif %}>Smartnodes</a>
-      <a href="/pools/" {% if page.url == '/pools/' %}aria-current="page"{% endif %}>Mining</a>
-      <a href="https://explorer.yerbas.org/">Explorer</a>
-      <a href="https://docs.yerbas.org/">Docs</a>
+      <a href="/projects/" {% if page.url == '/projects/' %}aria-current="page"{% endif %}>Ecosystem</a>
+      <a href="https://docs.yerbas.org/">Developers</a>
       <a href="/community/" {% if page.url == '/community/' %}aria-current="page"{% endif %}>Community</a>
     </nav>
     <button class="yb-theme-button" type="button" id="yb-theme-toggle" aria-label="Switch color theme">☀ Light</button>
