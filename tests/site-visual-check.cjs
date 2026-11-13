@@ -106,16 +106,21 @@ async function run() {
         failures.push(viewport.name + ': ' + e.message);
       } finally { await page.close(); }
     }
-    for (const route of ['/wallet/','/assets/','/smartnode-setup/','/pools/','/community/','/projects/','/buy-yerbas/','/whitepaper/']) {
+    for (const route of ['/wallet/','/assets/','/smartnode-setup/','/pools/','/community/','/projects/','/buy-yerbas/','/whitepaper/','/halving/']) {
       const page = await browser.newPage({viewport:{width:1280,height:800}, reducedMotion:'reduce'});
       try {
         const response = await page.goto(base + route, {waitUntil:'load', timeout:30000});
         assert.equal(response.status(),200, route + ' must return 200');
         assert.ok(await page.locator('h1').count() >= 1, route + ' must have a heading');
         assert.equal(await page.locator('#yb-theme-toggle').count(), 1, route + ' must have theme toggle');
-        if (['/wallet/','/smartnode-setup/','/pools/','/community/','/projects/','/buy-yerbas/'].includes(route)) {
+        if (['/wallet/','/smartnode-setup/','/pools/','/community/','/projects/','/buy-yerbas/','/halving/'].includes(route)) {
           await auditInternalLinks(page, route);
           await auditAccessibility(page, 'page-' + route.slice(1,-1));
+        }
+        if (route === '/halving/') {
+          assert.equal(await page.locator('.yb-reward-table tbody tr').count(), 18, 'Subsidy schedule must have 18 tiers');
+          assert.ok((await page.locator('.yb-reward-table tbody').innerText()).includes('10,000,000–10,999,999'));
+          await page.screenshot({path:path.join(out,'subsidy-desktop.png'),fullPage:true,animations:'disabled'});
         }
         if (route === '/wallet/') await page.screenshot({path:path.join(out,'wallet-desktop.png'),fullPage:true,animations:'disabled'});
         console.log('PASS route',route);
