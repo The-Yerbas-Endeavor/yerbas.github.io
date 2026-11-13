@@ -10,7 +10,10 @@ permalink: /halving/
   <div class="wrapper mt-4 mb-20">
     <h2>How it works...</h2>
    <h3>At every 1,000,000 blocks, Yerbas has implemented a custom reward structure that not only makes Yerb emissions smooth, but also unique.</h3>
-    <p>The block reward emission schedule:</p>
+    <p>The historical block reward emission schedule:</p>
+    <aside class="yb-notice" role="note" aria-label="Unverified emission schedule">
+      <strong>Historical table — verification required.</strong> At least one row in this published schedule is internally inconsistent: for blocks 10,000,000–11,000,000, the total is shown as 6 YERB while the listed component rewards add up to 6.4 YERB. Do not use this table to calculate payouts or implement consensus rules. Verify the emission schedule against the current <a href="https://github.com/The-Yerbas-Endeavor/yerbas">Yerbas Core consensus implementation</a> and <a href="https://github.com/The-Yerbas-Endeavor/yerbas/releases">official release notes</a>.
+    </aside>
 <table>
   <tr>
     <th>Block#</th>
