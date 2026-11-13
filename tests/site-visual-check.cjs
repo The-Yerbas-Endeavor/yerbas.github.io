@@ -117,6 +117,14 @@ async function run() {
           await auditInternalLinks(page, route);
           await auditAccessibility(page, 'page-' + route.slice(1,-1));
         }
+        if (route === '/smartnode-setup/') {
+          const table = page.locator('#yb-collateral-table');
+          assert.equal(await table.locator('tbody tr').count(), 8, 'Mainnet collateral schedule has eight tiers');
+          const values = await table.locator('tbody tr').allTextContents();
+          assert.ok(values[6].includes('1,096,421–1,369,420') && values[6].includes('69,000'), '69k boundary');
+          assert.ok(values[7].includes('1,369,421 and later') && values[7].includes('100,000'), '100k boundary');
+          await page.screenshot({path:path.join(out,'smartnodes-desktop.png'),fullPage:true,animations:'disabled'});
+        }
         if (route === '/halving/') {
           assert.equal(await page.locator('.yb-reward-table tbody tr').count(), 18, 'Subsidy schedule must have 18 tiers');
           assert.ok((await page.locator('.yb-reward-table tbody').innerText()).includes('10,000,000–10,999,999'));
