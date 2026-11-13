@@ -74,7 +74,7 @@ async function run() {
 
         // Catch stale/missing stylesheet where cards exist but render as plain stacked text.
         const cssLink = await page.locator('link[href*="yerbas-modern.css"]').getAttribute('href');
-        assert.match(cssLink, /[?&]v=\\d+/, 'Modern stylesheet URL must include a build cache-buster');
+        assert.match(cssLink, /[?&]v=[0-9]+/, 'Modern stylesheet URL must include a build cache-buster');
         const visual = await page.locator('.yb-start-grid').evaluate(grid => {
           const cards = [...grid.querySelectorAll('.yb-start-card')];
           const g = getComputedStyle(grid), c = cards.map(el => ({
