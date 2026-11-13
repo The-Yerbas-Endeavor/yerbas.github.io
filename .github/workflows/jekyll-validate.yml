@@ -57,7 +57,7 @@ jobs:
           node-version: '22'
       - name: Install pinned browser test runtime
         run: |
-          npm install --ignore-scripts --no-audit
+          npm ci --ignore-scripts --no-audit
           npx playwright install --with-deps chromium
       - name: Report npm dependency advisories (read-only)
         run: |
@@ -71,13 +71,6 @@ jobs:
           name: yerbas-npm-dependency-audit
           path: npm-audit.json
           if-no-files-found: ignore
-          retention-days: 7
-      - name: Upload regenerated npm lockfile for review
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: yerbas-browser-dependencies-lock
-          path: package-lock.json
           retention-days: 7
       - name: Check responsive browser rendering and theme
         run: |
