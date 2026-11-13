@@ -28,6 +28,34 @@ async function auditAccessibility(page, label) {
   }, null, 2));
   if (issues.length) throw new Error('Accessibility issues: ' + issues.map(x => x.id + '[' + x.impact + '] (' + x.nodes.map(n=>n.target).join(', ') + ')').join('; '));
 }
+async function auditInternalLinks(page, label) {
+  const local = new URL(base);
+  const links = await page.locator('a[href]').evaluateAll(elements => elements.map(a => ({
+    href: a.getAttribute('href'),
+    text: a.textContent.trim()
+  })));
+  const paths = new Set();
+  const issues = [];
+  for (const link of links) {
+    try {
+      const url = new URL(link.href, page.url());
+      if (url.origin !== local.origin) continue;
+      const location = url.pathname + url.search;
+      paths.add(location);
+      if (url.hash && url.pathname === new URL(page.url()).pathname) {
+        const id = decodeURIComponent(url.hash.slice(1));
+        const target = await page.locator('[id]').evaluateAll((els, id) => els.some(el => el.id === id), id);
+        if (!target) issues.push('Missing same-page anchor ' + url.hash + ' on ' + label);
+      }
+    } catch(e) { issues.push('Invalid URL ' + link.href + ': ' + e.message); }
+  }
+  for (const pathname of paths) {
+    const response = await page.request.get(base + pathname, { timeout: 12000 });
+    if (response.status() >= 400) issues.push('Broken internal URL ' + pathname + ' on ' + label + ': HTTP ' + response.status());
+  }
+  if (issues.length) throw new Error(issues.join('; '));
+  console.log('PASS internal links',label,paths.size);
+}
 async function run() {
   const browser = await chromium.launch({ headless: true });
   let failures = [];
@@ -70,6 +98,7 @@ async function run() {
         await page.screenshot({ path: path.join(out, 'home-' + viewport.name + '-' + initial + '.png'), fullPage: true, animations: 'disabled' });
         assert.deepEqual(errors, [], 'No uncaught JavaScript errors');
         await auditAccessibility(page, 'home-' + viewport.name + '-' + initial);
+        if(viewport.name === 'desktop') await auditInternalLinks(page, 'home');
         await theme.click();
         await auditAccessibility(page, 'home-' + viewport.name + '-' + next);
         console.log('PASS', viewport.name, viewport.width + 'x' + viewport.height, 'theme, navigation, layout');
@@ -85,6 +114,7 @@ async function run() {
         assert.ok(await page.locator('h1').count() >= 1, route + ' must have a heading');
         assert.equal(await page.locator('#yb-theme-toggle').count(), 1, route + ' must have theme toggle');
         if (['/wallet/','/smartnode-setup/','/pools/','/community/','/projects/','/buy-yerbas/'].includes(route)) {
+          await auditInternalLinks(page, route);
           await auditAccessibility(page, 'page-' + route.slice(1,-1));
         }
         if (route === '/wallet/') await page.screenshot({path:path.join(out,'wallet-desktop.png'),fullPage:true,animations:'disabled'});
