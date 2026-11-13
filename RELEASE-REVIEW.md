@@ -56,3 +56,11 @@ Sources:
 - https://github.com/The-Yerbas-Endeavor/yerbas/blob/v4.0.1.4/src/chainparams.cpp
 - https://github.com/The-Yerbas-Endeavor/yerbas/blob/v4.0.1.4/src/smartnode/smartnode-collaterals.cpp
 - https://github.com/The-Yerbas-Endeavor/yerbas/blob/v4.0.1.4/src/validation.cpp
+
+
+## Verified whitepaper library correction (2026-11-12)
+
+- The legacy `/whitepaper/` markup contained duplicate `x16r0`, `x16r1`, and `x16r2` IDs, JavaScript manipulating nonexistent `pub`, `GhostRider0`, and `roadMap0` elements, and translation links pointing to files absent from the repository (`Yerbas.German.pdf`, `GhostRider_Whitepaper.German.pdf`, `Roadmap.German.pdf`).
+- Replaced the broken language switcher with an accessible static document library. All linked PDFs were verified to exist in the `gh-pages` Git tree: `assets/documents/YerbasWhitePaper.pdf`, `GhostRider_Whitepaper.pdf`, `X16R-Whitepaper.pdf`, and `X16R-Whitepaper.German.pdf`.
+- Preserved the `/whitepaper/` URL and original PDF files; no legacy assets were deleted.
+- Browser CI now verifies four PDF links return HTTP 200 with a PDF-compatible content type and runs an axe-core accessibility scan for the page.
