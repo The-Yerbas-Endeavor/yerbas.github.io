@@ -82,3 +82,36 @@ Sources:
 - Confirm live market liquidity and aggregator data timestamps, rather than merely HTTP reachability.
 
 No external listing was removed based solely on incomplete web visibility or stale crawler snapshots.
+
+## Network alignment: evidence and safe verification procedure (2026-11-12 Pacific)
+
+Public snapshots inspected, with **different timestamps**, are not equivalent to a simultaneous chain comparison:
+
+| Source | Height in snapshot | Reported software | Snapshot context |
+| --- | ---: | --- | --- |
+| Explorer API `/api/v1/status` | 1,159,394 | Yerbas Core 4.0.1.3 | Web retrieval approximately 2026-11-11; reports `initialBlockDownload=false` |
+| Gatevia `/dashboard/coin_info` | 1,151,324 | Yerbas Core 3.2.0.15 | Table dated 2026-10-30 |
+| Project mining pool dashboard | 1,136,535 | Not reported | Last-found block displayed as approximately 33 days old; may represent historical pool activity, not current network tip |
+
+These figures **must not** be used to claim a fork or synchronized network status because they are not same-time block-hash comparisons. Explorer `/api/getblockcount` may also be cached by third-party crawlers.
+
+### Read-only same-height block-hash check
+
+The added `ops/verify-network-alignment.py` script compares a locally configured Yerbas Core **mainnet** node with the public explorer at the same height. The local `yerbas-cli` must be able to query an already running, trusted node.
+
+```bash
+python3 ops/verify-network-alignment.py
+```
+
+It performs local `getblockchaininfo` and `getblockhash` RPC calls via `yerbas-cli`, then fetches the explorer's documented `/api/v1/status` and `/api/getblockhash?index=HEIGHT` public APIs. It does **not** expose the local RPC port, create transactions, access a wallet, or send credentials to the explorer.
+
+- Exit 0: hash agrees at the sampled height. This is **not proof** of complete sync or agreement with exchanges/pools.
+- Exit 2: hashes disagree at that same height. Investigate before declaring a chain split.
+- Exit 3: inconclusive (unavailable RPC, unsupported response format, non-mainnet or other errors). Do not count as a match.
+- A matching hash accompanied by height drift or initial sync is reported as a warning.
+- Run again at multiple heights and at the same observation time if chain-state diagnosis matters.
+- For independent Gatevia or mining-pool verification, obtain a block hash at a common height directly from the operator or a verified API. Their public HTML snapshots do not provide simultaneous proof.
+
+Explorer public endpoint documentation: https://explorer.yerbas.org/info
+
+**Important:** This is a staged read-only diagnostic. We have not run it against the user's local node, so no present-day chain agreement is claimed.
