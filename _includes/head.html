@@ -21,7 +21,12 @@
     function paint(){if(theme){var next=root.dataset.theme==='dark'?'light':'dark';theme.textContent=next==='light'?'☀ Light':'☾ Dark';theme.setAttribute('aria-label','Switch to '+next+' theme')}}
     paint();
     if(theme)theme.addEventListener('click',function(){root.dataset.theme=root.dataset.theme==='dark'?'light':'dark';try{localStorage.setItem(key,root.dataset.theme)}catch(_){}paint()});
-    if(menu&&nav)menu.addEventListener('click',function(){var open=menu.getAttribute('aria-expanded')!=='true';menu.setAttribute('aria-expanded',String(open));nav.dataset.open=String(open)});
+    if(menu&&nav){
+      function closeMenu(){menu.setAttribute('aria-expanded','false');nav.dataset.open='false'}
+      menu.addEventListener('click',function(){var open=menu.getAttribute('aria-expanded')!=='true';menu.setAttribute('aria-expanded',String(open));nav.dataset.open=String(open)});
+      document.addEventListener('keydown',function(event){if(event.key==='Escape'&&menu.getAttribute('aria-expanded')==='true'){closeMenu();menu.focus()}});
+      nav.addEventListener('click',function(event){if(event.target.closest('a'))closeMenu()});
+    }
   }
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',bind);else bind();
 })();</script>
