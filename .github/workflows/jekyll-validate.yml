@@ -59,6 +59,18 @@ jobs:
         run: |
           npm install --no-save --ignore-scripts playwright@1.56.1 axe-core@4.10.3
           npx playwright install --with-deps chromium
+      - name: Report npm dependency advisories (read-only)
+        run: |
+          npm audit --json > npm-audit.json || true
+          node -e 'const a=require("./npm-audit.json"); console.log("npm audit:", JSON.stringify(a.metadata && a.metadata.vulnerabilities || {}));'
+      - name: Upload npm audit evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: yerbas-npm-dependency-audit
+          path: npm-audit.json
+          if-no-files-found: ignore
+          retention-days: 7
       - name: Check responsive browser rendering and theme
         run: |
           set -euo pipefail
