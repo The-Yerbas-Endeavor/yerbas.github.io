@@ -1,0 +1,33 @@
+name: Jekyll site validation
+on:
+  pull_request:
+    branches: [gh-pages]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+          bundler-cache: true
+      - name: Build website
+        run: bundle exec jekyll build --trace
+      - name: Verify important generated pages
+        run: |
+          set -eu
+          for page in index.html wallet/index.html assets/index.html smartnode-setup/index.html pools/index.html community/index.html projects/index.html buy-yerbas/index.html; do
+            test -s "_site/$page" || { echo "Missing: $page"; exit 1; }
+          done
+          test -f _site/assets/css/yerbas-modern.css
+          grep -q 'yb-theme-toggle' _site/index.html
+          grep -q 'Get the wallet' _site/index.html
+      - name: Upload site build for review
+        uses: actions/upload-artifact@v4
+        with:
+          name: yerbas-site-preview
+          path: _site/
+          retention-days: 7
