@@ -83,6 +83,19 @@ jobs:
             sleep 1
           done
           node tests/site-visual-check.cjs
+      # External DNS/CDN outages must not block normal Jekyll source validation.
+      # Inspect this advisory result and its attached screenshots before release.
+      - name: Inspect actual public homepage styling
+        continue-on-error: true
+        run: node tests/live-homepage-check.cjs
+      - name: Upload live homepage CSS and layout evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: yerbas-live-homepage-evidence
+          path: live-homepage-evidence/
+          if-no-files-found: ignore
+          retention-days: 7
       - name: Upload screenshots for visual review
         if: always()
         uses: actions/upload-artifact@v4
