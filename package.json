@@ -1,5 +1,8 @@
 {
+  "private": true,
+  "description": "Local browser validation dependencies for the Yerbas Jekyll website",
   "devDependencies": {
-    "gh-pages": "^5.0.0"
+    "axe-core": "4.10.3",
+    "playwright": "1.56.1"
   }
 }
