@@ -101,3 +101,26 @@ html{scroll-behavior:smooth}body{margin:0;background:var(--yb-bg)!important;colo
 .yb-network-panel-head{flex-wrap:wrap}
 .yb-network-panel-head>span:last-child{white-space:nowrap}
 @media(max-width:590px){.yb-header-inner{column-gap:8px}.yb-theme-button{font-size:.82rem;padding:.5rem .65rem}.yb-mobile-button{font-size:.82rem;padding:.5rem .65rem}.yb-brand{font-size:1.2rem;gap:.4rem}.yb-brand img{width:34px;height:34px}}
+
+/* Screenshot review: mobile controls, readable spacing and polished interactions. */
+.yb-mobile-button{align-items:center;justify-content:center;gap:.4rem;min-height:42px}
+.yb-theme-button{display:inline-flex;align-items:center;justify-content:center;min-height:42px;min-width:86px}
+.yb-nav a{white-space:nowrap}
+.yb-card p{line-height:1.6}
+.yb-card a{text-decoration-thickness:1px;text-underline-offset:4px}
+.yb-hero .yb-actions .yb-button{gap:.55rem}
+.yb-section-heading h2{max-width:850px;margin-inline:auto}
+@media(max-width:880px){
+  .yb-header-inner{gap:10px}
+  .yb-nav[data-open="true"]{width:100%;border-top:1px solid var(--yb-border);padding:14px 0 8px;gap:2px}
+  .yb-nav a{display:block;width:100%;padding:9px 12px;border-radius:8px}
+  .yb-nav a:hover,.yb-nav a:focus-visible{background:var(--yb-raised)}
+  .yb-nav a[aria-current="page"]:after{left:12px;right:auto;width:32px;bottom:5px}
+}
+@media(max-width:420px){
+  .yb-header-inner{gap:6px}
+  .yb-brand{font-size:1.08rem;gap:.25rem}
+  .yb-brand img{width:30px;height:30px}
+  .yb-theme-button{min-width:70px}
+  .yb-mobile-button,.yb-theme-button{padding:.5rem .6rem;font-size:.78rem}
+}
