@@ -126,3 +126,18 @@ Explorer public endpoint documentation: https://explorer.yerbas.org/info
 - Added a workflow check that asserts `CNAME=yerbas.org` and compares it against the unmodified `gh-pages` version.
 - Replaced the old README referencing Travis CI and defunct project URLs. Added `RELEASE-CHECKLIST.md` with approval gates, expected routes, production SHA capture, visual checks and non-force-push rollback strategy.
 - Safest release path is a reviewed and explicitly approved merge after the Pages configuration is confirmed. Preserve the original `gh-pages` SHA for rollback and avoid changes to DNS or CNAME.
+
+
+## Legacy mobile-support documentation audit (2026-11-12 Pacific)
+
+A repository-wide source inventory identified **54 static HTML pages** under `mobilewallet/support/`. They retain older Ravencoin-era support text and in some cases misleading Yerbas-specific substitutions. For example, `mobilewallet/support/cryptocurrency-basics/what-is-yerbas.html` incorrectly described a January 2018 launch, the X16R algorithm and absence of masternodes as the current Yerbas history. Several pages used HTTP script URLs for obsolete JavaScript dependencies.
+
+Actions on this draft branch:
+- Preserved every legacy support URL and the original historical body content; no wallet recovery instructions were silently rewritten or represented as current.
+- Added a prominent visible archive warning to all 54 HTML pages, pointing to current official wallet releases and warning against relying on old transaction, recovery, security or node instructions.
+- Added `<meta name="robots" content="noindex, nofollow">` on every legacy HTML page to discourage indexing after the site is published and recrawled. This does **not** guarantee immediate removal from search engines.
+- Changed the old public CDN references from `http://` to `https://`; the old libraries still warrant separate deprecation/security review if this archive remains interactive.
+- Added `tests/test_archived_support.py` and a Jekyll workflow step checking every archive page has its notice and noindex metadata both in source and generated output.
+- This is **containment, not a full correctness review** of the inherited mobile-wallet content. Do not link these pages from active onboarding or describe them as up-to-date.
+
+Potential later decision: after verifying historical traffic and external backlinks, migrate to vetted new support content or implement reviewed redirects, without breaking legitimate bookmarks unexpectedly.
