@@ -91,3 +91,13 @@ html{scroll-behavior:smooth}body{margin:0;background:var(--yb-bg)!important;colo
 @media(max-width:660px){.yb-hero-layout{grid-template-columns:1fr}.yb-hero-art{display:none}.yb-hero:before{background-position:65% center}.yb-hero h1{font-size:clamp(2.5rem,10.3vw,4.2rem)}.yb-feature-grid{grid-template-columns:1fr 1fr}.yb-feature{align-items:flex-start}.yb-feature-icon{font-size:1.45rem}.yb-feature h2{font-size:.89rem}.yb-feature p{font-size:.74rem}.yb-cta{grid-template-columns:1fr;gap:14px}.yb-cta .yb-actions{grid-column:1}.yb-cta-icon{width:56px;height:56px;font-size:2.2rem}}
 @media(max-width:420px){.yb-feature-grid{grid-template-columns:1fr;gap:18px}.yb-hero{padding:64px 0 80px!important}}
 @media(prefers-reduced-motion:reduce){.yb-ecosystem-grid .yb-card:hover{transform:none}}
+
+/* Accessibility: light-theme contrast and resilient small-screen layouts. */
+:root[data-theme="light"] .yb-button-primary,
+:root[data-theme="light"] .yb-button-primary:hover{color:#fff!important}
+.yb-nav a:focus-visible,.yb-card a:focus-visible,.yb-network-panel a:focus-visible,.yb-button:focus-visible{outline:3px solid var(--yb-green);outline-offset:4px}
+.yb-hero h1,.yb-card h3,.yb-footer-grid nav a{overflow-wrap:break-word}
+.yb-card{min-width:0}
+.yb-network-panel-head{flex-wrap:wrap}
+.yb-network-panel-head>span:last-child{white-space:nowrap}
+@media(max-width:590px){.yb-header-inner{column-gap:8px}.yb-theme-button{font-size:.82rem;padding:.5rem .65rem}.yb-mobile-button{font-size:.82rem;padding:.5rem .65rem}.yb-brand{font-size:1.2rem;gap:.4rem}.yb-brand img{width:34px;height:34px}}
