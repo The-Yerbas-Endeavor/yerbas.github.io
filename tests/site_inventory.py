@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
 """Static output inventory: local links, missing assets, duplicate IDs.
 
-Writes a machine-readable report and leaves historical findings visible.
-Deliberately advisory: the main Chromium test already enforces critical routes;
-legacy pages should be reviewed rather than deleted based on a crawler alone.
+Writes a machine-readable report and fails CI on missing local references
+or duplicate IDs. Does not check external HTTP availability or document truth.
 """
 import json
 import posixpath
@@ -104,7 +103,11 @@ def main():
     for x in records[:25]:
         targets = ", ".join(y["resolved"] for y in x["missing_local_resources"][:3])
         print("  ", x["page"], "duplicate ids:", x["duplicate_ids"][:5], "missing:", x["missing_count"], targets)
-    print("Report saved to", REPORT.name, "(advisory; manual triage required)")
+    print("Report saved to", REPORT.name)
+    if records:
+        print("FAIL: generated HTML contains missing local resources or duplicate IDs", file=sys.stderr)
+        return 1
+    print("PASS: no missing local resources or duplicate IDs")
     return 0
 
 
