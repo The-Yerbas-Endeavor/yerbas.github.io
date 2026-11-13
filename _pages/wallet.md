@@ -4,49 +4,20 @@ title: Wallets
 bannerTitle: Yerbas Wallets
 bannerImage: /assets/img/pages/wallet/wallet-banner.jpg
 permalink: /wallet/
+description: "Download and verify the latest Yerbas Core release."
 ---
-
-<div class="page-content">
-  <div class="wrapper text-center pt-8 pb-20" style="max-width: 700px;">
-    <h2 class="mt-10 mb-16">Desktop Downloads</h2>
-    <div class="flex flex-wrap align-center justify-center">
-      <div class="w-full sm:w-1/2 md:w-1/3 px-4 mb-12">
-        <div class="bg-grey-lighter max-w-sm rounded overflow-hidden shadow-md hover:by-grey">
-          <a class="block px-6 py-4" href="https://github.com/The-Yerbas-Endeavor/Yerbas/releases" target="_blank"><img style="max-height: 125px;" src="/assets/img/pages/wallet/windows.svg" align="middle" alt=" Windows wallet"/></a>
-        </div>
-        <a class="block walbg mt-8 text-lg rounded p-2 text-white" href="https://github.com/The-Yerbas-Endeavor/yerbas/releases/download/v4.0.1.3/yerbas-win64-x86-release-4.0.1.3.zip " download><i class="zmdi zmdi-download"></i><span class="inline-block ml-3">Windows</span></a>
-      </div>
-      <div class="w-full sm:w-1/2 md:w-1/3 px-4 mb-12">
-        <div class="bg-grey-lighter max-w-sm rounded overflow-hidden shadow-md hover:by-grey">
-          <a class="block px-6 py-4" href="https://github.com/The-Yerbas-Endeavor/Yerbas/releases" target="_blank"><img style="max-height: 125px;" src="/assets/img/pages/wallet/mac.svg" align="middle" alt=" Mac wallet"/></a>
-        </div>
-        <a class="block walbg mt-8 text-lg rounded p-2 text-white" href="https://github.com/The-Yerbas-Endeavor/yerbas/releases/download/v4.0.1.3/yerbas-macOS15-x86-release-4.0.1.3.tar.gz " download><i class="zmdi zmdi-download"></i><span class="inline-block ml-3">Mac</span></a>
-      </div>
-      <div class="w-full sm:w-1/2 md:w-1/3 px-4 mb-12">
-        <div class="bg-grey-lighter max-w-sm rounded overflow-hidden shadow-md hover:by-grey">
-          <a class="block px-6 py-4" href="https://github.com/The-Yerbas-Endeavor/Yerbas/releases" target="_blank"><img style="max-height: 125px;" src="/assets/img/pages/wallet/linux.svg" align="middle" alt="Linux wallet"/></a>
-        </div>
-        <a class="block walbg mt-8 text-lg rounded p-2 text-white" href="https://github.com/The-Yerbas-Endeavor/yerbas/releases/download/v4.0.1.3/yerbas-ubuntu-26.04-x86-release-4.0.1.3.tar.gz " download><i class="zmdi zmdi-download"></i><span class="inline-block ml-3">Linux</span></a>
-      </div>
-    </div>
-    <h3 class="">For verification hashes and signatures visit our github releases</h3>
-    <a class="block walbg mt-8 text-lg rounded p-2 text-white" href="https://github.com/The-Yerbas-Endeavor/Yerbas/releases"><i class="zmdi zmdi-github-alt"></i><span class="inline-block ml-3">Github Releases (Downloadable Binaries)</span></a>
-    <br>
-    <h2 class="mt-16 mb-8">Paper Wallet</h2>
-    <div class="pt-8 mb-8 pb-8">
-      <div class="flex flex-wrap">
-        <div class="w-full sm:w-1/2 px-2 mb-4">
-          <a class="block walbg mt-8 text-lg rounded p-2 text-white" href="https://paperwallet.yerbas.org/" target="_blank"><span class="inline-block ml-3">Paper Wallet</span></a>
-        </div>
-        <div class="w-full sm:w-1/2 px-2 mb-4">
-          <a class="block walbg mt-8 text-lg rounded p-2 text-white" href="https://vanitywallet.yerbas.org/" target="_blank"><span class="inline-block ml-3">Vanity Wallet</span></a>
-        </div>
-      </div>
+<div class="wrapper yb-section">
+  <div class="yb-eyebrow">Official releases</div>
+  <h2>Download Yerbas Core</h2>
+  <p class="yb-intro">Get the latest published wallet for your operating system from the official Yerbas GitHub releases page. Check the release notes and verify the provided hashes or signatures before installing. Exact package names and operating-system compatibility can vary by release.</p>
+  <div class="yb-grid">
+    <article class="yb-card"><h3>Windows</h3><p>Check current Windows wallet archives and release notes.</p><a href="https://github.com/The-Yerbas-Endeavor/yerbas/releases">Windows downloads →</a></article>
+    <article class="yb-card"><h3>macOS</h3><p>Check supported macOS builds and architecture requirements.</p><a href="https://github.com/The-Yerbas-Endeavor/yerbas/releases">macOS downloads →</a></article>
+    <article class="yb-card"><h3>Linux</h3><p>Review available Linux binaries and build instructions.</p><a href="https://github.com/The-Yerbas-Endeavor/yerbas/releases">Linux downloads →</a></article>
   </div>
+  <div class="yb-notice"><strong>Verify before upgrading.</strong> Back up your wallet securely and read the current release's mandatory upgrade instructions before running a new version. Never download wallet software from an unverified mirror.</div>
+  <div class="yb-actions"><a class="yb-button yb-button-primary" href="https://github.com/The-Yerbas-Endeavor/yerbas/releases">View official releases</a><a class="yb-button" href="https://docs.yerbas.org/">Wallet documentation</a></div>
+  <h2 style="margin-top:3rem">Additional wallet tools</h2>
+  <p class="yb-intro">These independent tools are offered for specialized use. Review their safety and maintenance status before generating or importing keys.</p>
+  <div class="yb-grid"><article class="yb-card"><h3>Paper wallet</h3><p>Offline-oriented wallet utility.</p><a href="https://paperwallet.yerbas.org/">Open tool →</a></article><article class="yb-card"><h3>Vanity wallet</h3><p>Custom-address generation utility.</p><a href="https://vanitywallet.yerbas.org/">Open tool →</a></article></div>
 </div>
-
-<style>
-  .page-content a {
-    color: #fff !important;
-  }
-</style>
