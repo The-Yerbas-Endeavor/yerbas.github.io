@@ -10,6 +10,13 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
+      - name: Protect custom domain and production source
+        run: |
+          set -euo pipefail
+          test "$(cat CNAME)" = "yerbas.org"
+          git fetch --no-tags --depth=1 origin gh-pages
+          git diff --exit-code FETCH_HEAD -- CNAME
+          echo "CNAME remains identical to gh-pages and points to yerbas.org"
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.1'
