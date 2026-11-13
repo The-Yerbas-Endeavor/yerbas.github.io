@@ -1,133 +1,43 @@
 ---
 layout: page-w-banner
-title: SmartnodeSetup
-description: "Yerbas is a digital peer to peer network that aims to implement a use case specific blockchain, designed to efficiently handle one specific function: the transfer of assets from one party to another."
-bannerTitle: Smartnode Setup Instructions
+title: Smartnode Setup
+bannerTitle: Run a Yerbas Smartnode
 bannerImage: /assets/img/pages/about/about-banner.jpg
 permalink: /smartnode-setup/
+description: "Source-backed Smartnode collateral tiers and technical resources for Yerbas Core."
 ---
-
-<div class="wrapper mt-16 pb-20">
-  <h2>To build your Smartnode, follow these simple steps</h2>
-     <h3>Ubuntu 20.04</h3>
-      <h4>1. Update Server</h4>
-    <div>
-        <p><b>sudo apt update && apt upgrade -y <br/>
-          sudo apt install unzip fail2ban -y </b>
-        </p>
-    </div>  
-        <h4>2. Add 4GB of SWAP</h4>
-            <p><i>First check to make sure there is not already swap active:</i></p>
-            <div><p><b>free -h</b></p></div>
-               <p>note<br/>
-                  <i>If no swap it will return:<br/>
-                     Swap:     0B     0B     0B</i>
-                     Create SWAP and Activate:
-                 </p>
-            <div>
-                <p><b>sudo bash \<br/>
-                   sudo dd if=/dev/zero of=/swapfile bs=1M count=4000 \<br/>
-                   sudo mkswap /swapfile && sudo chmod 600 /swapfile && sudo swapon /swapfile<br/>
-                   exit<br/></b>
-               </p>
-              </div>
-      <h4>3. Enable UFW & Open Ports</h4>
-            <div>
-                <p><b>apt install ufw -y<br/>
-                  ufw default deny incoming<br/>
-                  ufw default allow outgoing<br/>
-                  ufw allow ssh<br/>
-                  ufw allow 15420/tcp<br/>
-                  ufw enable <br/></b>
-                </p>
-            </div>
-      <h4>4. Configure Fail2Ban</h4>
-             <div>
-                <p><i>Setup jail for bad guys hitting SSH, and set it to ban after three failed logins to SSH</i></p>
-                <p> nano /etc/fail2ban/jail.local</p>
-             </div>
-               <p><i>Copy and paste the following into the file</i></p>
-            <div>
-               <p><b> [sshd]<br/>
-                    enabled = true<br/>
-                   port = 22<br/>
-                   filter = sshd<br/>
-                   logpath = /var/log/auth.log<br/>
-                   maxretry = 3  <br/></b>
-                </p>
-            </div>
-                 <p>Reboot the server</p>
-            <div><p><b>sudo reboot</b></p></div>
-                 <p>Add a system user to run yerbasd</p>
-            <div>
-                <p><b>adduser username<br/>
-                   adduser username sudo<br/>
-                   su username</b></p></div>
-                <p>Get Yerbas wallet and daemon:</p>
-            <div>
-                 <p><b>wget https://github.com/The-Yerbas-Endeavor/yerbas/releases/download/v3.1.2.7/yerbas-ubuntu20-v3.1.2.7.tar.gz<br/>
-                     tar -xf yerbas-ubuntu20-3.1.2.8.tar.gz<br/>
-                     mkdir ~/.yerbascore && touch ~/.yerbascore/yerbas.conf<br/>
-                     echo daemon=1 >> ~/.yerbascore/yerbas.conf<br/>
-                     cd .yerbascore<br/>
-                     wget https://github.com/The-Yerbas-Endeavor/yerbas/releases/download/v3.1.2.7/powcache.dat<br/>
-                     cd ~/yerbas-build<br/>
-                     ./yerbasd<br/></b> 
-                  </p>
-            </div>
-                  <p>Note<br/>
-                      <i>You should see Yerbasd server starting. You can confirm it is running top -c it will be using 100% CPU (1 core). This shows you it is working, we will return to it later
-                      </i>
-                  </p>
-      <h4>5. Sync local wallet and send collateral</h4>
-            <ul>
-              <li>Start wallet and let it finish syncing.</li>
-              <li>Encrypt wallet (Settings > Encrypt Wallet)</li>
-              <li>Create new receiving address Backup wallet.dat (File > Backup Wallet).</li>
-              <li>Store in multiple locations. Dump private key for receiving address (this should be printed and stored offline in multiple locations):</li>
-              <li>Send 28,000 YERB to self</li>
-              <li>Wait for 2 confirmations</li>
-              <li>walletpassphrase yourpasswordhere 600   <i> from the debug console to unlock the wallet before running the protx setup script.</i> </li>
-            </ul>
-      <h4>6. Build protx command for control wallet</h4>
-                    <p>An example protx quick_setup command</p>
-              <div>
-                     <p><b> protx quick_setup d7898f44c6bdc39a49b0917d5c6bcb61455270ddb9e7eb1168a6b745434daf26 1 194.113.73.87:15420 yaDfcdCupB1T5YoVRjYr8fXCvB8U5AuNX8</b></p>
-              </div>  
-       <h5>The structure from left to right is:</h5>
-              <ul>
-                 <li>Transaction ID: In your wallet go to “Transactions” right click the one you sent yourself earlier and “Copy Transaction ID”. Replace the Transaction ID in example.</li>
-                 <li>Encrypt wallet (Settings > Encrypt Wallet)</li>
-                 <li>Collateral index: Tools > Debug console. Type smartnode outputs to check if 1 or 0. Adjust example command if needed.</li>
-                 <li>Your smartnode server IP and port. Replace example IP with your Smartnode server IP, leave port as is.</li>
-                 <li>Fee address: This is any address in your wallet which contains enough YERB to pay the fee (cannot be the address which you sent the 10 thousand YERB to). When you enter the protx quick_setup command it is a transaction and needs to be paid for. It is a very small amount 1/2 a YERB is more than enough. In Debug console do “listaddressbalances” to show all addresses with a balance, choose one and replace address in example command.!</li>
-             </ul>
-                 <p>Note<br/>
-                     <i>Enter the protx quick_setup command in Debug console. This will create a .conf file for that node in the same directory you ran the wallet from. Open it and copy the contents</i></p>
-                 <p>Back to the smartnode server</p>
-             <div>
-                  <p><b> ~./yerbas-cli stop<br/>
-                      nano ~/.yerbascore/yerbas.conf</b>
-                  </p>
-              </div>
-                    <p>Paste in what you copied from the .conf file made during the protx command, save and exit.</p>
-                    <p>Start yerbasd</p> 
-                    <div><p><b>~./yerbasd</b></p></div>
-                    <p>Wait two minutes and do:Wait two minutes and do:</p>
-              <div>
-                     <p><b>~./yerbas-cli smartnode status</b></p>
-              </div>
-                     <p>This should return:</p>
-       <h5 class="heading4"><i>Ready Ready</i></h5>
-            <h2>Congratulations: Your smartnode is now running. Time for a break</h2>
-                      <br/>
-       <h5>Extras:</h5>
-                      <p>Check the node’s current height with:</p>
-                      <p><b><i>/yerbas-cli getblockcount</i></b></p>
-                      <p><b><i>./yerbas-cli -getinfo</i></b></p>
-                      <p>To update a node that has been PoSe Banded:</p>
-                      <p><i>protx update_service “protxhash” “ip”:15420 “BLSKEY”</i></p>
-                      <p>You can get the proTxHash by right clicking your Smartnode in the QT wallet Smartnode list<br/>
-                         BLS private key. This is stored on your Smartnode in ~/.yerbascore/yerbas.conf</p>
-                      <p><i>ie: protx update_service 7d62ce3bcf71825te84y5ca4b93a53583a8f1c9c70989e351c0f470088729a83 yoursmartnodeip:15420 3808471d6e52fe3b683474075cdf50192babe3b38203187ec0cg18fg54e439a4</i></p>
-</div>
+<section class="wrapper yb-section">
+  <p class="yb-eyebrow">Network infrastructure</p>
+  <h2>Operate a Yerbas Smartnode</h2>
+  <p class="yb-intro">Smartnodes are part of the Yerbas network infrastructure. Before registering or changing a Smartnode, check the Core release used by the network, current chain height, collateral policy and registration requirements.</p>
+  <div class="yb-notice"><strong>Version-sensitive operations:</strong> This reference is derived from Yerbas Core <code>v4.0.1.4</code>. It does not establish the current tip height or guarantee that a registration is valid. The earlier Ubuntu 20.04 / Core 3.1.2.7 installation script and 28,000 YERB example have been retired.</div>
+  <h2>Collateral schedule in Core v4.0.1.4</h2>
+  <p>The table below reflects <code>getCollateral(height)</code> in the mainnet consensus parameters. Each source threshold is an <strong>inclusive ending height</strong>, not the date or height when that tier begins. These are the amounts selected by the lookup for the indicated heights.</p>
+  <div class="yb-table-scroll">
+    <table class="yb-reward-table" id="yb-collateral-table">
+      <caption>Mainnet collateral lookup by chain height (Core v4.0.1.4)</caption>
+      <thead><tr><th scope="col">Height (inclusive)</th><th scope="col">Collateral (YERB)</th></tr></thead>
+      <tbody>
+        <tr><td>0–69,420</td><td>10,000</td></tr>
+        <tr><td>69,421–100,420</td><td>16,000</td></tr>
+        <tr><td>100,421–200,420</td><td>22,000</td></tr>
+        <tr><td>200,421–302,420</td><td>28,000</td></tr>
+        <tr><td>302,421–420,420</td><td>34,000</td></tr>
+        <tr><td>420,421–1,096,420</td><td>42,000</td></tr>
+        <tr><td>1,096,421–1,369,420</td><td>69,000</td></tr>
+        <tr><td>1,369,421 and later</td><td>100,000</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="yb-notice"><strong>Existing collaterals have separate rules.</strong> The Core <code>isPayableCollateral(height, amount)</code> function accepts listed historical collateral amounts only through their corresponding inclusive end heights (with the final tier not expiring). Do not assume that every previously used amount remains payable forever, or that a scheduled amount alone establishes a currently valid Smartnode registration.</div>
+  <h2>Smartnode reward rules</h2>
+  <p>The v4.0.1.4 mainnet parameters specify a 20% Smartnode base-reward share after the initial 4,200-height period. The payment function separately checks that the deterministic Smartnode list contains at least 10 nodes; otherwise it returns zero. When eligible, the payment calculation also includes the configured Smartnode share of special transaction fees.</p>
+  <p>These are rules in the tagged source, <strong>not</strong> a promise of a payment to any particular Smartnode or a representation of current network conditions.</p>
+  <div class="yb-grid">
+    <article class="yb-card"><h3>Installation reference</h3><p>Review setup concepts, but cross-check the external guide against the installed Core version. Parts of the external documentation reference older releases.</p><a href="https://docs.yerbas.org/docs/smartnodes/installation/manualsetup/">Read guide (verify version) →</a></article>
+    <article class="yb-card"><h3>Core releases</h3><p>Verify the supported wallet and daemon release before operating or registering a node.</p><a href="https://github.com/The-Yerbas-Endeavor/yerbas/releases">Official releases →</a></article>
+    <article class="yb-card"><h3>Network explorer</h3><p>Inspect the blockchain and Smartnode information on the network explorer.</p><a href="https://explorer.yerbas.org/masternodes">View Smartnodes →</a></article>
+  </div>
+  <h2>Source and verification</h2>
+  <p>References: <a href="https://github.com/The-Yerbas-Endeavor/yerbas/blob/v4.0.1.4/src/chainparams.cpp">mainnet collateral and reward parameters</a>, <a href="https://github.com/The-Yerbas-Endeavor/yerbas/blob/v4.0.1.4/src/smartnode/smartnode-collaterals.cpp">collateral threshold and payability implementation</a>, and <a href="https://github.com/The-Yerbas-Endeavor/yerbas/blob/v4.0.1.4/src/validation.cpp">Smartnode payment implementation</a>. Verify the current network height and any subsequent consensus updates before sending funds.</p>
+</section>

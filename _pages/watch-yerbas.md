@@ -1,27 +1,20 @@
 ---
 layout: page-w-banner
 title: Watch Yerbas
-bannerTitle: Watch Yerbas
+bannerTitle: Yerbas Market Resources
 bannerImage: /assets/img/pages/aggregators/aggregators-banner.jpg
 permalink: /watch-yerbas/
+description: "Third-party Yerbas market trackers, which may contain delayed or stale prices."
 ---
-
-<div class="page-content">
-  <div class="wrapper mt-8 mb-32 m-auto">
-    <h1><b>Aggregators</b></h1><br>
-    <div class="flex flex-wrap">
-      {% for aggregators in site.data.aggregators %}
-            {% if aggregators.kyc == false %}
-                <div class="mb-6 px-2 sm:w-1/2 md:w-1/4 text-center">
-                  <div class="bg-white max-w-sm rounded overflow-hidden shadow-md hover:by-grey">
-                    <a class="block px-6 py-8" href="{{ aggregators.url }}" target="_blank"><img src="{{ aggregators.logo }}" alt="{{ aggregators.name }} aggregators"/></a>
-                  </div>
-                  {% if aggregators.donates_to_project == true %}
-                    <span><i class="zmdi zmdi-balance"></i> &nbsp; Donates to foundation</span>
-                  {% endif %}
-                </div>
-            {% endif %}
-      {% endfor %}
-    </div>
+<section class="wrapper yb-section">
+  <p class="yb-eyebrow">Third-party listings</p>
+  <h2>Track Yerbas across market directories</h2>
+  <p class="yb-intro">These links are an external resource directory, not a live price feed. Listed prices, trading volumes, and circulation figures may be outdated or incomplete.</p>
+  <aside class="yb-notice"><strong>Check data freshness:</strong> Some directories display a last-trade date months in the past or report missing market data. Verify timestamps and compare with exchange order books before using any price or volume figure. No market data displayed here is guaranteed to be current.</aside>
+  <div class="yb-grid">
+  {% for item in site.data.aggregators %}
+    <article class="yb-card"><h3>{{ item.name | escape }}</h3><p>Third-party listing. Verify the last update timestamp and its data sources.</p><a href="{{ item.url }}" rel="noopener noreferrer nofollow" target="_blank">Open {{ item.name | escape }} ↗</a></article>
+  {% endfor %}
+    <article class="yb-card"><h3>Blockchain explorer</h3><p>See on-chain transactions, blocks, and assets. The explorer is not a substitute for an exchange order book.</p><a href="https://explorer.yerbas.org/">Explore the blockchain ↗</a></article>
   </div>
-</div>
+</section>

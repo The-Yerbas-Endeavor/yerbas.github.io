@@ -1,30 +1,22 @@
 ---
 layout: page-w-banner
-title: Pools
-bannerTitle: Mining Pools
+title: Mining Pools
+bannerTitle: Mine Yerbas
 bannerImage: /assets/img/pages/exchanges/exchange-banner.jpg
 permalink: /pools/
+description: "Mining resources and community-listed Yerbas pools."
 ---
-
-<div class="page-content">
-  <div class="wrapper mb-32 m-auto">
-    <h2>How can I mine Yerbas?</h2>
-    <p>Designed to be mined on readily available consumer-grade hardware, Yerbas uses a new algorithm known as GhostRider. It’s designed to be Application Specific Integrated Circuit (ASIC) resistant and is designed to be efficient on consumer CPU hardware.</p>
-    <p>To start mining YERB, you will first need to create a wallet and generate a wallet address that your YERB can be paid into. Next, choose a mining pool.</p>
-    <p>Network pool stats: <a href="https://miningpoolstats.stream/yerbas" target="_blank" rel="noopener">https://miningpoolstats.stream/yerbas</a></p>
-    <p>To learn how to mine, visit: <a href="https://docs.yerbas.org/docs/mining/" target="_blank" rel="noopener">https://docs.yerbas.org/docs/mining/</a></p>
-    <p class="mb-8">Yerbas (YERB) is supported by the following mining pools:</p>
-    <div class="flex flex-wrap">
-      {% assign n = site.data.pools | size %}
-      {% assign random_sorted_pools = site.data.pools | sample: n %}
-      {% for pool in random_sorted_pools %}
-      <div class="mb-2 px-2 sm:w-1/2 md:w-1/3 text-center">
-        <div class="max-w-sm rounded overflow-hidden shadow-md hover:text-white">
-          <span class="mb-0"><a class="block walbg2 mx-2 mt-4 mb-3 px-20 py-3 font-medium text-base rounded hover:text-white" href="{{ pool.url }}" target="_blank">{{ pool.name }}</a></span>
-        </div>
-      </div>
-      {% endfor %}
-    </div>
-          <p>You pool missing form this list? Please submit a pull request to add <a href="https://github.com/The-Yerbas-Endeavor/yerbas.github.io/blob/main/_data/pools.yml" target="_blank" rel="noopener">here</a></p>
+<section class="wrapper yb-section">
+  <p class="yb-eyebrow">Proof of work</p><h2>Start mining YERB</h2>
+  <p class="yb-intro">Yerbas uses GhostRider proof of work. Create and verify a wallet receiving address, review the mining documentation, and choose a compatible pool.</p>
+  <div class="yb-actions"><a class="yb-button yb-button-primary" href="/wallet/">Get a wallet</a><a class="yb-button" href="https://docs.yerbas.org/docs/mining/">Mining reference</a><a class="yb-button" href="https://miningpoolstats.stream/yerbas">Pool directory</a></div>
+  <aside class="yb-notice"><strong>Verify the pool before mining:</strong> A working website is not proof of working stratum connections, current block rewards or payouts. Check connection instructions, real-time pool statistics, fees, payout currency and the last successfully paid block directly with the operator.</aside>
+  <h2>Community-listed mining pools</h2>
+  <div class="yb-grid">
+  {% assign pools = site.data.pools | sort: 'name' %}
+  {% for pool in pools %}
+    <article class="yb-card"><h3>{{ pool.name | escape }}</h3><p>Check GhostRider support, current pool operation, fees and payout terms before connecting miners.</p><a href="{{ pool.url }}" rel="noopener noreferrer nofollow" target="_blank">Visit pool website ↗</a></article>
+  {% endfor %}
   </div>
-</div>
+  <p class="yb-small" style="margin-top:2rem">Pool operators can propose corrections to <a href="https://github.com/The-Yerbas-Endeavor/yerbas.github.io/blob/gh-pages/_data/pools.yml">the community pool directory</a>.</p>
+</section>

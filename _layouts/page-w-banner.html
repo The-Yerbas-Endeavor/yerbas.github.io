@@ -1,27 +1,20 @@
 ---
 layout: default
 ---
-
-<header class="page-banner text-center relative overflow-hidden py-20">
-  <div class="py-8">
-    <h1 class="animated fadeInDown page-title text-white mt-1 mb-1">{% if page.bannerTitle %} {{ page.bannerTitle | escape }} {% else %} {{ page.title | escape }} {% endif %}</h1>
-  {% if page.subTitle %}<div class="page-subtitle text-white mb-1">{{ page.subTitle | escape }}</div>{% endif %}
-  {% if page.bannerImage %}<img class="absolute pin" src="{{ page.bannerImage }}" alt="banner image"/>{% endif %}
-  </div>
+<header class="page-banner yb-page-banner">
+ <div class="wrapper">
+  <p class="yb-eyebrow">Yerbas ecosystem</p>
+  <h1>{% if page.bannerTitle %}{{ page.bannerTitle | escape }}{% else %}{{ page.title | escape }}{% endif %}</h1>
+  {% if page.subTitle %}<p>{{ page.subTitle | escape }}</p>{% endif %}
+ </div>
 </header>
 <div class="page-content" aria-label="Content">
-  {{ content }}
+ {% if page.url == '/assets/' or page.url == '/halving/' or page.url == '/ledger/' or page.url == '/whitepaper/' or page.url == '/wcc/' %}
+ <div class="wrapper">
+  <aside class="yb-notice" aria-label="Documentation status">
+   <strong>Technical reference:</strong> Some material on this page is historical and may not reflect current Yerbas Core releases or consensus rules. Verify critical details using <a href="https://docs.yerbas.org/">current documentation</a> and <a href="https://github.com/The-Yerbas-Endeavor/yerbas/releases">official releases</a>.
+  </aside>
+ </div>
+ {% endif %}
+ {{ content }}
 </div>
-
-<style>
-  .page-banner {
-    background-color: rgba(28, 79, 76, 0.89);
-  }
-  .page-banner img {
-    z-index: -1;
-    left: 25%;
-    top: 25%;
-    transform: translate(-25%, -25%);
-    width: 100%;
-  }
-</style>

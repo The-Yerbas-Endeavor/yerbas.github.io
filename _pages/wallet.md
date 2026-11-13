@@ -1,52 +1,29 @@
 ---
 layout: page-w-banner
 title: Wallets
-bannerTitle: Yerbas Wallets
+bannerTitle: Wallets & Downloads
 bannerImage: /assets/img/pages/wallet/wallet-banner.jpg
 permalink: /wallet/
+description: "Download and verify the latest Yerbas Core release."
 ---
-
-<div class="page-content">
-  <div class="wrapper text-center pt-8 pb-20" style="max-width: 700px;">
-    <h2 class="mt-10 mb-16">Desktop Downloads</h2>
-    <div class="flex flex-wrap align-center justify-center">
-      <div class="w-full sm:w-1/2 md:w-1/3 px-4 mb-12">
-        <div class="bg-grey-lighter max-w-sm rounded overflow-hidden shadow-md hover:by-grey">
-          <a class="block px-6 py-4" href="https://github.com/The-Yerbas-Endeavor/Yerbas/releases" target="_blank"><img style="max-height: 125px;" src="/assets/img/pages/wallet/windows.svg" align="middle" alt=" Windows wallet"/></a>
-        </div>
-        <a class="block walbg mt-8 text-lg rounded p-2 text-white" href="https://github.com/The-Yerbas-Endeavor/yerbas/releases/download/v4.0.1.3/yerbas-win64-x86-release-4.0.1.3.zip " download><i class="zmdi zmdi-download"></i><span class="inline-block ml-3">Windows</span></a>
-      </div>
-      <div class="w-full sm:w-1/2 md:w-1/3 px-4 mb-12">
-        <div class="bg-grey-lighter max-w-sm rounded overflow-hidden shadow-md hover:by-grey">
-          <a class="block px-6 py-4" href="https://github.com/The-Yerbas-Endeavor/Yerbas/releases" target="_blank"><img style="max-height: 125px;" src="/assets/img/pages/wallet/mac.svg" align="middle" alt=" Mac wallet"/></a>
-        </div>
-        <a class="block walbg mt-8 text-lg rounded p-2 text-white" href="https://github.com/The-Yerbas-Endeavor/yerbas/releases/download/v4.0.1.3/yerbas-macOS15-x86-release-4.0.1.3.tar.gz " download><i class="zmdi zmdi-download"></i><span class="inline-block ml-3">Mac</span></a>
-      </div>
-      <div class="w-full sm:w-1/2 md:w-1/3 px-4 mb-12">
-        <div class="bg-grey-lighter max-w-sm rounded overflow-hidden shadow-md hover:by-grey">
-          <a class="block px-6 py-4" href="https://github.com/The-Yerbas-Endeavor/Yerbas/releases" target="_blank"><img style="max-height: 125px;" src="/assets/img/pages/wallet/linux.svg" align="middle" alt="Linux wallet"/></a>
-        </div>
-        <a class="block walbg mt-8 text-lg rounded p-2 text-white" href="https://github.com/The-Yerbas-Endeavor/yerbas/releases/download/v4.0.1.3/yerbas-ubuntu-26.04-x86-release-4.0.1.3.tar.gz " download><i class="zmdi zmdi-download"></i><span class="inline-block ml-3">Linux</span></a>
-      </div>
-    </div>
-    <h3 class="">For verification hashes and signatures visit our github releases</h3>
-    <a class="block walbg mt-8 text-lg rounded p-2 text-white" href="https://github.com/The-Yerbas-Endeavor/Yerbas/releases"><i class="zmdi zmdi-github-alt"></i><span class="inline-block ml-3">Github Releases (Downloadable Binaries)</span></a>
-    <br>
-    <h2 class="mt-16 mb-8">Paper Wallet</h2>
-    <div class="pt-8 mb-8 pb-8">
-      <div class="flex flex-wrap">
-        <div class="w-full sm:w-1/2 px-2 mb-4">
-          <a class="block walbg mt-8 text-lg rounded p-2 text-white" href="https://paperwallet.yerbas.org/" target="_blank"><span class="inline-block ml-3">Paper Wallet</span></a>
-        </div>
-        <div class="w-full sm:w-1/2 px-2 mb-4">
-          <a class="block walbg mt-8 text-lg rounded p-2 text-white" href="https://vanitywallet.yerbas.org/" target="_blank"><span class="inline-block ml-3">Vanity Wallet</span></a>
-        </div>
-      </div>
+<section class="wrapper yb-section">
+  <p class="yb-eyebrow">Start with Yerbas Core</p>
+  <h2>Choose your platform</h2>
+  <p class="yb-intro">Find the official Yerbas wallet releases for Windows, macOS, and Linux. Check platform compatibility and release notes on GitHub before downloading.</p>
+  <div class="yb-grid">
+    <article class="yb-card yb-download-card"><span class="yb-mark" aria-hidden="true">▦</span><h3>Windows</h3><p>Review available Windows wallet packages and their checksums.</p><a href="https://github.com/The-Yerbas-Endeavor/yerbas/releases">View Windows releases <span aria-hidden="true">↗</span></a></article>
+    <article class="yb-card yb-download-card"><span class="yb-mark" aria-hidden="true">◉</span><h3>macOS</h3><p>Confirm current macOS and processor architecture support.</p><a href="https://github.com/The-Yerbas-Endeavor/yerbas/releases">View macOS releases <span aria-hidden="true">↗</span></a></article>
+    <article class="yb-card yb-download-card"><span class="yb-mark" aria-hidden="true">⌘</span><h3>Linux</h3><p>Review available Linux archives and build instructions.</p><a href="https://github.com/The-Yerbas-Endeavor/yerbas/releases">View Linux releases <span aria-hidden="true">↗</span></a></article>
   </div>
-</div>
-
-<style>
-  .page-content a {
-    color: #fff !important;
-  }
-</style>
+  <aside class="yb-notice"><strong>Download safely.</strong> Always use the official release page, verify published checksums or signatures where provided, back up your wallet before upgrading, and follow mandatory upgrade notices. We do not show a fixed “latest version” here because releases can change.</aside>
+  <div class="yb-actions"><a class="yb-button yb-button-primary" href="https://github.com/The-Yerbas-Endeavor/yerbas/releases">Official GitHub releases <span aria-hidden="true">↗</span></a><a class="yb-button" href="https://docs.yerbas.org/">Wallet setup guides <span aria-hidden="true">↗</span></a></div>
+</section>
+<section class="yb-section yb-section-alt">
+  <div class="wrapper"><p class="yb-eyebrow">Additional tools</p><h2>Specialized wallet utilities</h2><p class="yb-intro">Review how each tool handles private keys before generating or importing addresses. Never enter a seed phrase into a site you do not trust.</p>
+    <div class="yb-grid">
+      <article class="yb-card"><h3>Paper wallet</h3><p>Wallet-generation utility for specialized use.</p><a href="https://paperwallet.yerbas.org/">Open utility ↗</a></article>
+      <article class="yb-card"><h3>Vanity wallet</h3><p>Generate addresses with chosen prefixes.</p><a href="https://vanitywallet.yerbas.org/">Open utility ↗</a></article>
+      <article class="yb-card"><h3>Community support</h3><p>Find assistance, report issues, and review development updates.</p><a href="/community/">Ask the community ↗</a></article>
+    </div>
+  </div>
+</section>

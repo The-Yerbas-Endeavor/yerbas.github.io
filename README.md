@@ -1,42 +1,39 @@
-# Welcome to future Yerbas.org website codebase
-## READ.ME under construction!
-Current Build Status: ![Build Status](https://travis-ci.org/YerbasProject/Yerbas.svg?branch=master)
-Live site: [yerbas.org](https://yerbas.org)
-Report problems or help improve the site by opening a [new issue](https://github.com/The-Yerbas-Endeavor/The-Yerbas-Endeavor.github.io.org/issues/new) or [pull request](https://github.com/The-Yerbas-Endeavor/The-Yerbas-Endeavor.github.io.org/compare).
+# Yerbas.org website
 
+Official source for [yerbas.org](https://yerbas.org), built with Jekyll and hosted on GitHub Pages.
 
-## Earn Yerbas for Contributing to the Yerbas website (TBD)
-Open issues [labeled with "Bounty"](https://github.com/The-Yerbas-Endeavor/The-Yerbas-Endeavor.github.io/labels/Bounty)
-have bounties on them. Viewing the issue will reveal the value of the bounty.
-Submit a pull request resolving the issue along with an accompanying note or
-comment containing a yerbas address and automatically receive a payment in the
-amount of the bounty if it gets merged.
+The production website is maintained from the `gh-pages` branch. **GitHub's actual Pages publishing-source setting must be confirmed in repository Settings → Pages before deploying.** The repository default branch is `main`, which should not be treated as the production source solely because it is the default.
 
-## Setup the website locally
-https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/
-View site on localhost:4000
+## Website development
 
-## How to Participate
-1. Fork yerbasproject.github.io
-2. Click the settings tab
-3. Rename repository from yerbasproject.github.io to `username`.github.io
-4. Make changes.
-5. Ensure your changes are published with GitHub Pages at https://`username`.github.io
-6. Create a Pull Request from your repository to YerbasProject
-7. Add comment to pull request to your local fork of the website. https://`username`.github.io
-8. Click the Create Pull Request button
-9. Wait for PR to be approved!
+The site uses the existing Jekyll / Minima build pipeline, shared layouts in `_layouts/`, includes in `_includes/`, and content in `_pages/`. Shared visual styles for the modernization are in `assets/css/yerbas-modern.css`.
 
-### Code of Conduct
-Participation in this project is subject to a [Code of Conduct](https://github.com/The-Yerbas-Endeavor/The-Yerbas-Endeavor.github.io/blob/master/CODE_OF_CONDUCT.md).
+Create a feature branch from `gh-pages`, not `main`. Make changes in the feature branch and open a **draft pull request targeting `gh-pages`**.
 
-### Questions?
-Please join us in one of our [communities](https://yerbasproject.github.io/community/) if you need help.
+To build locally (with a compatible Ruby/Bundler environment):
 
-### Todo List
-The following are on the Yerbas.org agenda.
-+ Integrate multiple languages and language templating.
-+ Refine overall templating and css structures.
-+ Continue to convert away from minima theme.
-+ Remove any lingering legacy/irrelevant data from minima theme.
-+ Fix minor issues on mobilewallet/support
+```sh
+bundle install
+bundle exec jekyll build --trace
+bundle exec jekyll serve
+```
+
+The local site is normally available at `http://127.0.0.1:4000/`. Before merging, GitHub Actions must pass the Jekyll build and Chromium browser, accessibility, page and internal-link checks. Screenshots and the compiled site are available as CI artifacts.
+
+## Deployment and rollback
+
+Read [RELEASE-CHECKLIST.md](RELEASE-CHECKLIST.md) and [RELEASE-REVIEW.md](RELEASE-REVIEW.md) before promotion. A successful CI run does **not** authorize production deployment. Explicit human approval is required to merge the draft PR.
+
+The `CNAME` file in the publishing branch must remain `yerbas.org`. Do not change DNS, GitHub Pages publishing configuration or production settings as part of an ordinary visual update.
+
+Before merge, record the exact `gh-pages` commit SHA and the intended merge commit. If the deployed version has to be rolled back, make a **new revert commit or restore the prior tree in a new commit**, then allow Pages to publish it; avoid force-pushing or deleting history.
+
+## Contributing
+
+Use the current [website repository](https://github.com/The-Yerbas-Endeavor/yerbas.github.io) to report issues and propose pull requests. Refer to the [Core repository](https://github.com/The-Yerbas-Endeavor/yerbas) for consensus changes, [Core releases](https://github.com/The-Yerbas-Endeavor/yerbas/releases) for software downloads, and [Yerbas documentation](https://docs.yerbas.org/) for operator guides. Verify version-dependent documentation against the current Core release before publishing it as active instructions.
+
+Historical technical articles may remain in the site as archives and should be labeled accordingly. Do not promise contributor bounties, live market data, compatible wallet builds or current Smartnode requirements without verifying the source and obtaining appropriate project approval.
+
+## Community
+
+Connect through the [community page](https://yerbas.org/community/) or the project's [GitHub organization](https://github.com/The-Yerbas-Endeavor).

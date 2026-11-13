@@ -5,6 +5,8 @@ bannerTitle: World Crypto Con Hackathon
 permalink: /wcc/
 ---
 
+<aside class="yb-notice" role="note" aria-label="Archived hackathon documentation"><strong>Archived hackathon reference.</strong> This page describes an earlier event, testnet, nightly builds and API endpoints. Its downloads, faucet and setup procedures may no longer function or be secure. Do not use these instructions to configure a current Yerbas wallet or node. For current development resources visit <a href="https://github.com/The-Yerbas-Endeavor/yerbas">Yerbas Core</a> and <a href="https://github.com/The-Yerbas-Endeavor/yerbas/releases">official releases</a>.</aside>
+
 <div class="page-content">
   <div class="wrapper mt-8 mb-32 m-auto">
 

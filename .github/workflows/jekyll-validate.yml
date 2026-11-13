@@ -1,0 +1,100 @@
+name: Jekyll site validation
+on:
+  pull_request:
+    branches: [gh-pages]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Protect custom domain and production source
+        run: |
+          set -euo pipefail
+          test "$(cat CNAME)" = "yerbas.org"
+          git fetch --no-tags --depth=1 origin gh-pages
+          git diff --exit-code FETCH_HEAD -- CNAME
+          echo "CNAME remains identical to gh-pages and points to yerbas.org"
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+          bundler-cache: true
+      - name: Validate read-only alignment helper offline
+        run: |
+          python3 -m py_compile ops/verify-network-alignment.py
+          python3 -m unittest discover -s tests -p 'test_network_alignment.py' -v
+      - name: Build website
+        run: bundle exec jekyll build --trace
+      - name: Inventory all generated HTML links and duplicate IDs
+        run: python3 tests/site_inventory.py
+      - name: Upload site-wide inventory
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: yerbas-site-inventory
+          path: site-inventory.json
+          if-no-files-found: ignore
+          retention-days: 7
+      - name: Verify archived mobile support safeguards
+        run: python3 -m unittest discover -s tests -p 'test_archived_support.py' -v
+      - name: Verify important generated pages
+        run: |
+          set -eu
+          for page in index.html wallet/index.html assets/index.html smartnode-setup/index.html pools/index.html community/index.html projects/index.html buy-yerbas/index.html; do
+            test -s "_site/$page" || { echo "Missing: $page"; exit 1; }
+          done
+          test -f _site/assets/css/yerbas-modern.css
+          grep -q 'yb-theme-toggle' _site/index.html
+          grep -q 'Download wallet' _site/index.html
+          grep -q 'yb-ecosystem-heading' _site/index.html
+          grep -q 'yb-feature-strip' _site/index.html
+          test -s _site/assets/img/home/grass.jpg
+          test -s _site/assets/img/media/logo-icon-small.png
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install pinned browser test runtime
+        run: |
+          npm ci --ignore-scripts --no-audit
+          npx playwright install --with-deps chromium
+      - name: Report npm dependency advisories (read-only)
+        run: |
+          npm audit --json > npm-audit.json || true
+          node -e 'const a=require("./npm-audit.json"); console.log("npm audit:", JSON.stringify(a.metadata && a.metadata.vulnerabilities || {}));'
+          npm audit --audit-level=high
+      - name: Upload npm audit evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: yerbas-npm-dependency-audit
+          path: npm-audit.json
+          if-no-files-found: ignore
+          retention-days: 7
+      - name: Check responsive browser rendering and theme
+        run: |
+          set -euo pipefail
+          python3 -m http.server 8765 --bind 127.0.0.1 --directory _site > /tmp/yerbas-preview.log 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid" || true' EXIT
+          for i in $(seq 1 20); do
+            if curl -fsS http://127.0.0.1:8765/ -o /dev/null; then break; fi
+            sleep 1
+          done
+          node tests/site-visual-check.cjs
+      - name: Upload screenshots for visual review
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: yerbas-visual-previews
+          path: visual-previews/
+          if-no-files-found: ignore
+          retention-days: 7
+      - name: Upload site build for review
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: yerbas-site-preview
+          path: _site/
+          retention-days: 7
