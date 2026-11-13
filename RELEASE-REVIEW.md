@@ -42,3 +42,17 @@ This file documents checks and uncertainty, not a claim that the project content
 - Verified previous-block height boundaries and base YERB subsidies (4.2 through 0.420). Removed the misleading static payment-split columns; actual founder/smartnode payouts have separate consensus conditions.
 - Added Chromium table-row and accessibility checks on `/halving/`.
 - Source links: https://github.com/The-Yerbas-Endeavor/yerbas/blob/v4.0.1.4/src/validation.cpp and https://github.com/The-Yerbas-Endeavor/yerbas/blob/v4.0.1.4/src/test/subsidy_tests.cpp
+
+## Confirmed Smartnode-source review (2026-11-12)
+
+- Examined tag `v4.0.1.4` `src/chainparams.cpp`, `src/smartnode/smartnode-collaterals.cpp`, and `src/validation.cpp`.
+- Mainnet `getCollateral(height)` uses **inclusive upper bounds**. 69,000 YERB is selected at heights 1,096,421–1,369,420; 100,000 YERB is selected at height 1,369,421 onward. These ranges should not be misrepresented as activation heights.
+- `isPayableCollateral` is a separate lookup for historical amounts, with an inclusive end-height policy. New registration and payment validity require additional consensus context and network state.
+- Mainnet Smartnode reward percentage in `chainparams.cpp` uses 0 through height 4,200 and 20 thereafter. `GetSmartnodePayment` checks the deterministic list for at least 10 nodes and adds a Smartnode share of special transaction fees when eligible.
+- Updated `/smartnode-setup/` with a source-backed reference table, explicit version qualification, non-guarantee language, and existing documentation warnings. Added Chromium tests for the eight tiers and 69k/100k boundaries.
+- Still required: verify the current network height, registrations and deployment specifics before claiming any amount is presently required for a new Smartnode.
+
+Sources:
+- https://github.com/The-Yerbas-Endeavor/yerbas/blob/v4.0.1.4/src/chainparams.cpp
+- https://github.com/The-Yerbas-Endeavor/yerbas/blob/v4.0.1.4/src/smartnode/smartnode-collaterals.cpp
+- https://github.com/The-Yerbas-Endeavor/yerbas/blob/v4.0.1.4/src/validation.cpp
