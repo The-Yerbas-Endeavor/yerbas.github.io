@@ -1,15 +1,28 @@
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1210">
   {%- seo -%}
-  <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Raleway:300,400,500,600,700" rel="stylesheet">
-  <link href="{{ "/assets/css/material-design-iconic-font.min.css" | relative_url }}" rel="stylesheet">
-  <link href="{{ "/assets/css/tailwind.min.css" | relative_url }}" rel="stylesheet">
-  <link href="{{ "/assets/css/animate.min.css" | relative_url }}" rel="stylesheet">
-  <link href="{{ "/assets/main.css" | relative_url }}" rel="stylesheet">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="stylesheet" href="{{ '/assets/css/material-design-iconic-font.min.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/tailwind.min.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/animate.min.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/yerbas-modern.css' | relative_url }}">
   {%- feed_meta -%}
-  <script async type="text/javascript" src="/assets/js/waypoints.min.js"></script>
-  {% include scripts.html %}
+  <script>(function(){
+  var root=document.documentElement, key='yerbas-theme';
+  var stored;
+  try{stored=localStorage.getItem(key)}catch(_){}
+  var preferred=window.matchMedia&&window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';
+  root.dataset.theme=stored==='light'||stored==='dark'?stored:preferred;
+  function bind(){
+    var theme=document.getElementById('yb-theme-toggle'),menu=document.getElementById('yb-menu-toggle'),nav=document.getElementById('yb-nav');
+    function paint(){if(theme){var next=root.dataset.theme==='dark'?'light':'dark';theme.textContent=next==='light'?'☀ Light':'☾ Dark';theme.setAttribute('aria-label','Switch to '+next+' theme')}}
+    paint();
+    if(theme)theme.addEventListener('click',function(){root.dataset.theme=root.dataset.theme==='dark'?'light':'dark';try{localStorage.setItem(key,root.dataset.theme)}catch(_){}paint()});
+    if(menu&&nav)menu.addEventListener('click',function(){var open=menu.getAttribute('aria-expanded')!=='true';menu.setAttribute('aria-expanded',String(open));nav.dataset.open=String(open)});
+  }
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',bind);else bind();
+})();</script>
 </head>
