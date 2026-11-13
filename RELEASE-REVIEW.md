@@ -141,3 +141,19 @@ Actions on this draft branch:
 - This is **containment, not a full correctness review** of the inherited mobile-wallet content. Do not link these pages from active onboarding or describe them as up-to-date.
 
 Potential later decision: after verifying historical traffic and external backlinks, migrate to vetted new support content or implement reviewed redirects, without breaking legitimate bookmarks unexpectedly.
+
+
+## Site-wide generated HTML inventory (2026-11-12 Pacific)
+
+The GitHub Actions build now runs `tests/site_inventory.py` across all published `_site/**/*.html` output and uploads `yerbas-site-inventory` JSON for review.
+
+First audit in [run 43373598681](https://github.com/The-Yerbas-Endeavor/yerbas.github.io/actions/runs/43373598681):
+- **76 generated HTML pages** scanned.
+- **0 pages with duplicate HTML IDs**.
+- **148 missing local links or assets** across **51 pages**.
+- All 51 pages with findings are inside the already-archived `/mobilewallet/support/` section, mostly obsolete relative asset paths, missing old stylesheet files, and links to renamed Ravencoin/Yerbas FAQ pages.
+- No missing local paths or duplicate IDs were found by this scan on the other generated pages. This does not guarantee all third-party links or all dynamic JavaScript actions are correct.
+
+These findings are **not** silently suppressed or described as corrected. The old mobile support pages already have a visible archive warning and `noindex` tags, but a future owner decision is needed to replace, redirect or repair this material. The inventory is advisory rather than blocking the Jekyll build, because the changes predate the redesign and we do not want to remove historical pages without approving a migration.
+
+Do not promote the archived support pages as live documentation. Keep all fresh onboarding linked to `/wallet/`, current release notes, and version-verified guides.
