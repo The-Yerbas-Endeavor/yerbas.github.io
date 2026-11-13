@@ -70,6 +70,11 @@ async function run() {
         assert.equal(await page.locator('h1').count(), 1, 'Home should have a single h1');
         assert.equal(await page.locator('#yb-ecosystem-heading').count(), 1, 'Ecosystem section must exist');
         assert.equal(await page.locator('.yb-ecosystem-grid .yb-card').count(), 6, 'Six ecosystem cards');
+        assert.equal(await page.locator('.yb-start-grid .yb-start-card').count(), 3, 'Three clear onboarding paths');
+        assert.equal(await page.locator('#yb-start-heading').count(), 1, 'Starter section is present');
+        assert.ok(await page.locator('.yb-hero-refresh a[href="/wallet/"]').count() === 1, 'Primary wallet CTA');
+        assert.ok(await page.locator('.yb-hero-refresh a[href="https://explorer.yerbas.org/"]').count() === 1, 'Explorer CTA');
+        assert.ok(await page.locator('.yb-ecosystem-grid a[href="/projects/"]').count() === 1, 'Projects CTA');
         assert.equal(await page.locator('nav[aria-label="Main navigation"]').count(), 1);
         const overflow = await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 2);
         assert.equal(overflow, false, viewport.name + ' horizontal overflow');
