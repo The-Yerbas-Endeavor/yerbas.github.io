@@ -27,6 +27,16 @@ jobs:
           python3 -m unittest discover -s tests -p 'test_network_alignment.py' -v
       - name: Build website
         run: bundle exec jekyll build --trace
+      - name: Inventory all generated HTML links and duplicate IDs
+        run: python3 tests/site_inventory.py
+      - name: Upload site-wide inventory
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: yerbas-site-inventory
+          path: site-inventory.json
+          if-no-files-found: ignore
+          retention-days: 7
       - name: Verify archived mobile support safeguards
         run: python3 -m unittest discover -s tests -p 'test_archived_support.py' -v
       - name: Verify important generated pages
