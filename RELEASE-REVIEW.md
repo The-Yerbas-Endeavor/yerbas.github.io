@@ -23,7 +23,7 @@ Production branch: `gh-pages` (must remain unchanged until approval)
 ## Open release blockers
 
 1. **Operator documentation:** Verify smartnode registration, collateral, and wallet version compatibility directly against current consensus/release notes. The documentation website is stale.
-2. **Technical pages:** Review `/halving/`, `/assets/`, `/whitepaper/`, `/ledger/`, and `/wcc/`. These pages retain historical explanations. In `/halving/` the row for blocks 10,000,000–11,000,000 lists total reward 6 YERB, but its subshares total 6.4 YERB; verify actual consensus before correcting any values.
+2. **Technical pages:** The `/halving/` table has now been replaced with source-backed v4.0.1.4 base subsidy ranges (using previous-block height as in Core). Review `/halving/`, `/assets/`, `/whitepaper/`, `/ledger/`, and `/wcc/`. These pages retain historical explanations. The earlier `/halving/` table incorrectly combined base subsidy with assumed static payout shares and included an arithmetic inconsistency. The replacement separates base subsidy from recipient-specific payments, verified against `src/validation.cpp` and `src/test/subsidy_tests.cpp` in tag v4.0.1.4.
 3. **Trading venues and pools:** Confirm exact deep links, custody status, YERB markets, deposit/withdrawal availability, and pool operation with the respective operators; never represent listed third-party venues as endorsed.
 4. **Accessibility:** Automated axe checks do not replace manual screen-reader and keyboard traversal testing, or a human visual contrast review.
 5. **Deployment:** Confirm GitHub Pages publishing source and custom-domain behavior, and obtain explicit approval before merging PR #4.
@@ -35,3 +35,10 @@ Production branch: `gh-pages` (must remain unchanged until approval)
 - After approval: verify a clean CI run at the exact merge SHA, deploy, then verify canonical routes, desktop/mobile themes, and external links.
 
 This file documents checks and uncertainty, not a claim that the project content or external services are fully verified.
+
+## Confirmed protocol-source correction (2026-11-12)
+
+- Inspected tagged `v4.0.1.4` source: `src/validation.cpp` `GetBlockSubsidy` and `src/test/subsidy_tests.cpp`.
+- Verified previous-block height boundaries and base YERB subsidies (4.2 through 0.420). Removed the misleading static payment-split columns; actual founder/smartnode payouts have separate consensus conditions.
+- Added Chromium table-row and accessibility checks on `/halving/`.
+- Source links: https://github.com/The-Yerbas-Endeavor/yerbas/blob/v4.0.1.4/src/validation.cpp and https://github.com/The-Yerbas-Endeavor/yerbas/blob/v4.0.1.4/src/test/subsidy_tests.cpp
