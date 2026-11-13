@@ -1,6 +1,7 @@
 // Browser smoke tests against a locally served Jekyll build.
 // Run from CI with PLAYWRIGHT_BASE_URL=http://127.0.0.1:8765 node tests/site-visual-check.cjs
 const { chromium } = require('playwright');
+const axe = require('axe-core');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
@@ -8,6 +9,25 @@ const base = process.env.PLAYWRIGHT_BASE_URL || 'http://127.0.0.1:8765';
 const out = path.join(process.cwd(), 'visual-previews');
 fs.mkdirSync(out, { recursive: true });
 
+async function auditAccessibility(page, label) {
+  await page.addScriptTag({ content: axe.source });
+  const result = await page.evaluate(async () => window.axe.run(document, {
+    runOnly: { type: 'tag', values: ['wcag2a','wcag2aa','wcag21a','wcag21aa'] },
+    rules: { 'color-contrast': { enabled: true } }
+  }));
+  const issues = result.violations.map(v => ({
+    id: v.id,
+    impact: v.impact,
+    description: v.help,
+    nodes: v.nodes.slice(0, 12).map(n => ({ target: n.target, failure: n.failureSummary }))
+  }));
+  fs.writeFileSync(path.join(out, 'accessibility-' + label + '.json'), JSON.stringify({
+    url: page.url(),
+    violations: issues,
+    incomplete: result.incomplete.map(x => ({ id:x.id, nodes:x.nodes.length }))
+  }, null, 2));
+  if (issues.length) throw new Error('Accessibility issues: ' + issues.map(x => x.id + '[' + x.impact + '] (' + x.nodes.map(n=>n.target).join(', ') + ')').join('; '));
+}
 async function run() {
   const browser = await chromium.launch({ headless: true });
   let failures = [];
@@ -49,6 +69,9 @@ async function run() {
         await theme.click();
         await page.screenshot({ path: path.join(out, 'home-' + viewport.name + '-' + initial + '.png'), fullPage: true, animations: 'disabled' });
         assert.deepEqual(errors, [], 'No uncaught JavaScript errors');
+        await auditAccessibility(page, 'home-' + viewport.name + '-' + initial);
+        await theme.click();
+        await auditAccessibility(page, 'home-' + viewport.name + '-' + next);
         console.log('PASS', viewport.name, viewport.width + 'x' + viewport.height, 'theme, navigation, layout');
       } catch(e) {
         failures.push(viewport.name + ': ' + e.message);
@@ -61,6 +84,9 @@ async function run() {
         assert.equal(response.status(),200, route + ' must return 200');
         assert.ok(await page.locator('h1').count() >= 1, route + ' must have a heading');
         assert.equal(await page.locator('#yb-theme-toggle').count(), 1, route + ' must have theme toggle');
+        if (['/wallet/','/smartnode-setup/','/pools/','/community/','/projects/','/buy-yerbas/'].includes(route)) {
+          await auditAccessibility(page, 'page-' + route.slice(1,-1));
+        }
         if (route === '/wallet/') await page.screenshot({path:path.join(out,'wallet-desktop.png'),fullPage:true,animations:'disabled'});
         console.log('PASS route',route);
       } catch (e) { failures.push(route + ': '+e.message); }
