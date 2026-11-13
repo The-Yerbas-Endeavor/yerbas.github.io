@@ -117,6 +117,11 @@ async function run() {
           await auditInternalLinks(page, route);
           await auditAccessibility(page, 'page-' + route.slice(1,-1));
         }
+        if (route === '/buy-yerbas/' || route === '/pools/' || route === '/watch-yerbas/') {
+          const safety = await page.locator('.yb-notice').innerText();
+          assert.ok(safety.length > 60, route + ' must include a substantial operational-data caution');
+          assert.equal(await page.locator('main a[href^="https://"]').count() > 0, true, route + ' should expose external references');
+        }
         if (route === '/whitepaper/') {
           const documents = page.locator('a[href$=".pdf"]');
           assert.equal(await documents.count(),4,'Only four repository-verified PDFs should be linked');
