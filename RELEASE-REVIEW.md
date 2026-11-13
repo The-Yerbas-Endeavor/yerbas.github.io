@@ -150,10 +150,22 @@ The GitHub Actions build now runs `tests/site_inventory.py` across all published
 First audit in [run 43373598681](https://github.com/The-Yerbas-Endeavor/yerbas.github.io/actions/runs/43373598681):
 - **76 generated HTML pages** scanned.
 - **0 pages with duplicate HTML IDs**.
-- **148 missing local links or assets** across **51 pages**.
+- **148 missing local links or assets** across **51 pages** in the initial audit; repaired in a later commit (see clean rerun below).
 - All 51 pages with findings are inside the already-archived `/mobilewallet/support/` section, mostly obsolete relative asset paths, missing old stylesheet files, and links to renamed Ravencoin/Yerbas FAQ pages.
 - No missing local paths or duplicate IDs were found by this scan on the other generated pages. This does not guarantee all third-party links or all dynamic JavaScript actions are correct.
 
-These findings are **not** silently suppressed or described as corrected. The old mobile support pages already have a visible archive warning and `noindex` tags, but a future owner decision is needed to replace, redirect or repair this material. The inventory is advisory rather than blocking the Jekyll build, because the changes predate the redesign and we do not want to remove historical pages without approving a migration.
+These findings were subsequently repaired for local URL and asset integrity (see the later audit below). The old mobile support pages retain visible archive warnings and `noindex` tags. A future owner decision is still needed to replace, redirect or fully validate their historic content. The inventory is advisory rather than blocking the Jekyll build, because the changes predate the redesign and we do not want to remove historical pages without approving a migration.
 
 Do not promote the archived support pages as live documentation. Keep all fresh onboarding linked to `/wallet/`, current release notes, and version-verified guides.
+
+
+## Archived support link-repair verification (2026-11-12 Pacific)
+
+The initial whole-site inventory found 148 missing local URLs/assets across 51 archived support pages. Five reviewable commits repaired these without removing the historical pages: all legacy support pages now reference the existing root Yerbas logo, canonical `/mobilewallet/support/css/` stylesheets, and existing archived article paths. The one missing `js/init.js` reference was removed because the file does not exist.
+
+- Before: 76 HTML pages scanned, **148 missing local references**, 51 pages with findings, 0 duplicate IDs.
+- After: 76 HTML pages scanned, **0 missing local references**, 0 pages with findings, 0 duplicate IDs.
+- Evidence: `yerbas-site-inventory` artifact from [GitHub Actions run 43374464781](https://github.com/The-Yerbas-Endeavor/yerbas.github.io/actions/runs/43374464781).
+- Following the clean result, `tests/site_inventory.py` was promoted from an advisory report to a **required CI gate** for missing local links/assets or duplicate IDs.
+- This is a local-path integrity result, **not** verification that archive instructions, historic security guidance, third-party HTTP services, or external exchanges are trustworthy.
+- The 54 legacy mobilewallet HTML pages remain visibly archived and `noindex`; do not promote them as current Yerbas support.
