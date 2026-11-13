@@ -29,6 +29,32 @@ jobs:
           grep -q 'yb-feature-strip' _site/index.html
           test -s _site/assets/img/home/grass.jpg
           test -s _site/assets/img/media/logo-icon-small.png
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install pinned browser test runtime
+        run: |
+          npm install --no-save --ignore-scripts playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Check responsive browser rendering and theme
+        run: |
+          set -euo pipefail
+          python3 -m http.server 8765 --bind 127.0.0.1 --directory _site > /tmp/yerbas-preview.log 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid" || true' EXIT
+          for i in $(seq 1 20); do
+            if curl -fsS http://127.0.0.1:8765/ -o /dev/null; then break; fi
+            sleep 1
+          done
+          node tests/site-visual-check.cjs
+      - name: Upload screenshots for visual review
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: yerbas-visual-previews
+          path: visual-previews/
+          if-no-files-found: ignore
+          retention-days: 7
       - name: Upload site build for review
         uses: actions/upload-artifact@v4
         with:
