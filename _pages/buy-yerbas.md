@@ -4,14 +4,20 @@ title: Buy Yerbas
 bannerTitle: Where to Find Yerbas
 bannerImage: /assets/img/pages/exchanges/exchange-banner.jpg
 permalink: /buy-yerbas/
-description: "View exchange links listed by the Yerbas community."
+description: "Community-listed Yerbas exchange links with independent verification guidance."
 ---
 <section class="wrapper yb-section">
- <div class="yb-eyebrow">Markets</div><h2>Find YERB trading markets</h2>
- <p class="yb-intro">Explore community-listed venues. Verify market availability, the exact trading pair, fees, custody and withdrawal policies before transferring funds. This directory is not an endorsement of an exchange.</p>
- {% assign exchanges = site.data.exchanges | sort: 'name' %}
- <div class="yb-grid">{% for exchange in exchanges %}
-  <article class="yb-card"><h3>{{ exchange.name | escape }}</h3><p>{% if exchange.kyc %}KYC may be required; verify current requirements on the venue.{% else %}Confirm account and identity requirements directly with the venue.{% endif %}</p><a href="{{ exchange.url }}" target="_blank" rel="noopener noreferrer nofollow">View trading market →</a></article>
- {% endfor %}</div>
- <div class="yb-notice"><strong>Trade carefully.</strong> Liquidity and markets can change without notice. Double-check addresses, network selection, and account restrictions.</div>
+  <p class="yb-eyebrow">Third-party markets</p>
+  <h2>Find YERB trading venues</h2>
+  <p class="yb-intro">These venues are listed for discovery. A trading page being online does not prove its YERB order book, deposits, withdrawals, or wallet synchronization are functioning. Confirm everything on the venue before transferring funds.</p>
+  {% assign exchanges = site.data.exchanges | sort: 'name' %}
+  <div class="yb-grid">
+  {% for exchange in exchanges %}
+    <article class="yb-card"><h3>{{ exchange.name | escape }}</h3>
+      <p>Community-listed market. Confirm the exact YERB trading pair, current trading activity, fees, identity requirements, deposit status and withdrawals directly with the operator.</p>
+      <a href="{{ exchange.url }}" target="_blank" rel="noopener noreferrer nofollow" aria-label="Open {{ exchange.name | escape }} external trading page">Open market ↗</a>
+    </article>
+  {% endfor %}
+  </div>
+  <aside class="yb-notice"><strong>Trading involves risk:</strong> YERB pairs may have limited liquidity or outdated quotes. Compare bid/ask spreads and available balances, and independently validate a receiving address before sending coins. Listing does not constitute endorsement.</aside>
 </section>
