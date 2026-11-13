@@ -1,104 +1,20 @@
 ---
 layout: page-w-banner
 title: Community
-bannerTitle: Community Resources
+bannerTitle: Join the Yerbas Community
 bannerImage: /assets/img/pages/community/community-banner.jpg
 permalink: /community/
+description: "Meet the people building and using Yerbas."
 ---
-
-<div class="page-content">
-  <div class="wrapper text-center">
-    <h2>Get involved with the Yerbas community today!</h2>
-    <p>We have a number of active and growing communities for you to choose from:</p>
-    <div class="flex flex-wrap pt-16 pb-32 m-auto" style="max-width: 800px;">
-      <div class="w-1/2 sm:w-1/4 mb-8">
-        <a href="https://x.com/Yerbas_Endeavor" target="_blank">
-          <div class="mb-6 py-4 px-5 inline-block rounded-full bg-grey hover:bg-grey-dark">
-            <i class="zmdi zmdi-x text-5xl text-white"></i>
-          </div>
-        </a>
-        <h3><a href="https://x.com/Yerbas_Endeavor" target="_blank">X</a></h3>
-      </div>
-      <div class="w-1/2 sm:w-1/4 mb-8">
-        <a href="https://discord.gg/XGEp2cKSKF" target="_blank">
-          <div class="mb-6 px-5 inline-block rounded-full bg-grey hover:bg-grey-dark" style="padding-top: 1.75em;padding-bottom: 1.75em;">
-            <img style="width:40px;" src="{{"/assets/img/pages/community/discord.png"}}" alt="discord 1"/>
-          </div>
-        </a>
-        <h3><a href="https://discord.gg/XGEp2cKSKF" target="_blank">Discord</a></h3>
-      </div>
-      <div class="w-1/2 sm:w-1/4 mb-8">
-        <a href="https://t.me/Yerbas420" target="_blank">
-          <div class="mb-6 py-5 px-5 inline-block rounded-full bg-grey hover:bg-grey-dark">
-            <img style="width:40px;" src="{{"/assets/img/pages/community/telegram.png"}}" alt="telegram"/>
-          </div>
-        </a>
-        <h3><a href="https://t.me/Yerbas420" target="_blank">Telegram</a></h3>
-      </div>
-      <div class="w-1/2 sm:w-1/4 mb-8">
-        <a href="https://t.me/yerbas_ru/4" target="_blank">
-          <div class="mb-6 py-5 px-5 inline-block rounded-full bg-grey hover:bg-grey-dark">
-            <img style="width:40px;" src="{{"/assets/img/pages/community/telegram.png"}}" alt="telegram"/>
-          </div>
-        </a>
-        <h3><a href="https://t.me/yerbas_ru/4" target="_blank">Telegram Русский</a></h3>
-      </div>
-      <div class="w-1/2 sm:w-1/4 mb-8">
-        <a href="https://www.reddit.com/r/Yerbas/" target="_blank">
-          <div class="mb-6 py-4 px-5 inline-block rounded-full bg-grey hover:bg-grey-dark">
-            <i class="zmdi zmdi-reddit text-5xl text-white"></i>
-          </div>
-        </a>
-        <h3><a href="https://www.reddit.com/r/Yerbas/" target="_blank">Reddit - r/Yerbas</a></h3>
-      </div>
-      <div class="w-1/2 sm:w-1/4 mb-8">
-        <a href="https://bitcointalk.org/index.php?topic=5398223.msg60105817#msg60105817" target="_blank">
-          <div class="mb-6 py-4 px-5 inline-block rounded-full bg-grey hover:bg-grey-dark">
-            <i class="zmdi zmdi-comments text-5xl text-white"></i>
-          </div>
-        </a>
-        <h3><a href="https://bitcointalk.org/index.php?topic=5398223.msg60105817#msg60105817" target="_blank">Bitcoin Talk</a></h3>
-      </div>
-      <div class="w-1/2 sm:w-1/4 mb-8">
-        <a href="https://github.com/The-Yerbas-Endeavor/Yerbas" target="_blank">
-          <div class="mb-6 py-4 px-5 inline-block rounded-full bg-grey hover:bg-grey-dark">
-            <i class="zmdi zmdi-github text-5xl text-white"></i>
-          </div>
-        </a>
-        <h3><a href="https://github.com/The-Yerbas-Endeavor/Yerbas" target="_blank">Github</a></h3>
-      </div>
-      <div class="w-1/2 sm:w-1/4 mb-8">
-        <a href="https://wiki.yerbas.org/" target="_blank">
-          <div class="mb-6 py-4 px-5 inline-block rounded-full bg-grey hover:bg-grey-dark">
-            <i class="zmdi zmdi-wikipedia text-5xl text-white"></i>
-          </div>
-        </a>
-        <h3><a href="https://wiki.yerbas.org/" target="_blank">Wiki</a></h3>
-      </div>
-      <div class="w-1/2 sm:w-1/4 mb-8">
-        <a href="https://medium.com/@codef1re" target="_blank">
-          <div class="mb-6 py-6 px-5 inline-block rounded-full bg-grey hover:bg-grey-dark">
-            <img style="width:40px;" src="{{"/assets/img/pages/community/medium.png"}}" alt="medium"/>
-          </div>
-        </a>
-        <h3><a href="https://medium.com/@codef1re" target="_blank">Medium (@codef1re)</a></h3>
-      </div>
-      <div class="w-1/2 sm:w-1/4 mb-8">
-        <a href="http://nodes.yerbas.org/" target="_blank">
-          <div class="mb-6 py-4 px-5 inline-block rounded-full bg-grey hover:bg-grey-dark">
-            <i class="zmdi zmdi-chart text-5xl text-white"></i>
-          </div>
-        </a>
-        <h3><a href="http://nodes.yerbas.org/" target="_blank">Yerbas Node Map</a></h3>
-      </div>
-      <div class="w-1/2 sm:w-1/4 mb-8">
-        <a href="https://assetsviewer.yerbas.org/" target="_blank">
-          <div class="mb-6 py-4 px-5 inline-block rounded-full bg-grey hover:bg-grey-dark">
-            <i class="zmdi zmdi-view-list-alt text-5xl text-white"></i>
-          </div>
-        </a>
-        <h3><a href="https://assetsviewer.yerbas.org/" target="_blank">Yerbas Asset Explorer</a></h3>
-      </div>
-    </div>
-  </div>
-</div>
+<section class="wrapper yb-section">
+ <div class="yb-eyebrow">Built together</div><h2>Connect with the community</h2>
+ <p class="yb-intro">Ask questions, share development ideas, follow releases and contribute to the open-source Yerbas ecosystem.</p>
+ <div class="yb-grid">
+  <article class="yb-card"><h3>Discord</h3><p>Discuss wallets, mining, smartnodes and development.</p><a href="https://discord.gg/XGEp2cKSKF" rel="noopener noreferrer" target="_blank">Join Discord →</a></article>
+  <article class="yb-card"><h3>Telegram</h3><p>Connect with community members in real time.</p><a href="https://t.me/Yerbas420" rel="noopener noreferrer" target="_blank">Open Telegram →</a></article>
+  <article class="yb-card"><h3>GitHub</h3><p>Read the source code, report bugs and submit contributions.</p><a href="https://github.com/The-Yerbas-Endeavor" rel="noopener noreferrer" target="_blank">Explore repositories →</a></article>
+  <article class="yb-card"><h3>X / Twitter</h3><p>Follow project news and public announcements.</p><a href="https://x.com/Yerbas_Endeavor" rel="noopener noreferrer" target="_blank">Follow Yerbas →</a></article>
+  <article class="yb-card"><h3>Reddit</h3><p>Join longer community discussions.</p><a href="https://www.reddit.com/r/Yerbas/" rel="noopener noreferrer" target="_blank">Visit r/Yerbas →</a></article>
+  <article class="yb-card"><h3>BitcoinTalk</h3><p>Browse the public Yerbas discussion thread.</p><a href="https://bitcointalk.org/index.php?topic=5398223.msg60105817#msg60105817" rel="noopener noreferrer" target="_blank">Read thread →</a></article>
+ </div>
+</section>
