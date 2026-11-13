@@ -1,27 +1,14 @@
 ---
 layout: page-w-banner
 title: Watch Yerbas
-bannerTitle: Watch Yerbas
+bannerTitle: Yerbas Market Resources
 bannerImage: /assets/img/pages/aggregators/aggregators-banner.jpg
 permalink: /watch-yerbas/
+description: "Community-listed market trackers and aggregation websites for Yerbas."
 ---
-
-<div class="page-content">
-  <div class="wrapper mt-8 mb-32 m-auto">
-    <h1><b>Aggregators</b></h1><br>
-    <div class="flex flex-wrap">
-      {% for aggregators in site.data.aggregators %}
-            {% if aggregators.kyc == false %}
-                <div class="mb-6 px-2 sm:w-1/2 md:w-1/4 text-center">
-                  <div class="bg-white max-w-sm rounded overflow-hidden shadow-md hover:by-grey">
-                    <a class="block px-6 py-8" href="{{ aggregators.url }}" target="_blank"><img src="{{ aggregators.logo }}" alt="{{ aggregators.name }} aggregators"/></a>
-                  </div>
-                  {% if aggregators.donates_to_project == true %}
-                    <span><i class="zmdi zmdi-balance"></i> &nbsp; Donates to foundation</span>
-                  {% endif %}
-                </div>
-            {% endif %}
-      {% endfor %}
-    </div>
-  </div>
-</div>
+<section class="wrapper yb-section">
+ <div class="yb-eyebrow">Market information</div><h2>Follow the YERB network and markets</h2>
+ <p class="yb-intro">Third-party information providers may report prices and statistics differently. Confirm any financial decisions using primary sources.</p>
+ <div class="yb-grid">{% for item in site.data.aggregators %}<article class="yb-card"><h3>{{ item.name | escape }}</h3><p>View community-listed Yerbas market information.</p><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer nofollow">Visit {{ item.name | escape }} →</a></article>{% endfor %}
+ <article class="yb-card"><h3>Blockchain explorer</h3><p>Explore transactions, blocks and assets directly.</p><a href="https://explorer.yerbas.org/">Open explorer →</a></article></div>
+</section>
