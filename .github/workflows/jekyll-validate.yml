@@ -27,6 +27,8 @@ jobs:
           python3 -m unittest discover -s tests -p 'test_network_alignment.py' -v
       - name: Build website
         run: bundle exec jekyll build --trace
+      - name: Verify archived mobile support safeguards
+        run: python3 -m unittest discover -s tests -p 'test_archived_support.py' -v
       - name: Verify important generated pages
         run: |
           set -eu
