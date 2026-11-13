@@ -124,3 +124,6 @@ html{scroll-behavior:smooth}body{margin:0;background:var(--yb-bg)!important;colo
   .yb-theme-button{min-width:70px}
   .yb-mobile-button,.yb-theme-button{padding:.5rem .6rem;font-size:.78rem}
 }
+
+/* Keep inline links distinguishable from surrounding paragraph text without relying on color alone. */
+.yb-small a,.yb-notice a,.yb-intro a,.page-content p a{ text-decoration:underline!important;text-underline-offset:.18em;text-decoration-thickness:1px }
