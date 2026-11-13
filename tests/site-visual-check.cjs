@@ -71,6 +71,44 @@ async function run() {
         assert.equal(await page.locator('#yb-ecosystem-heading').count(), 1, 'Ecosystem section must exist');
         assert.equal(await page.locator('.yb-ecosystem-grid .yb-card').count(), 6, 'Six ecosystem cards');
         assert.equal(await page.locator('.yb-start-grid .yb-start-card').count(), 3, 'Three clear onboarding paths');
+
+        // Catch stale/missing stylesheet where cards exist but render as plain stacked text.
+        const cssLink = await page.locator('link[href*="yerbas-modern.css"]').getAttribute('href');
+        assert.match(cssLink, /[?&]v=\\d+/, 'Modern stylesheet URL must include a build cache-buster');
+        const visual = await page.locator('.yb-start-grid').evaluate(grid => {
+          const cards = [...grid.querySelectorAll('.yb-start-card')];
+          const g = getComputedStyle(grid), c = cards.map(el => ({
+            style: getComputedStyle(el),
+            rect: el.getBoundingClientRect()
+          }));
+          return {
+            display: g.display,
+            template: g.gridTemplateColumns,
+            backgrounds: c.map(x => x.style.backgroundColor),
+            borders: c.map(x => x.style.borderTopWidth),
+            radius: c.map(x => x.style.borderTopLeftRadius),
+            x: c.map(x => x.rect.x),
+            y: c.map(x => x.rect.y),
+            width: c.map(x => x.rect.width),
+            padding: c.map(x => x.style.paddingLeft)
+          };
+        });
+        assert.equal(visual.display, 'grid', 'Starter items must be rendered as a CSS grid');
+        assert.ok(visual.backgrounds.every(bg => bg !== 'rgba(0, 0, 0, 0)' && bg !== 'transparent'),
+          'Each starter card needs a visible card background');
+        assert.ok(visual.borders.every(b => parseFloat(b) >= 1), 'Each starter card needs a border');
+        assert.ok(visual.radius.every(r => parseFloat(r) >= 12), 'Each starter card needs rounded corners');
+        assert.ok(visual.padding.every(p => parseFloat(p) >= 20), 'Each starter card needs internal padding');
+        if (viewport.width >= 1000) {
+          assert.ok(visual.x[1] > visual.x[0] + 100 && visual.x[2] > visual.x[1] + 100,
+            'Desktop starter cards must appear in three columns, not stacked text');
+          assert.ok(Math.abs(visual.y[0] - visual.y[2]) < 5, 'Desktop starter cards share a row');
+        }
+        if (viewport.width <= 590) {
+          assert.ok(visual.y[1] > visual.y[0] + 40, 'Mobile starter cards stack vertically');
+          assert.ok(visual.width.every(w => w > 250), 'Mobile cards use available content width');
+        }
+
         assert.equal(await page.locator('#yb-start-heading').count(), 1, 'Starter section is present');
         assert.ok(await page.locator('.yb-hero-refresh a[href="/wallet/"]').count() === 1, 'Primary wallet CTA');
         assert.ok(await page.locator('.yb-hero-refresh a[href="https://explorer.yerbas.org/"]').count() === 1, 'Explorer CTA');
