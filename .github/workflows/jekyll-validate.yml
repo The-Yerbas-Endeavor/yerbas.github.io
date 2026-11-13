@@ -83,6 +83,16 @@ jobs:
             sleep 1
           done
           node tests/site-visual-check.cjs
+      - name: Inspect actual public homepage styling
+        run: node tests/live-homepage-check.cjs
+      - name: Upload live homepage CSS and layout evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: yerbas-live-homepage-evidence
+          path: live-homepage-evidence/
+          if-no-files-found: ignore
+          retention-days: 7
       - name: Upload screenshots for visual review
         if: always()
         uses: actions/upload-artifact@v4
