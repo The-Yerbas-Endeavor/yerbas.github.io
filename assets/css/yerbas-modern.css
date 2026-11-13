@@ -127,3 +127,13 @@ html{scroll-behavior:smooth}body{margin:0;background:var(--yb-bg)!important;colo
 
 /* Keep inline links distinguishable from surrounding paragraph text without relying on color alone. */
 .yb-small a,.yb-notice a,.yb-intro a,.page-content p a{ text-decoration:underline!important;text-underline-offset:.18em;text-decoration-thickness:1px }
+
+
+/* Source-backed block subsidy reference. */
+.yb-table-scroll{max-width:100%;overflow-x:auto;margin:1.5rem 0 2.5rem;border:1px solid var(--yb-border);border-radius:16px}
+.yb-reward-table{border-collapse:collapse;min-width:420px;width:100%;display:table!important;margin:0}
+.yb-reward-table caption{text-align:left;padding:14px 18px;color:var(--yb-muted);font-size:.9rem;background:var(--yb-surface)}
+.yb-reward-table th,.yb-reward-table td{padding:12px 18px!important;text-align:left;border:0!important;border-top:1px solid var(--yb-border)!important}
+.yb-reward-table thead{background:var(--yb-raised)}
+.yb-reward-table tbody tr:nth-child(even){background:var(--yb-surface)}
+.yb-table-scroll .yb-reward-table th:last-child,.yb-table-scroll .yb-reward-table td:last-child{text-align:right;font-variant-numeric:tabular-nums}
