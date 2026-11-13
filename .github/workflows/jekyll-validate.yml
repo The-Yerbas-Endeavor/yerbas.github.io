@@ -24,7 +24,11 @@ jobs:
           done
           test -f _site/assets/css/yerbas-modern.css
           grep -q 'yb-theme-toggle' _site/index.html
-          grep -q 'Get the wallet' _site/index.html
+          grep -q 'Download wallet' _site/index.html
+          grep -q 'yb-ecosystem-heading' _site/index.html
+          grep -q 'yb-feature-strip' _site/index.html
+          test -s _site/assets/img/home/grass.jpg
+          test -s _site/assets/img/media/logo-icon-small.png
       - name: Upload site build for review
         uses: actions/upload-artifact@v4
         with:
