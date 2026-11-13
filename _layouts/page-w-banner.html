@@ -8,4 +8,13 @@ layout: default
   {% if page.subTitle %}<p>{{ page.subTitle | escape }}</p>{% endif %}
  </div>
 </header>
-<div class="page-content" aria-label="Content">{{ content }}</div>
+<div class="page-content" aria-label="Content">
+ {% if page.url == '/assets/' or page.url == '/halving/' or page.url == '/ledger/' or page.url == '/whitepaper/' or page.url == '/wcc/' %}
+ <div class="wrapper">
+  <aside class="yb-notice" aria-label="Documentation status">
+   <strong>Technical reference:</strong> Some material on this page is historical and may not reflect current Yerbas Core releases or consensus rules. Verify critical details using <a href="https://docs.yerbas.org/">current documentation</a> and <a href="https://github.com/The-Yerbas-Endeavor/yerbas/releases">official releases</a>.
+  </aside>
+ </div>
+ {% endif %}
+ {{ content }}
+</div>
