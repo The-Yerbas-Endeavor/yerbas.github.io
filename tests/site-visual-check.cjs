@@ -113,9 +113,19 @@ async function run() {
         assert.equal(response.status(),200, route + ' must return 200');
         assert.ok(await page.locator('h1').count() >= 1, route + ' must have a heading');
         assert.equal(await page.locator('#yb-theme-toggle').count(), 1, route + ' must have theme toggle');
-        if (['/wallet/','/smartnode-setup/','/pools/','/community/','/projects/','/buy-yerbas/','/halving/'].includes(route)) {
+        if (['/wallet/','/smartnode-setup/','/pools/','/community/','/projects/','/buy-yerbas/','/halving/','/whitepaper/'].includes(route)) {
           await auditInternalLinks(page, route);
           await auditAccessibility(page, 'page-' + route.slice(1,-1));
+        }
+        if (route === '/whitepaper/') {
+          const documents = page.locator('a[href$=".pdf"]');
+          assert.equal(await documents.count(),4,'Only four repository-verified PDFs should be linked');
+          for (const href of await documents.evaluateAll(els => els.map(el=>el.getAttribute('href')))) {
+            const response = await page.request.get(base + href, { timeout: 12000 });
+            assert.equal(response.status(),200,'Whitepaper document must exist: ' + href);
+            assert.match(response.headers()['content-type'] || '',/pdf|octet-stream/,'Document content type should be PDF: ' + href);
+          }
+          await page.screenshot({path:path.join(out,'whitepapers-desktop.png'),fullPage:true,animations:'disabled'});
         }
         if (route === '/smartnode-setup/') {
           const table = page.locator('#yb-collateral-table');
