@@ -12,7 +12,7 @@ description: "Current resources for configuring and maintaining a Yerbas smartno
  <p class="yb-intro">Smartnode requirements, collateral amounts, and registration procedures change with network upgrades. Always use instructions that match your installed Yerbas Core version and the current chain height.</p>
  <div class="yb-notice"><strong>Legacy instructions retired.</strong> The old Ubuntu 20.04 and Yerbas 3.1.2.7 instructions, including the 28,000 YERB collateral example, are outdated. They have been removed to avoid accidental misconfiguration. Do not rely on old collateral values or registration commands.</div>
  <div class="yb-grid">
-  <article class="yb-card"><h3>Installation guide</h3><p>Start with the actively maintained documentation and confirm compatibility with your release.</p><a href="https://docs.yerbas.org/docs/smartnodes/installation/manualsetup/">Read current documentation →</a></article>
+  <article class="yb-card"><h3>Installation guide</h3><p>The documentation may reference older wallet versions and commands. Cross-check every step with current Core release notes before proceeding.</p><a href="https://docs.yerbas.org/docs/smartnodes/installation/manualsetup/">Read installation reference (verify version) →</a></article>
   <article class="yb-card"><h3>Core releases</h3><p>Read the mandatory update notices and download the version supported by the network.</p><a href="https://github.com/The-Yerbas-Endeavor/yerbas/releases">Check Core releases →</a></article>
   <article class="yb-card"><h3>Smartnode network</h3><p>Explore network information and node listings.</p><a href="https://explorer.yerbas.org/masternodes">View smartnodes →</a></article>
  </div>
