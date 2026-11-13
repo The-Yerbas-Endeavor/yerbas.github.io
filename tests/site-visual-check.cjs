@@ -33,6 +33,10 @@ async function run() {
           assert.equal(await page.locator('#yb-menu-toggle').getAttribute('aria-expanded'), 'true');
           await page.locator('#yb-menu-toggle').click();
           assert.equal(await nav.isVisible(), false, 'Mobile menu should close');
+          await page.locator('#yb-menu-toggle').click();
+          await page.keyboard.press('Escape');
+          assert.equal(await nav.isVisible(), false, 'Escape should close mobile navigation');
+          assert.equal(await page.locator('#yb-menu-toggle').getAttribute('aria-expanded'), 'false');
         }
         const theme = page.locator('#yb-theme-toggle');
         const initial = await page.locator('html').getAttribute('data-theme');
