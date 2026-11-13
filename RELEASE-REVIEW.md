@@ -115,3 +115,14 @@ It performs local `getblockchaininfo` and `getblockhash` RPC calls via `yerbas-c
 Explorer public endpoint documentation: https://explorer.yerbas.org/info
 
 **Important:** This is a staged read-only diagnostic. We have not run it against the user's local node, so no present-day chain agreement is claimed.
+
+
+## Repository deployment audit (2026-11-12 Pacific)
+
+- Verified the public GitHub repository's **default branch is `main`**, while the modernization PR is correctly based on `gh-pages`.
+- Verified the original `gh-pages/CNAME` contents are `yerbas.org`. The PR comparison shows the custom-domain file is unchanged.
+- Confirmed the PR's new GitHub Actions workflow performs Jekyll and browser **validation** and uploads artifacts; it has no `pages: write` permission and no deployment step. It must not be treated as evidence of the actual GitHub Pages publishing-source setting.
+- **Still unverified:** repository Settings → Pages publishing source, branch/folder, HTTPS-enforcement state, DNS configuration and release trigger. The available GitHub connector does not expose this setting; the owner must inspect the settings before approving deployment.
+- Added a workflow check that asserts `CNAME=yerbas.org` and compares it against the unmodified `gh-pages` version.
+- Replaced the old README referencing Travis CI and defunct project URLs. Added `RELEASE-CHECKLIST.md` with approval gates, expected routes, production SHA capture, visual checks and non-force-push rollback strategy.
+- Safest release path is a reviewed and explicitly approved merge after the Pages configuration is confirmed. Preserve the original `gh-pages` SHA for rollback and avoid changes to DNS or CNAME.
