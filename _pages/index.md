@@ -91,7 +91,15 @@ description: "Yerbas is an open-source blockchain for peer-to-peer payments, dig
       {% assign exchanges = site.data.exchanges | sort: 'name' %}
       {% for exchange in exchanges %}
       <a class="yb-exchange-tile" href="{{ exchange.url | escape }}" target="_blank" rel="noopener noreferrer nofollow" aria-label="Visit {{ exchange.name | escape }} {{ exchange.pair | escape }} trading market">
-        <span class="yb-exchange-name">{{ exchange.name | escape }}</span>
+        <span class="yb-exchange-tile-identity">
+          <span class="yb-exchange-tile-logo" aria-hidden="true">
+            <span class="yb-exchange-tile-initial">{{ exchange.name | slice: 0, 1 | upcase }}</span>
+            {% if exchange.logo %}
+            <img src="{{ exchange.logo | escape }}" alt="" width="42" height="42" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.hidden=true">
+            {% endif %}
+          </span>
+          <span class="yb-exchange-name">{{ exchange.name | escape }}</span>
+        </span>
         <span class="yb-exchange-meta">{{ exchange.pair | escape }} <span aria-hidden="true">↗</span></span>
       </a>
       {% endfor %}
