@@ -319,3 +319,22 @@ html{scroll-behavior:smooth}body{margin:0;background:var(--yb-bg)!important;colo
 .yb-exchange-tile-logo img[hidden]{display:none!important}
 .yb-exchange-tile-identity .yb-exchange-name{overflow-wrap:anywhere}
 @media(max-width:420px){.yb-exchange-tile-identity{gap:10px}.yb-exchange-tile-logo{flex-basis:44px;width:44px;height:44px}}
+
+
+/* Explicit verified Core wallet binary downloads. */
+.yb-wallet-release-label{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:22px 0 0;color:var(--yb-text)}
+.yb-wallet-release-label strong{padding:7px 12px;border:1px solid var(--yb-border);border-radius:999px;background:var(--yb-faint);color:var(--yb-green);font-size:.87rem}
+.yb-wallet-release-label span{font-size:.87rem;color:var(--yb-muted)}
+.yb-wallet-platform-grid .yb-download-card{gap:13px}
+.yb-wallet-platform-grid .yb-download-card>.yb-button{width:100%;margin-top:auto;padding:12px 14px}
+.yb-wallet-platform-grid .yb-download-card>.yb-small{margin-top:0}
+.yb-linux-downloads{margin:40px 0 0}
+.yb-linux-downloads h3{font-size:clamp(1.4rem,2.5vw,1.85rem);margin:0 0 5px}
+.yb-linux-downloads>p{margin:0}
+.yb-linux-download-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:20px}
+.yb-linux-download-grid a{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 15px;align-items:center;border:1px solid var(--yb-border);border-radius:14px;padding:15px 18px;text-decoration:none!important;color:var(--yb-text);background:var(--yb-card-bg)}
+.yb-linux-download-grid a:hover,.yb-linux-download-grid a:focus-visible{border-color:var(--yb-green);background:var(--yb-raised)}
+.yb-linux-download-grid a strong{grid-column:1;grid-row:1;font-weight:800}
+.yb-linux-download-grid a span:nth-child(2){grid-column:1;grid-row:2;font-size:.84rem;color:var(--yb-muted)}
+.yb-linux-download-grid a span:last-child{grid-column:2;grid-row:1 / 3;color:var(--yb-green);font-size:1.1rem;font-weight:800}
+@media(max-width:660px){.yb-linux-download-grid{grid-template-columns:1fr}.yb-wallet-platform-grid .yb-download-card{min-height:0}}
