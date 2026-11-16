@@ -274,7 +274,7 @@ async function run() {
           const evaluateCode = async () => page.locator('code').first().evaluate(el => {
             const fg=getComputedStyle(el).color, bg=getComputedStyle(el).backgroundColor;
             function luminance(color) {
-              const rgb=color.match(/[\\d.]+/g).slice(0,3).map(Number).map(v=>v/255);
+              const rgb=color.match(/[0-9.]+/g).slice(0,3).map(Number).map(v=>v/255);
               const linear=rgb.map(v=>v<=.04045?v/12.92:Math.pow((v+.055)/1.055,2.4));
               return linear[0]*.2126+linear[1]*.7152+linear[2]*.0722;
             }
