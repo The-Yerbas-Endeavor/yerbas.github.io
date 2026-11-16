@@ -319,7 +319,28 @@ async function run() {
           assert.ok((await page.locator('.yb-reward-table tbody').innerText()).includes('10,000,000–10,999,999'));
           await page.screenshot({path:path.join(out,'subsidy-desktop.png'),fullPage:true,animations:'disabled'});
         }
-        if (route === '/wallet/') await page.screenshot({path:path.join(out,'wallet-desktop.png'),fullPage:true,animations:'disabled'});
+        if (route === '/wallet/') {
+          const prefix='https://github.com/The-Yerbas-Endeavor/yerbas/releases/download/v4.0.1.4/';
+          const expected=[
+            'yerbas-win64-x86-release-4.0.1.4.zip',
+            'yerbas-macOS15-x86-release-4.0.1.4.tar.gz',
+            'yerbas-debian-13-x86-release-4.0.1.4.tar.gz',
+            'yerbas-ubuntu-22.04-x86-release-4.0.1.4.tar.gz',
+            'yerbas-ubuntu-24.04-x86-release-4.0.1.4.tar.gz',
+            'yerbas-ubuntu-24.04-arm64-release-4.0.1.4.tar.gz',
+            'yerbas-ubuntu-26.04-x86-release-4.0.1.4.tar.gz'
+          ];
+          const links=await page.locator('.yb-wallet-downloads a[href]').evaluateAll(els=>els.map(el=>el.getAttribute('href')));
+          for (const name of expected) {
+            assert.equal(links.filter(x=>x===prefix+name).length,1,'Direct binary link required: '+name);
+          }
+          assert.equal(await page.locator('.yb-linux-download-grid a').count(),5,
+            'Linux choices must include all five current release archives');
+          assert.ok(links.includes(prefix+'SHA256SUMS'),'Direct published checksum link required');
+          assert.equal(await page.locator('.yb-wallet-platform-grid a[href="https://github.com/The-Yerbas-Endeavor/yerbas/releases"]').count(),0,
+            'Platform cards should not point to generic release index');
+          await page.screenshot({path:path.join(out,'wallet-desktop.png'),fullPage:true,animations:'disabled'});
+        }
         console.log('PASS route',route);
       } catch (e) { failures.push(route + ': '+e.message); }
       finally { await page.close(); }
