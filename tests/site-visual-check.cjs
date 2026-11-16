@@ -187,6 +187,32 @@ async function run() {
           assert.ok(safety.length > 60, route + ' must include a substantial operational-data caution');
           assert.equal(await page.locator('main a[href^="https://"]').count() > 0, true, route + ' should expose external references');
         }
+        if (route === '/buy-yerbas/') {
+          const rows = page.locator('.yb-market-list .yb-market-row');
+          assert.equal(await rows.count(),5,'Five compact market rows must be displayed');
+          assert.equal(await page.locator('h1').innerText(),'Trade Yerbas.');
+          const styles = await rows.evaluateAll(elements => elements.map(el => {
+            const rect=el.getBoundingClientRect();
+            const css=getComputedStyle(el);
+            return {height:rect.height,width:rect.width,display:css.display,padding:css.paddingTop,bg:css.backgroundColor};
+          }));
+          assert.ok(styles.every(x=>x.display==='grid' && x.height<125 && x.width>400),
+            'Directory must render compact grid rows, not oversized article cards');
+          assert.ok(styles.every(x=>parseFloat(x.padding)<=22),'Rows should remain compact');
+          const links=await page.locator('.yb-market-link').evaluateAll(els=>els.map(e=>e.getAttribute('href')));
+          for (const target of ['https://neoxa.exchange/trade/YERB_USDT',
+            'https://spotex.trade/trade/YERB-USDT',
+            'https://filodex.xyz/trade/YERB_USDT']) {
+            assert.ok(links.includes(target),'Exchange destination missing: '+target);
+          }
+          const oldCards = await page.locator('.yb-market-page .yb-card').count();
+          assert.equal(oldCards,0,'Generic bulky cards must not appear in exchange directory');
+          await page.screenshot({path:path.join(out,'exchanges-desktop-dark.png'),fullPage:true,animations:'disabled'});
+          const toggle=page.locator('#yb-theme-toggle');
+          await toggle.click();
+          await auditAccessibility(page,'page-exchanges-light');
+          await page.screenshot({path:path.join(out,'exchanges-desktop-light.png'),fullPage:true,animations:'disabled'});
+        }
         if (route === '/whitepaper/') {
           const documents = page.locator('a[href$=".pdf"]');
           assert.equal(await documents.count(),4,'Only four repository-verified PDFs should be linked');
