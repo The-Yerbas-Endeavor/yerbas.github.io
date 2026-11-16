@@ -70,6 +70,28 @@ async function run() {
         assert.equal(await page.locator('h1').count(), 1, 'Home should have a single h1');
         assert.equal(await page.locator('#yb-ecosystem-heading').count(), 1, 'Ecosystem section must exist');
         assert.equal(await page.locator('.yb-ecosystem-grid .yb-card').count(), 6, 'Six ecosystem cards');
+
+        const exchangeTiles = page.locator('#exchanges .yb-exchange-tile');
+        assert.equal(await exchangeTiles.count(), 5, 'Homepage should show five Yerbas exchange listings');
+        const exchangeLinks = await exchangeTiles.evaluateAll(links => links.map(a => ({name:a.textContent.trim(),url:a.getAttribute('href')})));
+        for (const [name,url] of [
+          ['NeoxEX','https://neoxa.exchange/trade/YERB_USDT'],
+          ['SpotEX','https://spotex.trade/trade/YERB-USDT'],
+          ['Filodex','https://filodex.xyz/trade/YERB_USDT']
+        ]) {
+          assert.ok(exchangeLinks.some(x => x.name.includes(name) && x.url === url), 'Missing '+name+' link');
+        }
+        const exchangeStyle = await exchangeTiles.first().evaluate(el => ({
+          display: getComputedStyle(el).display,
+          bg: getComputedStyle(el).backgroundColor,
+          border: parseFloat(getComputedStyle(el).borderTopWidth),
+          width: el.getBoundingClientRect().width
+        }));
+        assert.equal(exchangeStyle.display, 'flex', 'Exchange tiles must have layout styling');
+        assert.ok(exchangeStyle.border >= 1 && exchangeStyle.width >= 150,
+          'Exchange tiles must have visible borders and usable size');
+        assert.notEqual(exchangeStyle.bg,'rgba(0, 0, 0, 0)', 'Exchange tiles must have a background');
+
         assert.equal(await page.locator('.yb-start-grid .yb-start-card').count(), 3, 'Three clear onboarding paths');
 
         // Catch stale/missing stylesheet where cards exist but render as plain stacked text.
