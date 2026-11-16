@@ -13,7 +13,7 @@
   donates_to_project: false
 
 - name: NeoxEX
-  logo: https://neoxa.exchange/favicon-512.png
+  logo: "https://www.google.com/s2/favicons?domain=neoxa.exchange&sz=128"
   pair: YERB/USDT
   url: https://neoxa.exchange/trade/YERB_USDT
   donates_to_project: false
