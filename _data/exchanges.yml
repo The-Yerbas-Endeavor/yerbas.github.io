@@ -6,23 +6,26 @@
   donates_to_project: false
 
 - name: Gatevia
-  logo: /assets/img/pages/exchanges/gatevia.png
+  logo: "https://www.google.com/s2/favicons?domain=gatevia.io&sz=128"
   pair: YERB/DOGE
   url: https://gatevia.io/exchange/YERB_DOGE
   kyc: true
   donates_to_project: false
 
 - name: NeoxEX
+  logo: https://neoxa.exchange/favicon-512.png
   pair: YERB/USDT
   url: https://neoxa.exchange/trade/YERB_USDT
   donates_to_project: false
 
 - name: SpotEX
+  logo: "https://www.google.com/s2/favicons?domain=spotex.trade&sz=128"
   pair: YERB/USDT
   url: https://spotex.trade/trade/YERB-USDT
   donates_to_project: false
 
 - name: Filodex
+  logo: "https://www.google.com/s2/favicons?domain=filodex.xyz&sz=128"
   pair: YERB/USDT
   url: https://filodex.xyz/trade/YERB_USDT
   donates_to_project: false
