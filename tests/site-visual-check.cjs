@@ -183,7 +183,8 @@ async function run() {
           await auditAccessibility(page, 'page-' + route.slice(1,-1));
         }
         if (route === '/buy-yerbas/' || route === '/pools/' || route === '/watch-yerbas/') {
-          const safety = await page.locator('.yb-notice').innerText();
+          const noteSelector = route === '/buy-yerbas/' ? '.yb-market-note' : '.yb-notice';
+          const safety = await page.locator(noteSelector).innerText();
           assert.ok(safety.length > 60, route + ' must include a substantial operational-data caution');
           assert.equal(await page.locator('main a[href^="https://"]').count() > 0, true, route + ' should expose external references');
         }
