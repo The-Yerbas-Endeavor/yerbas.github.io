@@ -73,6 +73,24 @@ async function run() {
 
         const exchangeTiles = page.locator('#exchanges .yb-exchange-tile');
         assert.equal(await exchangeTiles.count(), 5, 'Homepage should show five Yerbas exchange listings');
+
+        assert.equal(await exchangeTiles.locator('.yb-exchange-tile-logo img').count(), 5,
+          'All homepage market tiles must display an exchange logo image');
+        assert.equal(await exchangeTiles.locator('.yb-exchange-tile-initial').count(), 5,
+          'Homepage logos must retain initials as a fallback');
+        const logoSlots = await exchangeTiles.locator('.yb-exchange-tile-logo').evaluateAll(els=>els.map(el=>{
+          const image=el.querySelector('img');
+          const rect=el.getBoundingClientRect();
+          return {width:rect.width,height:rect.height,src:image?.getAttribute('src'),hidden:image?.hidden};
+        }));
+        assert.ok(logoSlots.every(x=>x.width>=40 && x.height>=40 && !!x.src),
+          'Exchange logos must occupy clearly visible slots');
+        await exchangeTiles.first().scrollIntoViewIfNeeded();
+        const nestexLogo=exchangeTiles.locator('img[src="/assets/img/pages/exchanges/nestex.png"]');
+        assert.equal(await nestexLogo.count(),1,'Existing local NestEx logo must be reused');
+        await nestexLogo.evaluate(img=>img.decode());
+        assert.ok(await nestexLogo.evaluate(img=>img.naturalWidth>0),'Local NestEx logo must load');
+
         const exchangeLinks = await exchangeTiles.evaluateAll(links => links.map(a => ({name:a.textContent.trim(),url:a.getAttribute('href')})));
         for (const [name,url] of [
           ['NeoxEX','https://neoxa.exchange/trade/YERB_USDT'],
