@@ -271,6 +271,24 @@ async function run() {
           await page.screenshot({path:path.join(out,'whitepapers-desktop.png'),fullPage:true,animations:'disabled'});
         }
         if (route === '/smartnode-setup/') {
+          const evaluateCode = async () => page.locator('code').first().evaluate(el => {
+            const fg=getComputedStyle(el).color, bg=getComputedStyle(el).backgroundColor;
+            function luminance(color) {
+              const rgb=color.match(/[0-9.]+/g).slice(0,3).map(Number).map(v=>v/255);
+              const linear=rgb.map(v=>v<=.04045?v/12.92:Math.pow((v+.055)/1.055,2.4));
+              return linear[0]*.2126+linear[1]*.7152+linear[2]*.0722;
+            }
+            const l1=luminance(fg),l2=luminance(bg);
+            return {fg,bg,ratio:(Math.max(l1,l2)+.05)/(Math.min(l1,l2)+.05)};
+          });
+          for (const themeName of ['dark','light']) {
+            const toggle=page.locator('#yb-theme-toggle');
+            if ((await page.locator('html').getAttribute('data-theme'))!==themeName) await toggle.click();
+            const result=await evaluateCode();
+            assert.ok(result.ratio>=4.5,themeName+' inline code contrast should be at least 4.5:1, got '+JSON.stringify(result));
+            await auditAccessibility(page,'smartnode-code-'+themeName);
+            await page.screenshot({path:path.join(out,'smartnodes-code-'+themeName+'.png'),fullPage:true,animations:'disabled'});
+          }
           const table = page.locator('#yb-collateral-table');
           assert.equal(await table.locator('tbody tr').count(), 8, 'Mainnet collateral schedule has eight tiers');
           const values = await table.locator('tbody tr').allTextContents();
