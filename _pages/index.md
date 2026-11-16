@@ -41,19 +41,37 @@ description: "Yerbas is an open-source blockchain for peer-to-peer payments, dig
     </div>
     <div class="yb-start-grid">
       <article class="yb-start-card">
-        <span class="yb-start-index" aria-hidden="true">01</span>
-        <div><p class="yb-eyebrow">Use the network</p><h3>Get a wallet</h3><p>Download Yerbas Core, check official release files and learn how to get started.</p></div>
-        <a href="/wallet/">Explore wallets <span aria-hidden="true">↗</span></a>
+        <div class="yb-start-card-top">
+          <span class="yb-start-icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><rect x="7" y="13" width="34" height="25" rx="6"/><path d="M12 13V10a4 4 0 0 1 4-4h20"/><path d="M29 25h12"/><circle cx="32" cy="25" r="1.6" fill="currentColor" stroke="none"/></svg></span>
+          <span class="yb-start-index" aria-hidden="true">01 / 03</span>
+        </div>
+        <div class="yb-start-card-content">
+          <h3>Get a wallet</h3>
+          <p>Download Yerbas Core and start sending, receiving, and managing YERB.</p>
+        </div>
+        <a class="yb-start-card-action" href="/wallet/"><span>Explore wallets</span><span class="yb-start-arrow" aria-hidden="true">↗</span></a>
       </article>
       <article class="yb-start-card">
-        <span class="yb-start-index" aria-hidden="true">02</span>
-        <div><p class="yb-eyebrow">See what's happening</p><h3>Explore the chain</h3><p>Look up blocks, transactions, addresses, digital assets and Smartnode information.</p></div>
-        <a href="https://explorer.yerbas.org/">Open the explorer <span aria-hidden="true">↗</span></a>
+        <div class="yb-start-card-top">
+          <span class="yb-start-icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><rect x="6" y="6" width="13" height="13" rx="3"/><rect x="29" y="6" width="13" height="13" rx="3"/><rect x="17" y="29" width="14" height="13" rx="3"/><path d="M12.5 19v5h11.5m11.5-5v5H24m0 0v5"/></svg></span>
+          <span class="yb-start-index" aria-hidden="true">02 / 03</span>
+        </div>
+        <div class="yb-start-card-content">
+          <h3>Explore the chain</h3>
+          <p>Follow blocks, transactions, assets, and Smartnodes on the explorer.</p>
+        </div>
+        <a class="yb-start-card-action" href="https://explorer.yerbas.org/"><span>Open explorer</span><span class="yb-start-arrow" aria-hidden="true">↗</span></a>
       </article>
       <article class="yb-start-card">
-        <span class="yb-start-index" aria-hidden="true">03</span>
-        <div><p class="yb-eyebrow">Help run Yerbas</p><h3>Participate</h3><p>Learn about CPU mining, pools, Smartnode tools and maintaining network infrastructure.</p></div>
-        <a href="/pools/">Explore mining <span aria-hidden="true">↗</span></a>
+        <div class="yb-start-card-top">
+          <span class="yb-start-icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><rect x="8" y="7" width="32" height="12" rx="4"/><rect x="8" y="29" width="32" height="12" rx="4"/><path d="M16 19v10m16-10v10"/><circle cx="15" cy="13" r="1.8" fill="currentColor" stroke="none"/><circle cx="15" cy="35" r="1.8" fill="currentColor" stroke="none"/><path d="M24 13h10m-10 22h10"/></svg></span>
+          <span class="yb-start-index" aria-hidden="true">03 / 03</span>
+        </div>
+        <div class="yb-start-card-content">
+          <h3>Support the network</h3>
+          <p>Find mining pools, Smartnode resources, and ways to participate.</p>
+        </div>
+        <a class="yb-start-card-action" href="/pools/"><span>Explore mining</span><span class="yb-start-arrow" aria-hidden="true">↗</span></a>
       </article>
     </div>
   </div>
