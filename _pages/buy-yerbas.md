@@ -1,24 +1,60 @@
 ---
-layout: page-w-banner
-title: Buy Yerbas
-bannerTitle: Where to Find Yerbas
-bannerImage: /assets/img/pages/exchanges/exchange-banner.jpg
+layout: default
+title: Exchanges
 permalink: /buy-yerbas/
-description: "Community-listed Yerbas exchange links with independent verification guidance."
+description: "Explore third-party trading markets for Yerbas (YERB), including YERB/USDT and YERB/DOGE pairs."
 ---
-<section class="wrapper yb-section">
-  <p class="yb-eyebrow">Third-party markets</p>
-  <h2>Find YERB trading venues</h2>
-  <p class="yb-intro">These venues are listed for discovery. A trading page being online does not prove its YERB order book, deposits, withdrawals, or wallet synchronization are functioning. Confirm everything on the venue before transferring funds.</p>
-  {% assign exchanges = site.data.exchanges | sort: 'name' %}
-  <div class="yb-grid">
-  {% for exchange in exchanges %}
-    <article class="yb-card"><h3>{{ exchange.name | escape }}</h3>
-      {% if exchange.pair %}<p class="yb-exchange-pair">{{ exchange.pair | escape }}</p>{% endif %}
-      <p>Third-party listing. Verify the trading pair, activity, fees, identity requirements, deposits and withdrawals directly with the operator.</p>
-      <a href="{{ exchange.url | escape }}" target="_blank" rel="noopener noreferrer nofollow" aria-label="Open {{ exchange.name | escape }} external {{ exchange.pair | escape }} market">Open market ↗</a>
-    </article>
-  {% endfor %}
+<section class="yb-market-page" aria-labelledby="yb-market-heading">
+  <div class="wrapper">
+    <div class="yb-market-intro">
+      <div class="yb-market-headline">
+        <p class="yb-eyebrow"><span class="yb-signal" aria-hidden="true"></span> YERB · Exchanges</p>
+        <h1 id="yb-market-heading">Trade <span>Yerbas.</span></h1>
+        <p>Browse independent markets for YERB. Choose a trading pair, then continue directly to the exchange.</p>
+        <div class="yb-market-intro-actions">
+          <a href="/wallet/">Get a wallet <span aria-hidden="true">↗</span></a>
+          <a href="https://explorer.yerbas.org/">Block explorer <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <div class="yb-market-visual" aria-hidden="true">
+        <div class="yb-market-orbit">
+          <div class="yb-market-orbit-core"><img src="/assets/img/media/logo-icon-small.png" width="92" height="92" alt=""></div>
+          <span class="yb-market-orbit-tag yb-market-orbit-tag-a">YERB</span>
+          <span class="yb-market-orbit-tag yb-market-orbit-tag-b">USDT</span>
+          <span class="yb-market-orbit-tag yb-market-orbit-tag-c">DOGE</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="yb-market-directory" aria-label="Exchange listings">
+      <div class="yb-market-directory-head">
+        <div>
+          <h2>Available listings</h2>
+          <p>Choose a venue to open its market page.</p>
+        </div>
+        <span class="yb-market-count">{{ site.data.exchanges | size }} listed venues</span>
+      </div>
+
+      <div class="yb-market-list">
+        {% assign exchanges = site.data.exchanges | sort: 'name' %}
+        {% for exchange in exchanges %}
+        <article class="yb-market-row">
+          <span class="yb-market-monogram" aria-hidden="true">{{ exchange.name | slice: 0, 1 | upcase }}</span>
+          <div class="yb-market-identity">
+            <h3>{{ exchange.name | escape }}</h3>
+            <span>External exchange</span>
+          </div>
+          <div class="yb-market-pair-block">
+            <span class="yb-market-col-label">Trading pair</span>
+            <span class="yb-market-pair">{{ exchange.pair | default: 'YERB market' | escape }}</span>
+          </div>
+          <a class="yb-market-link" href="{{ exchange.url | escape }}" target="_blank" rel="noopener noreferrer nofollow" aria-label="Open {{ exchange.name | escape }} {{ exchange.pair | escape }} market in a new tab">
+            Visit market <span aria-hidden="true">↗</span>
+          </a>
+        </article>
+        {% endfor %}
+      </div>
+      <p class="yb-market-note"><span aria-hidden="true">ⓘ</span> Independent venues. Check liquidity, fees, and deposit/withdrawal availability before trading. Listings are not endorsements or live status indicators.</p>
+    </div>
   </div>
-  <aside class="yb-notice"><strong>Trading involves risk:</strong> YERB pairs may have limited liquidity or outdated quotes. Compare bid/ask spreads and available balances, and independently validate a receiving address before sending coins. Listing does not constitute endorsement.</aside>
 </section>
