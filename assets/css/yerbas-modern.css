@@ -281,8 +281,7 @@ html{scroll-behavior:smooth}body{margin:0;background:var(--yb-bg)!important;colo
 /* Readable inline code in dark and light themes.
    The legacy Minima/Tailwind code rule uses a light swatch with insufficient
    foreground contrast in dark mode. Keep code tokens legible everywhere. */
-.page-container :not(pre) > code,
-.page-container code:not(pre code),
+.page-container code,
 .yb-notice code,
 .yb-intro code {
   display:inline;
