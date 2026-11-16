@@ -191,6 +191,21 @@ async function run() {
         if (route === '/buy-yerbas/') {
           const rows = page.locator('.yb-market-list .yb-market-row');
           assert.equal(await rows.count(),5,'Five compact market rows must be displayed');
+
+          assert.equal(await page.locator('.yb-market-logo').count(), 5, 'All exchange rows must include a brand image');
+          const brandChecks = await rows.evaluateAll(elements => elements.map(el => {
+            const img = el.querySelector('.yb-market-logo');
+            const fallback = el.querySelector('.yb-market-monogram-letter');
+            return {name:el.querySelector('h3')?.textContent.trim(),image:!!img,
+              source:img?.getAttribute('src'),width:img?.getBoundingClientRect().width,
+              fallback:!!fallback,srcLoaded:!!(img?.complete && img?.naturalWidth > 0)};
+          }));
+          assert.ok(brandChecks.every(x => x.image && x.fallback && x.width > 24),
+            'Exchange brand images must occupy the logo area and retain initials as fallback');
+          assert.ok(brandChecks.find(x=>x.name==='NestEx')?.srcLoaded,
+            'Local NestEx branding must be available in the generated site');
+          console.log('EXCHANGE LOGOS',JSON.stringify(brandChecks));
+
           assert.equal(await page.locator('h1').innerText(),'Trade Yerbas.');
           const styles = await rows.evaluateAll(elements => elements.map(el => {
             const rect=el.getBoundingClientRect();
