@@ -39,7 +39,12 @@ description: "Explore third-party trading markets for Yerbas (YERB), including Y
         {% assign exchanges = site.data.exchanges | sort: 'name' %}
         {% for exchange in exchanges %}
         <article class="yb-market-row">
-          <span class="yb-market-monogram" aria-hidden="true">{{ exchange.name | slice: 0, 1 | upcase }}</span>
+          <span class="yb-market-monogram yb-market-brand" aria-hidden="true">
+            <span class="yb-market-monogram-letter">{{ exchange.name | slice: 0, 1 | upcase }}</span>
+            {% if exchange.logo %}
+            <img class="yb-market-logo" src="{{ exchange.logo | escape }}" alt="" width="40" height="40" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.hidden=true">
+            {% endif %}
+          </span>
           <div class="yb-market-identity">
             <h3>{{ exchange.name | escape }}</h3>
             <span>External exchange</span>

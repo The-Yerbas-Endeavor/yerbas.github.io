@@ -235,3 +235,10 @@ html{scroll-behavior:smooth}body{margin:0;background:var(--yb-bg)!important;colo
 /* Compact the legacy banners across other secondary pages, retaining page titles. */
 .yb-page-banner{padding:clamp(33px,4.5vw,58px) 0!important}
 .yb-page-banner h1{font-size:clamp(2rem,4vw,3.15rem)}
+
+
+/* Exchange identity: real brand icons with readable fallback initials. */
+.yb-market-brand{position:relative;overflow:hidden;background:var(--yb-card-bg)}
+.yb-market-monogram-letter{display:grid;place-items:center;inset:0;position:absolute}
+.yb-market-logo{position:absolute;z-index:1;inset:0;margin:auto;width:100%;height:100%;padding:5px;object-fit:contain;background:var(--yb-card-bg);border-radius:inherit}
+.yb-market-logo[hidden]{display:none!important}
