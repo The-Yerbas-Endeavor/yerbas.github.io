@@ -276,3 +276,35 @@ html{scroll-behavior:smooth}body{margin:0;background:var(--yb-bg)!important;colo
 @media(max-width:880px){.yb-start-section .yb-start-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:660px){.yb-start-section .yb-start-grid{grid-template-columns:1fr;gap:13px}.yb-start-section .yb-start-card{min-height:225px;padding:21px 22px 17px}.yb-start-card-top{margin-bottom:14px}.yb-start-icon{width:46px;height:46px}.yb-start-icon svg{width:29px;height:29px}.yb-start-card-content{margin-bottom:17px}}
 @media(prefers-reduced-motion:reduce){.yb-start-section .yb-start-card:hover,.yb-start-section .yb-start-card:focus-within{transform:none}.yb-start-arrow{transition:none}}
+
+
+/* Readable inline code in dark and light themes.
+   The legacy Minima/Tailwind code rule uses a light swatch with insufficient
+   foreground contrast in dark mode. Keep code tokens legible everywhere. */
+.page-container :not(pre) > code,
+.page-container code:not(pre code),
+.yb-notice code,
+.yb-intro code {
+  display:inline;
+  padding:.12em .38em;
+  border:1px solid var(--yb-border);
+  border-radius:6px;
+  background:var(--yb-raised)!important;
+  color:var(--yb-text)!important;
+  font-family:ui-monospace,SFMono-Regular,Consolas,"Liberation Mono",monospace;
+  font-size:.88em;
+  font-weight:650;
+  white-space:normal;
+  overflow-wrap:anywhere;
+  box-decoration-break:clone;
+  -webkit-box-decoration-break:clone;
+}
+.page-container pre code {
+  background:transparent!important;
+  color:inherit!important;
+  border:0;
+  padding:0;
+  font-weight:inherit;
+  white-space:pre;
+  overflow-wrap:normal;
+}
