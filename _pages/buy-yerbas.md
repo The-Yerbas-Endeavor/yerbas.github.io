@@ -14,8 +14,9 @@ description: "Community-listed Yerbas exchange links with independent verificati
   <div class="yb-grid">
   {% for exchange in exchanges %}
     <article class="yb-card"><h3>{{ exchange.name | escape }}</h3>
-      <p>Community-listed market. Confirm the exact YERB trading pair, current trading activity, fees, identity requirements, deposit status and withdrawals directly with the operator.</p>
-      <a href="{{ exchange.url }}" target="_blank" rel="noopener noreferrer nofollow" aria-label="Open {{ exchange.name | escape }} external trading page">Open market ↗</a>
+      {% if exchange.pair %}<p class="yb-exchange-pair">{{ exchange.pair | escape }}</p>{% endif %}
+      <p>Third-party listing. Verify the trading pair, activity, fees, identity requirements, deposits and withdrawals directly with the operator.</p>
+      <a href="{{ exchange.url | escape }}" target="_blank" rel="noopener noreferrer nofollow" aria-label="Open {{ exchange.name | escape }} external {{ exchange.pair | escape }} market">Open market ↗</a>
     </article>
   {% endfor %}
   </div>
