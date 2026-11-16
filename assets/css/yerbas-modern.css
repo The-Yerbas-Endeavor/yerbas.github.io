@@ -187,3 +187,51 @@ html{scroll-behavior:smooth}body{margin:0;background:var(--yb-bg)!important;colo
 @media(max-width:700px){.yb-exchange-header{align-items:flex-start;flex-direction:column}.yb-exchange-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:420px){.yb-exchange-grid{grid-template-columns:1fr}.yb-exchange-tile{min-height:95px}}
 @media(prefers-reduced-motion:reduce){.yb-exchange-tile:hover{transform:none}}
+
+
+/* Compact, visual exchange directory — replaces large generic banner/card prose. */
+.yb-market-page{background:var(--yb-bg);padding:clamp(34px,5vw,66px) 0 clamp(64px,8vw,105px)}
+.yb-market-intro{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(230px,.65fr);gap:clamp(22px,5vw,68px);align-items:center;padding:10px 0 clamp(30px,5vw,54px);border-bottom:1px solid var(--yb-border)}
+.yb-market-headline .yb-eyebrow{display:flex;align-items:center;gap:12px;margin:0 0 16px}
+.yb-market-headline h1{font-size:clamp(3.1rem,6vw,5.6rem);line-height:1.04;letter-spacing:-.055em;margin:0 0 16px}
+.yb-market-headline h1 span{color:var(--yb-accent-strong)}
+.yb-market-headline>p:not(.yb-eyebrow){font-size:clamp(1rem,1.55vw,1.17rem);line-height:1.65;max-width:590px;color:var(--yb-muted);margin:0}
+.yb-market-intro-actions{display:flex;flex-wrap:wrap;gap:22px;margin-top:23px}
+.yb-market-intro-actions a{font-size:.88rem;font-weight:750;color:var(--yb-text);text-decoration:none;border-bottom:1px solid var(--yb-border);padding-bottom:4px}
+.yb-market-intro-actions a:hover{color:var(--yb-green);border-color:var(--yb-green)}
+.yb-market-visual{display:grid;place-items:center;min-height:220px}
+.yb-market-orbit{position:relative;display:grid;place-items:center;width:min(21vw,258px);height:min(21vw,258px);min-width:205px;min-height:205px;border-radius:50%;border:1px solid var(--yb-border);background:radial-gradient(circle at 50% 45%,var(--yb-green-deep),transparent 68%);box-shadow:0 0 0 22px var(--yb-faint),inset 0 0 50px rgba(92,201,77,.08)}
+.yb-market-orbit:before,.yb-market-orbit:after{content:"";position:absolute;inset:18px;border:1px dashed var(--yb-border);border-radius:50%}
+.yb-market-orbit:after{inset:39px;border-style:solid;opacity:.6}
+.yb-market-orbit-core{z-index:1;display:grid;place-items:center;width:110px;height:110px;border-radius:27px;background:var(--yb-card-bg);border:1px solid var(--yb-border);box-shadow:var(--yb-shadow)}
+.yb-market-orbit-core img{width:92px;max-height:92px;object-fit:contain}
+.yb-market-orbit-tag{position:absolute;z-index:2;padding:6px 11px;border:1px solid var(--yb-border);border-radius:999px;background:var(--yb-card-bg);color:var(--yb-text);font-size:.67rem;font-weight:800;letter-spacing:.08em;box-shadow:var(--yb-shadow)}
+.yb-market-orbit-tag-a{top:10px;left:-7px}.yb-market-orbit-tag-b{right:-20px;top:40%}.yb-market-orbit-tag-c{bottom:8px;left:3px}
+.yb-market-directory{margin-top:clamp(28px,4vw,48px)}
+.yb-market-directory-head{display:flex;align-items:end;justify-content:space-between;gap:14px;margin-bottom:18px}
+.yb-market-directory-head h2{font-size:clamp(1.4rem,2.3vw,2rem);letter-spacing:-.03em;margin:0 0 4px}
+.yb-market-directory-head p{font-size:.92rem;color:var(--yb-muted);margin:0}
+.yb-market-count{white-space:nowrap;color:var(--yb-green);background:var(--yb-faint);border:1px solid var(--yb-border);border-radius:999px;padding:7px 13px;font-size:.8rem;font-weight:800}
+.yb-market-list{border:1px solid var(--yb-border);border-radius:18px;overflow:hidden;background:var(--yb-card-bg)}
+.yb-market-row{display:grid;grid-template-columns:50px minmax(0,1.15fr) minmax(140px,.7fr) auto;gap:clamp(12px,2.7vw,32px);align-items:center;padding:17px clamp(15px,2.7vw,30px);border-bottom:1px solid var(--yb-border);min-width:0}
+.yb-market-row:last-child{border-bottom:0}
+.yb-market-row:hover{background:var(--yb-raised)}
+.yb-market-monogram{display:grid;place-items:center;width:49px;height:49px;border-radius:14px;background:var(--yb-faint);color:var(--yb-accent-strong);border:1px solid var(--yb-border);font-size:1.34rem;font-weight:900;line-height:1}
+.yb-market-identity{min-width:0}
+.yb-market-identity h3{font-size:clamp(1rem,1.5vw,1.23rem);font-weight:800;letter-spacing:-.02em;margin:0 0 4px}
+.yb-market-identity>span{font-size:.76rem;color:var(--yb-muted)}
+.yb-market-pair-block{display:flex;flex-direction:column;gap:5px;align-items:flex-start}
+.yb-market-col-label{font-size:.69rem;color:var(--yb-muted);text-transform:uppercase;letter-spacing:.08em;font-weight:700}
+.yb-market-pair{font-size:.87rem;font-weight:800;color:var(--yb-text);border:1px solid var(--yb-border);border-radius:8px;padding:5px 9px;background:var(--yb-surface);white-space:nowrap}
+.yb-market-link{display:inline-flex;align-items:center;justify-content:center;gap:18px;white-space:nowrap;border-radius:10px;background:var(--yb-green);border:1px solid var(--yb-green);color:var(--yb-bg)!important;text-decoration:none!important;font-weight:850;font-size:.84rem;padding:12px 16px}
+.yb-market-link:hover{filter:brightness(1.08);background:var(--yb-green);color:var(--yb-bg)!important}
+:root[data-theme="light"] .yb-market-link,:root[data-theme="light"] .yb-market-link:hover{color:#fff!important}
+.yb-market-note{display:flex;gap:9px;align-items:flex-start;max-width:850px;margin:16px 0 0;font-size:.79rem;color:var(--yb-muted);line-height:1.55}
+.yb-market-note span{color:var(--yb-green);font-size:1rem}
+@media(max-width:900px){.yb-market-intro{grid-template-columns:minmax(0,1fr) 210px}.yb-market-row{grid-template-columns:44px minmax(0,1fr) minmax(120px,.7fr) auto;gap:13px}.yb-market-monogram{width:44px;height:44px}.yb-market-link{padding:11px 12px}}
+@media(max-width:690px){.yb-market-page{padding-top:32px}.yb-market-intro{grid-template-columns:1fr}.yb-market-visual{display:none}.yb-market-headline h1{font-size:clamp(2.8rem,10vw,4rem)}.yb-market-directory-head{align-items:start;flex-wrap:wrap}.yb-market-row{grid-template-columns:43px minmax(0,1fr) auto;gap:10px 13px;padding:15px}.yb-market-pair-block{grid-column:2;grid-row:2}.yb-market-link{grid-column:3;grid-row:1 / 3;align-self:center;font-size:.79rem;gap:8px}.yb-market-identity h3{font-size:1.08rem}.yb-market-monogram{grid-row:1 / 3;align-self:center}.yb-market-col-label{display:none}}
+@media(max-width:400px){.yb-market-row{grid-template-columns:40px minmax(0,1fr);gap:8px 11px}.yb-market-link{grid-column:2;grid-row:3;justify-self:start}.yb-market-pair-block{grid-column:2}.yb-market-monogram{grid-row:1 / 3}}
+@media(prefers-reduced-motion:reduce){.yb-market-row,.yb-market-link{transition:none}}
+/* Compact the legacy banners across other secondary pages, retaining page titles. */
+.yb-page-banner{padding:clamp(33px,4.5vw,58px) 0!important}
+.yb-page-banner h1{font-size:clamp(2rem,4vw,3.15rem)}
