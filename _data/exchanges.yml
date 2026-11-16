@@ -1,11 +1,28 @@
 - name: NestEx
   logo: /assets/img/pages/exchanges/nestex.png
-  url:  https://trade.nestex.one/spot/YERB_USDT
+  pair: YERB/USDT
+  url: https://trade.nestex.one/spot/YERB_USDT
   kyc: true
   donates_to_project: false
 
 - name: Gatevia
   logo: /assets/img/pages/exchanges/gatevia.png
-  url:  https://gatevia.io/exchange/YERB_DOGE
+  pair: YERB/DOGE
+  url: https://gatevia.io/exchange/YERB_DOGE
   kyc: true
+  donates_to_project: false
+
+- name: NeoxEX
+  pair: YERB/USDT
+  url: https://neoxa.exchange/trade/YERB_USDT
+  donates_to_project: false
+
+- name: SpotEX
+  pair: YERB/USDT
+  url: https://spotex.trade/trade/YERB-USDT
+  donates_to_project: false
+
+- name: Filodex
+  pair: YERB/USDT
+  url: https://filodex.xyz/trade/YERB_USDT
   donates_to_project: false
