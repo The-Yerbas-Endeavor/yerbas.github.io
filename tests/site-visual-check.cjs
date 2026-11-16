@@ -208,11 +208,26 @@ async function run() {
           }
           const oldCards = await page.locator('.yb-market-page .yb-card').count();
           assert.equal(oldCards,0,'Generic bulky cards must not appear in exchange directory');
-          await page.screenshot({path:path.join(out,'exchanges-desktop-dark.png'),fullPage:true,animations:'disabled'});
           const toggle=page.locator('#yb-theme-toggle');
+          if ((await page.locator('html').getAttribute('data-theme')) !== 'dark') await toggle.click();
+          await auditAccessibility(page,'page-exchanges-dark');
+          await page.screenshot({path:path.join(out,'exchanges-desktop-dark.png'),fullPage:true,animations:'disabled'});
           await toggle.click();
+          assert.equal(await page.locator('html').getAttribute('data-theme'),'light');
           await auditAccessibility(page,'page-exchanges-light');
           await page.screenshot({path:path.join(out,'exchanges-desktop-light.png'),fullPage:true,animations:'disabled'});
+          const mobile=await browser.newPage({viewport:{width:375,height:812},reducedMotion:'reduce'});
+          try {
+            await mobile.goto(base + route,{waitUntil:'load',timeout:30000});
+            if ((await mobile.locator('html').getAttribute('data-theme')) !== 'dark')
+              await mobile.locator('#yb-theme-toggle').click();
+            const noOverflow=await mobile.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 2);
+            assert.ok(noOverflow,'Exchange directory must not overflow mobile viewport');
+            const mobileRows=mobile.locator('.yb-market-row');
+            assert.equal(await mobileRows.count(),5);
+            await auditAccessibility(mobile,'page-exchanges-mobile-dark');
+            await mobile.screenshot({path:path.join(out,'exchanges-mobile-dark.png'),fullPage:true,animations:'disabled'});
+          } finally { await mobile.close(); }
         }
         if (route === '/whitepaper/') {
           const documents = page.locator('a[href$=".pdf"]');
