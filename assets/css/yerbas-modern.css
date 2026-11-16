@@ -169,3 +169,21 @@ html{scroll-behavior:smooth}body{margin:0;background:var(--yb-bg)!important;colo
 @media(max-width:880px){.yb-start-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.yb-hero-refresh .yb-hero-layout{grid-template-columns:minmax(0,1fr) 200px}.yb-hero-refresh h1{font-size:clamp(2.75rem,5.7vw,4.3rem)}}
 @media(max-width:660px){.yb-start-grid{grid-template-columns:1fr;margin-top:30px}.yb-start-card{gap:20px}.yb-hero-refresh .yb-hero-layout{grid-template-columns:1fr}.yb-hero-refresh .yb-hero-art{display:none}.yb-hero-refresh h1{font-size:clamp(2.6rem,10.3vw,4rem)}.yb-hero-refresh .yb-eyebrow{font-size:.7rem;letter-spacing:.1em}}
 @media(prefers-reduced-motion:reduce){.yb-start-card:hover{transform:none}}
+
+
+/* Yerbas exchange directory: compact, responsive market links on the homepage. */
+.yb-exchanges-section{background:var(--yb-bg)}
+.yb-exchange-header{display:flex;align-items:end;justify-content:space-between;gap:20px}
+.yb-exchange-header .yb-intro{margin-bottom:0}
+.yb-exchange-header>.yb-button{flex-shrink:0}
+.yb-exchange-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin-top:32px}
+.yb-exchange-tile{display:flex;flex-direction:column;justify-content:space-between;gap:22px;min-width:0;min-height:115px;padding:20px;border:1px solid var(--yb-border);border-radius:16px;background:var(--yb-card-bg);color:var(--yb-text)!important;text-decoration:none!important;transition:border-color .2s,transform .2s,background .2s}
+.yb-exchange-tile:hover,.yb-exchange-tile:focus-visible{border-color:var(--yb-accent-strong);background:var(--yb-raised);transform:translateY(-2px)}
+.yb-exchange-name{font-size:clamp(1rem,1.4vw,1.24rem);font-weight:800;line-height:1.25}
+.yb-exchange-meta{display:flex;align-items:center;justify-content:space-between;gap:6px;color:var(--yb-green);font-size:.8rem;font-weight:750}
+.yb-exchange-disclaimer{margin:18px 0 0}
+.yb-exchange-pair{font-weight:800;letter-spacing:.04em;color:var(--yb-green)!important}
+@media(max-width:1060px){.yb-exchange-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:700px){.yb-exchange-header{align-items:flex-start;flex-direction:column}.yb-exchange-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:420px){.yb-exchange-grid{grid-template-columns:1fr}.yb-exchange-tile{min-height:95px}}
+@media(prefers-reduced-motion:reduce){.yb-exchange-tile:hover{transform:none}}

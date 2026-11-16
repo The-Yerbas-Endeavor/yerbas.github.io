@@ -59,6 +59,29 @@ description: "Yerbas is an open-source blockchain for peer-to-peer payments, dig
   </div>
 </section>
 
+<section class="yb-section yb-exchanges-section" id="exchanges" aria-labelledby="yb-exchanges-heading">
+  <div class="wrapper">
+    <div class="yb-exchange-header">
+      <div>
+        <p class="yb-eyebrow">YERB markets</p>
+        <h2 id="yb-exchanges-heading">Explore Yerbas exchanges.</h2>
+        <p class="yb-intro">Find third-party YERB trading pairs. Compare liquidity, fees, and deposit or withdrawal availability with each venue before trading.</p>
+      </div>
+      <a class="yb-button" href="/buy-yerbas/">All exchange information <span aria-hidden="true">↗</span></a>
+    </div>
+    <div class="yb-exchange-grid">
+      {% assign exchanges = site.data.exchanges | sort: 'name' %}
+      {% for exchange in exchanges %}
+      <a class="yb-exchange-tile" href="{{ exchange.url | escape }}" target="_blank" rel="noopener noreferrer nofollow" aria-label="Visit {{ exchange.name | escape }} {{ exchange.pair | escape }} trading market">
+        <span class="yb-exchange-name">{{ exchange.name | escape }}</span>
+        <span class="yb-exchange-meta">{{ exchange.pair | escape }} <span aria-hidden="true">↗</span></span>
+      </a>
+      {% endfor %}
+    </div>
+    <p class="yb-small yb-exchange-disclaimer">These are third-party listings, not endorsements or live order books. Verify market availability and wallet status before transferring YERB.</p>
+  </div>
+</section>
+
 <section class="yb-section yb-ecosystem-section yb-section-alt" id="ecosystem" aria-labelledby="yb-ecosystem-heading">
   <div class="wrapper">
     <div class="yb-section-heading">
