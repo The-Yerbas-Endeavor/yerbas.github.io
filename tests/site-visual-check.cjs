@@ -94,6 +94,22 @@ async function run() {
 
         assert.equal(await page.locator('.yb-start-grid .yb-start-card').count(), 3, 'Three clear onboarding paths');
 
+        const starterCards = page.locator('.yb-start-grid .yb-start-card');
+        assert.equal(await starterCards.locator('.yb-start-icon svg').count(), 3,
+          'Each starter card should have a distinctive vector icon');
+        assert.equal(await starterCards.locator('.yb-start-card-action').count(), 3,
+          'All three cards need a clear action');
+        assert.equal(await starterCards.locator('.yb-start-card-content h3').count(), 3,
+          'All cards need a clear heading');
+        const cardGeometry = await starterCards.evaluateAll(cards => cards.map(card => {
+          const rect = card.getBoundingClientRect(), icon=card.querySelector('.yb-start-icon');
+          const iconRect=icon.getBoundingClientRect();
+          return {height:rect.height,iconWidth:iconRect.width,padding:parseFloat(getComputedStyle(card).paddingLeft)};
+        }));
+        assert.ok(cardGeometry.every(card => card.height <= 320 && card.iconWidth >= 44),
+          'Starter cards should stay compact and have visible icons');
+
+
         // Catch stale/missing stylesheet where cards exist but render as plain stacked text.
         const cssLink = await page.locator('link[href*="yerbas-modern.css"]').getAttribute('href');
         assert.match(cssLink, /[?&]v=[0-9]+/, 'Modern stylesheet URL must include a build cache-buster');
