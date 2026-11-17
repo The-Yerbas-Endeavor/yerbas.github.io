@@ -94,6 +94,6 @@ description: "Find Yerbas GhostRider mining pools, compare payout options, and g
     <div class="pool-step"><span class="pool-number">3</span><strong>Connect and monitor</strong><p>Start with a small test, confirm accepted shares on your pool dashboard, and verify the first payout in your wallet.</p></div>
   </div>
 
-  <aside class="pool-disclaimer"><strong>Before you mine:</strong> Pool websites, fees, ports, and payment policies may change without notice. A reachable website does not prove that stratum or payouts are operational. Verify recent blocks and payouts directly with the operator. Listed pools are independent services, not endorsements.</aside>
+  <aside class="yb-notice pool-disclaimer"><strong>Before you mine:</strong> Pool websites, fees, ports, and payment policies may change without notice. A reachable website does not prove that stratum or payouts are operational. Verify recent blocks and payouts directly with the operator. Listed pools are independent services, not endorsements.</aside>
   <p class="yb-small" style="margin-top:1.5rem">Operate a Yerbas pool? <a href="https://github.com/The-Yerbas-Endeavor/yerbas.github.io/blob/gh-pages/_data/pools.yml">Suggest a listing correction on GitHub</a>.</p>
 </section>
